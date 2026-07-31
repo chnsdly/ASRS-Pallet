@@ -1,0 +1,74 @@
+{{ define "main" }}
+
+<main class="section contact" aria-labelledby="contact-page-title">
+  <div class="container container--narrow">
+    <header class="section__header"><h1 id="contact-page-title" class="section__title font-title-l">{{ .Title }}</h1><p class="section__description">{{ .Description }}</p></header>
+    <div class="section__inner contact__layout">      <section class="contact__form">
+        {{ with .Params.form }}
+        <div class="contact__form-header">
+
+          {{ with .title }}
+          <h2 id="contact-form-title" class="contact-page__panel-title font-body">{{ . }}</h2>
+          {{ end }}
+
+          {{ with .description }}
+          <p class="contact__form-description font-body">{{ . }}</p>
+          {{ end }}
+        </div>
+
+        <div class="contact__form-body">
+          {{ partial "form.html" (dict "page" $ "sitekey" $.Site.Params.turnstile_sitekey "id" "contact") }}
+        </div>
+        {{ end }}
+      </section>
+
+      <section class="contact__direct" aria-labelledby="contact-direct-title">
+        {{ with .Params.direct }}
+        <div class="contact__direct-header">
+
+          {{ with .title }}
+          <h2 id="contact-direct-title" class="contact__direct-title font-body">{{ . }}</h2>
+          {{ end }}
+
+          {{ with .description }}
+          <p class="contact__direct-description font-body">{{ . }}</p>
+          {{ end }}
+
+        </div>
+        {{ end }}
+
+        <div class="contact__direct-body">
+          {{ with .Site.Params.email }}
+          <div class="contact__direct-item">
+            <p class="contact__direct-label font-meta">{{ T "email" }}</p>
+            <a class="contact__direct-value font-body" href="mailto:{{ . }}">{{ . }}</a>
+          </div>
+          {{ end }}
+
+          {{ with .Site.Params.phone }}
+          <div class="contact__direct-item">
+            <p class="contact__direct-label font-meta">{{ T "phone" }}</p>
+            <a class="contact__direct-value font-body" href="tel:{{ . | replaceRE "[^+0-9]" "" }}">{{ . }}</a>
+          </div>
+          {{ end }}
+
+          {{ with .Site.Params.business_hours }}
+          <div class="contact__direct-item">
+            <p class="contact__direct-label font-meta">{{ T "business_hours" }}</p>
+            <p class="contact__direct-value font-body">{{ . }}</p>
+          </div>
+          {{ end }}
+
+          {{ with .Site.Params.address }}
+          <div class="contact__direct-item">
+            <p class="contact__direct-label font-meta">{{ T "address" }}</p>
+            <p class="contact__direct-value font-body">{{ . }}</p>
+          </div>
+          {{ end }}
+        </div>
+
+      </section>
+    </div>
+  </div>
+</main>
+{{ end }}

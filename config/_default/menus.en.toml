@@ -1,0 +1,88 @@
+[[main]]
+name = "HOME"
+pageRef = "/"
+weight = 10
+
+[[main]]
+name = "PRODUCTS"
+pageRef = "/product"
+identifier = "product"
+weight = 20
+
+  [[main]]
+  name = "GRID 3-RUNNER"
+  pageRef = "/product/grid-3runner"
+  parent = "product"
+  weight = 21
+
+  [[main]]
+  name = "SOLID 3-RUNNER"
+  pageRef = "/product/solid-3runner"
+  parent = "product"
+  weight = 22
+
+  [[main]]
+  name = "REINFORCED SOLID 3-RUNNER"
+  pageRef = "/product/solid-3runner-reinforced"
+  parent = "product"
+  weight = 23
+
+  [[main]]
+  name = "GRID FULL-PERIMETER"
+  pageRef = "/product/grid-full-perimeter"
+  parent = "product"
+  weight = 24
+
+[[main]]
+name = "AS/RS GUIDE"
+pageRef = "/resources"
+identifier = "resources"
+weight = 30
+
+  [[main]]
+  name = "INSIGHTS"
+  pageRef = "/resources/insights"
+  parent = "resources"
+  weight = 31
+
+  [[main]]
+  name = "APPLICATIONS"
+  pageRef = "/resources/case-studies"
+  parent = "resources"
+  weight = 32
+
+  [[main]]
+  name = "FAQ"
+  pageRef = "/resources/faq"
+  parent = "resources"
+  weight = 33
+
+[[main]]
+name = "ABOUT"
+pageRef = "/about"
+weight = 40
+
+[[main]]
+name = "CONTACT"
+pageRef = "/contact"
+weight = 50
+
+[[footer]]
+name = "Privacy Policy"
+pageRef = "/footer/privacy-policy"
+weight = 1
+
+[[footer]]
+name = "Terms & Conditions"
+pageRef = "/footer/terms-conditions"
+weight = 2
+
+[[footer]]
+name = "Cookie Policy"
+pageRef = "/footer/cookie-policy"
+weight = 3
+
+[[footer]]
+name = "Disclaimer"
+pageRef = "/footer/disclaimer"
+weight = 4

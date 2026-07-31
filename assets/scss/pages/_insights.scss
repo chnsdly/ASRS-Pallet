@@ -1,0 +1,84 @@
+.insights-list__list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.insights-list__item {
+  border-bottom: var(--border);
+}
+
+.insights-list__card {
+  display: grid;
+  gap: space(2);
+  padding-block: space(2.5);
+  color: var(--on-surface);
+  transition: color var(--transition-base);
+
+  &:hover,
+  &:focus-visible {
+    color: var(--brand);
+  }
+
+  &:focus-visible {
+    outline: var(--focus-outline);
+    outline-offset: var(--focus-offset);
+  }
+}
+
+.insights-list__media {
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-s);
+  overflow: hidden;
+  background-color: color-mix(in oklab, var(--surface) 86%, var(--brand));
+}
+
+.insights-list__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.insights-list__content {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-content: start;
+  gap: space(1.25);
+  min-width: 0;
+}
+
+.insights-list__title {
+  color: currentColor;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.insights-list__excerpt {
+  color: var(--secondary);
+  display: -webkit-box;
+  line-height: 1.6;
+  max-height: calc(2 * 1.6em);
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.insights-list__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: space(0.5) space(1.5);
+  color: var(--secondary);
+}
+
+@include mq-up(tablet) {
+  .insights-list__card {
+    grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+    align-items: stretch;
+    gap: space(3);
+  }
+
+  .faq-list__card {
+    grid-template-columns: 1fr;
+  }
+}

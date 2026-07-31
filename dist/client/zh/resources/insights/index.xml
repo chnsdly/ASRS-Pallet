@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>立体库托盘知识 on Storack</title><link>https://www.storack.com/zh/resources/insights/</link><description>Recent content in 立体库托盘知识 on Storack</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 20 Jul 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://www.storack.com/zh/resources/insights/index.xml" rel="self" type="application/rss+xml"/><item><title>货架载荷不是一个孤立数字</title><link>https://www.storack.com/zh/resources/insights/rack-load-is-not-a-single-number/</link><pubDate>Mon, 20 Jul 2026 00:00:00 +0000</pubDate><guid>https://www.storack.com/zh/resources/insights/rack-load-is-not-a-single-number/</guid><description>&lt;p&gt;货架载荷只有在测试条件明确时才有意义。即使承载相同质量，如果货架横梁间距更大、载荷集中或仓库温度更高，托盘挠度也可能完全不同。&lt;/p&gt;
+&lt;h2 id="明确支撑条件"&gt;明确支撑条件&lt;/h2&gt;
+&lt;p&gt;记录净跨度、横梁宽度、接触位置，以及托盘由两根横梁、导轨还是穿梭车平台支撑。图纸比“用于货架”这样的笼统描述更可靠。&lt;/p&gt;
+&lt;h2 id="明确时间与温度"&gt;明确时间与温度&lt;/h2&gt;
+&lt;p&gt;HDPE 会受到持续载荷和温度影响。需要说明最长存放时间与工作温度范围，包括冷库或高温季节工况。&lt;/p&gt;
+&lt;h2 id="确认完整配置"&gt;确认完整配置&lt;/h2&gt;
+&lt;p&gt;型号、托盘自重、钢管数量、钢管位置和载荷方式应出现在同一份确认资料中。量产前使用代表性样品并约定测试方法。&lt;/p&gt;</description></item><item><title>输送线与穿梭车托盘如何确认规格</title><link>https://www.storack.com/zh/resources/insights/specify-pallet-for-conveyors-shuttles/</link><pubDate>Sun, 12 Jul 2026 00:00:00 +0000</pubDate><guid>https://www.storack.com/zh/resources/insights/specify-pallet-for-conveyors-shuttles/</guid><description>&lt;p&gt;自动化搬运依赖可重复的接口。首先应明确输送机类型、滚筒或链条节距、托盘运行方向、转接点和定位机构尺寸。&lt;/p&gt;
+&lt;h2 id="核对底部结构"&gt;核对底部结构&lt;/h2&gt;
+&lt;p&gt;川字或田字底必须在运行全程保持稳定接触，同时确认开孔、加强筋和钢管不会与链条、滚筒、挡停器或提升机构干涉。&lt;/p&gt;
+&lt;h2 id="核对传感与居中"&gt;核对传感与居中&lt;/h2&gt;
+&lt;p&gt;提供传感器位置、预期识别面和居中方式。托盘颜色与表面几何可能影响光电识别。&lt;/p&gt;
+&lt;h2 id="按接口验证"&gt;按接口验证&lt;/h2&gt;
+&lt;p&gt;先审核尺寸图，再让样品带代表性载荷通过所有关键转接点。仅通过静载测试，并不能证明输送兼容性。&lt;/p&gt;</description></item><item><title>什么时候值得增加钢管</title><link>https://www.storack.com/zh/resources/insights/when-steel-reinforcement-adds-value/</link><pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate><guid>https://www.storack.com/zh/resources/insights/when-steel-reinforcement-adds-value/</guid><description>&lt;p&gt;钢管加强只有针对明确的弯曲方向和支撑条件时才最有价值。钢管更多，并不必然意味着系统表现更好。&lt;/p&gt;
+&lt;h2 id="从受力路径开始"&gt;从受力路径开始&lt;/h2&gt;
+&lt;p&gt;明确单元载荷如何作用在台面上，以及货架、输送线或穿梭车在哪里支撑托盘。钢管应加强真正发生弯曲的跨度。&lt;/p&gt;
+&lt;h2 id="平衡刚度与搬运"&gt;平衡刚度与搬运&lt;/h2&gt;
+&lt;p&gt;增加钢管会提高托盘自重，也可能影响人工搬运、运输装载和防腐要求。数量与表面处理应结合完整环境选择。&lt;/p&gt;
+&lt;h2 id="固化配置"&gt;固化配置&lt;/h2&gt;
+&lt;p&gt;把钢管尺寸、位置和方向写入确认图纸，保证后续补货保持相同的性能基础。&lt;/p&gt;</description></item></channel></rss>

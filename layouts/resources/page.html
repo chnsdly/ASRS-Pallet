@@ -1,0 +1,25 @@
+{{ define "main" }}
+<main class="section resources-page" aria-labelledby="resources-page-title">
+  <div class="container container--narrow">
+    <article class="resources-page__article">
+      {{ with .Params.image }}
+      <div class="resources-page__media">
+        <img class="resources-page__image" src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy" decoding="async">
+      </div>
+      {{ end }}
+
+      <div class="resources-page__meta font-meta">
+        {{ with .Date }}<time class="resources-page__meta-item" datetime="{{ .Format "2006-01-02" }}">{{ . | time.Format ":date_long" }}</time>{{ end }}
+        {{ with .Params.author }}<span class="resources-page__meta-item">{{ i18n "author" }}: {{ . }}</span>{{ end }}
+        {{ with .Params.readingTime }}<span class="resources-page__meta-item">{{ i18n "readingTime" }}: {{ . }}</span>{{ end }}
+      </div>
+
+      <h1 id="resources-page-title" class="resources-page__title font-title-l">{{ .Title }}</h1>
+
+      <div class="resources-page__content font-body">
+        {{ .Content }}
+      </div>
+    </article>
+  </div>
+</main>
+{{ end }}

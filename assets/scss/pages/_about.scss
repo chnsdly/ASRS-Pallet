@@ -1,0 +1,145 @@
+
+
+.about-support::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
+.about-support__background {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.about-support__header .section__title,
+.about-support__header .section__description {
+  color: var(--surface);
+}
+
+.about-support__grid {
+  display: grid;
+  gap: space(2);
+  grid-template-columns: 1fr;
+}
+
+.about-support__item {
+  min-width: 0;
+}
+
+.about-support__card {
+  height: 100%;
+  display: grid;
+  gap: space(2);
+  padding: space(2);
+  border: 1px solid color-mix(in oklab, var(--surface) 22%, transparent);
+  border-radius: var(--radius-m);
+  background: color-mix(in oklab, var(--surface) 14%, transparent);
+  backdrop-filter: blur(4px);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    background-color var(--transition-base);
+}
+
+.about-support__card-title {
+  display: flex;
+  align-items: center;
+  gap: space(1);
+  color: var(--surface);
+}
+
+.about-support__icon {
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--surface);
+}
+
+.about-support__icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.about-support__card:hover,
+.about-support__card:focus-visible {
+  background: color-mix(in oklab, var(--surface) 20%, transparent);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+}
+
+
+.about-support__card:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-offset);
+}
+
+.about-support__card-description {
+  color: var(--surface);
+}
+
+@include mq-up(tablet) {
+  .about-support__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@include mq-up(desktop) {
+  .about-support__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+
+.about-production__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: space(2);
+}
+
+.about-production__item {
+  min-width: 0;
+}
+
+.about-production__card {
+  height: 100%;
+  display: grid;
+  gap: space(1);
+  align-content: start;
+}
+
+.about-production__image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: var(--radius-s);
+}
+
+.about-production__content {
+  display: grid;
+  text-align: center;
+  padding-bottom: space(2);
+  gap: space(1);
+}
+
+.about-production__card:active {
+  transform: translateY(0);
+}
+
+
+
+@include mq-up(tablet) {
+  .about-production__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

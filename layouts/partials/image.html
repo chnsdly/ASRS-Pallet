@@ -1,0 +1,63 @@
+{{- /* 
+  极简图片组件：只服务你现在的网站需求
+  参数：
+  - src:    相对 assets/ 的路径，必填，例如 "images/products/a.webp"
+  - alt:    alt 文本，建议传；装饰图可传 ""
+  - class:  可选
+  - sizes:  可选，默认 "100vw"
+  - widths: 可选，默认 (480 768 1200)
+  - loading: 可选，默认 "lazy"
+  - fetch:  可选，"high" / "low" / ""
+*/ -}}
+
+{{- $src := .src -}}
+{{- $alt := .alt | default "" -}}
+{{- $class := .class | default "" -}}
+{{- $sizes := .sizes | default "100vw" -}}
+{{- $widths := .widths | default (slice 480 768 1200) -}}
+{{- $loading := .loading | default "lazy" -}}
+{{- $fetch := .fetch | default "" -}}
+
+{{- if not $src -}}
+  {{- errorf "img.html: missing src" -}}
+{{- end -}}
+
+{{- $orig := resources.Get $src -}}
+{{- if not $orig -}}
+  {{- errorf "img.html: image not found: %q" $src -}}
+{{- end -}}
+
+{{- $widths = sort (uniq $widths) -}}
+
+{{- $finalWidths := slice -}}
+{{- range $widths -}}
+  {{- if le . $orig.Width -}}
+    {{- $finalWidths = $finalWidths | append . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if eq (len $finalWidths) 0 -}}
+  {{- $finalWidths = slice $orig.Width -}}
+{{- end -}}
+
+{{- $srcset := slice -}}
+{{- $largest := $orig -}}
+
+{{- range $finalWidths -}}
+  {{- $img := $orig.Resize (printf "%dx webp q80" .) -}}
+  {{- $srcset = $srcset | append (printf "%s %dw" $img.RelPermalink $img.Width) -}}
+  {{- $largest = $img -}}
+{{- end -}}
+
+<img
+  src="{{ $largest.RelPermalink }}"
+  srcset="{{ delimit $srcset ", " }}"
+  sizes="{{ $sizes }}"
+  width="{{ $largest.Width }}"
+  height="{{ $largest.Height }}"
+  alt="{{ $alt }}"
+  {{ with $class }}class="{{ . }}"{{ end }}
+  loading="{{ $loading }}"
+  decoding="async"
+  {{ if or (eq $fetch "high") (eq $fetch "low") }}fetchpriority="{{ $fetch }}"{{ end }}
+>

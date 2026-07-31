@@ -1,0 +1,50 @@
+{{ define "main" }}
+<main class="section product-single" aria-labelledby="product-single-title">
+  <div class="container container--wide"><div class="section__inner">
+    <div class="product-single__overview">
+      <div class="product-single__media"><img class="product-single__image" src="{{ .Params.image | relURL }}" alt="{{ .Title }}"></div>
+      <div class="product-single__summary">
+        <p class="product-single__eyebrow font-meta">{{ if eq .Lang "zh" }}立体库塑料托盘{{ else }}AS/RS PLASTIC PALLET{{ end }}</p>
+        <h1 id="product-single-title" class="product-single__title">{{ .Title }}</h1>
+        <p class="font-body">{{ .Description }}</p>
+        <dl class="product-single__quick">
+          <div><dt>{{ if eq .Lang "zh" }}材料{{ else }}Material{{ end }}</dt><dd>{{ .Params.material }}</dd></div>
+          <div><dt>{{ if eq .Lang "zh" }}工艺{{ else }}Process{{ end }}</dt><dd>{{ .Params.process }}</dd></div>
+          <div><dt>{{ if eq .Lang "zh" }}结构{{ else }}Structure{{ end }}</dt><dd>{{ .Params.structure }}</dd></div>
+          <div><dt>{{ if eq .Lang "zh" }}进叉{{ else }}Entry{{ end }}</dt><dd>{{ .Params.entry }}</dd></div>
+          <div><dt>{{ if eq .Lang "zh" }}颜色{{ else }}Colors{{ end }}</dt><dd>{{ .Params.colors }}</dd></div>
+          <div><dt>{{ if eq .Lang "zh" }}钢管{{ else }}Steel tubes{{ end }}</dt><dd>{{ .Params.steel_tubes }}</dd></div>
+        </dl>
+        <a class="button product-single__quote" href='{{ "/contact/" | relLangURL }}'>{{ i18n "request_quote" }}</a>
+      </div>
+    </div>
+
+    {{ with .Params.gallery }}<div class="product-single__gallery">{{ range . }}<img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">{{ end }}</div>{{ end }}
+
+    <section class="product-single__details" aria-labelledby="spec-title">
+      <h2 id="spec-title" class="product-single__details-title font-title-s">{{ if eq .Lang "zh" }}规格与参考性能{{ else }}Sizes & Reference Performance{{ end }}</h2>
+      <div class="product-single__specs-wrap"><table class="product-single__specs">
+        <thead><tr><th>{{ if eq .Lang "zh" }}规格{{ else }}Size{{ end }}</th><th>{{ if eq .Lang "zh" }}高度{{ else }}Height{{ end }}</th><th>{{ if eq .Lang "zh" }}参考自重{{ else }}Reference weight{{ end }}</th><th>{{ if eq .Lang "zh" }}钢管范围{{ else }}Steel-tube range{{ end }}</th></tr></thead>
+        <tbody>{{ range .Params.sizes }}<tr><td>{{ .size }}</td><td>{{ .height }}</td><td>{{ .weight }}</td><td>{{ .steel }}</td></tr>{{ end }}</tbody>
+      </table></div>
+      <dl class="product-single__quick">
+        <div><dt>{{ if eq .Lang "zh" }}静载{{ else }}Static load{{ end }}</dt><dd>{{ .Params.static_load }}</dd></div>
+        <div><dt>{{ if eq .Lang "zh" }}动载{{ else }}Dynamic load{{ end }}</dt><dd>{{ .Params.dynamic_load }}</dd></div>
+        <div><dt>{{ if eq .Lang "zh" }}货架载荷{{ else }}Rack load{{ end }}</dt><dd>{{ .Params.rack_load }}</dd></div>
+        <div><dt>{{ if eq .Lang "zh" }}定制{{ else }}Customization{{ end }}</dt><dd>{{ if eq .Lang "zh" }}颜色 / Logo / 标识 / 钢管{{ else }}Color / logo / marking / steel{{ end }}</dd></div>
+      </dl>
+      <p class="product-single__note">{{ if eq .Lang "zh" }}以上均为临时市场参考值；不同规格、钢管方案及工况对应不同载荷。最终以双方确认的参数表、图纸与测试条件为准。{{ else }}All values are temporary market references. Ratings vary by size, steel layout and operating condition; the approved data sheet, drawing and test conditions take precedence.{{ end }}</p>
+    </section>
+
+    <section class="product-single__details" aria-labelledby="dimension-title">
+      <h2 id="dimension-title" class="product-single__details-title font-title-s">{{ if eq .Lang "zh" }}尺寸图{{ else }}Dimension Drawing{{ end }}</h2>
+      {{ with .Params.dimension_image }}<img class="product-single__dimension-image" src="{{ . | relURL }}" alt="{{ $.Title }} dimensions">{{ else }}<div class="product-single__dimension"><p><strong>{{ if eq $.Lang "zh" }}尺寸图预留位置{{ else }}DIMENSION DRAWING RESERVED{{ end }}</strong><span>{{ $.Params.dimension_note }}</span></p></div>{{ end }}
+    </section>
+
+    <section class="product-single__details product-single__content font-body" aria-labelledby="details-title">
+      <h2 id="details-title" class="product-single__details-title font-title-s">{{ if eq .Lang "zh" }}结构与应用说明{{ else }}Structure & Application Notes{{ end }}</h2>
+      {{ .Content }}
+    </section>
+  </div></div>
+</main>
+{{ end }}

@@ -1,0 +1,62 @@
+/* ==========================================================================
+   WhatsApp floating contact
+   ========================================================================== */
+
+.whatsapp-float {
+  position: fixed;
+  right: 1rem;
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  z-index: var(--z-panel);
+  display: grid;
+  width: 3.25rem;
+  height: 3.25rem;
+  place-items: center;
+  color: #fff;
+  background: #25d366;
+  border-radius: 50%;
+  box-shadow:
+    0 4px 12px rgba(18, 18, 18, 0.16),
+    0 12px 28px rgba(18, 18, 18, 0.12);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base),
+    background-color var(--transition-base);
+
+  &:hover {
+    background: #20bd5a;
+    box-shadow:
+      0 6px 16px rgba(18, 18, 18, 0.18),
+      0 16px 32px rgba(18, 18, 18, 0.14);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow:
+      0 3px 8px rgba(18, 18, 18, 0.14),
+      0 8px 20px rgba(18, 18, 18, 0.12);
+    transform: translateY(0);
+  }
+
+  &:focus-visible {
+    outline: var(--focus-outline);
+    outline-offset: var(--focus-offset);
+  }
+
+  @include mq-up(tablet) {
+    right: 1.5rem;
+    bottom: 1.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+.whatsapp-float__icon {
+  width: 1.85rem;
+  height: 1.85rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-float {
+    transition: none;
+  }
+}

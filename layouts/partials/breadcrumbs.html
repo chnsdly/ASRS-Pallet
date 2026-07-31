@@ -1,0 +1,31 @@
+{{ if not .IsHome }}
+  {{ $homeLabel := i18n "breadcrumb_home" | default "Home" }}
+  {{ $navLabel := i18n "breadcrumbs_navigation" | default "Breadcrumb" }}
+  
+  {{ $containerClass := "container" }}
+  {{ if and .IsPage (in (slice "product" "insights" "contact" "resources") .Type) }}
+    {{ $containerClass = "container container--narrow" }}
+  {{ end }}
+
+  <nav class="breadcrumbs" aria-label="{{ $navLabel }}">
+    <div class="{{ $containerClass }}">
+      <ol class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="{{ "/" | relLangURL }}">{{ $homeLabel }}</a>
+        </li>
+
+        {{ range .Ancestors.Reverse }}
+          {{ if not .IsHome }}
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            </li>
+          {{ end }}
+        {{ end }}
+
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__current" aria-current="page">{{ .LinkTitle }}</span>
+        </li>
+      </ol>
+    </div>
+  </nav>
+{{ end }}

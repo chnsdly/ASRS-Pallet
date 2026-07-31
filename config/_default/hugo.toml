@@ -1,0 +1,24 @@
+baseURL = 'https://www.storack.com/'
+title = 'Storack'
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+
+[languages]
+  [languages.en]
+    languageCode = 'en-US'
+    languageName = 'English'
+    contentDir = 'content/en'
+    weight = 1  
+  [languages.zh]
+    languageCode = 'zh-CN'
+    languageName = '简体中文'
+    contentDir = 'content/zh'
+    weight = 2
+    [languages.zh.params]
+      company_name = "Storack"
+      email = "sales@storack.com"
+      phone = "+86 178 6161 6766"
+      business_hours = "周一至周六 08:00–18:00（GMT+8）"
+      address = "中国山东省临沂市河东区"
+# Storack multilingual configuration

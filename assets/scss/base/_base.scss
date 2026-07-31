@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Base
+   --------------------------------------------------------------------------
+   这里存放全站的基础样式，用来定义网站默认的视觉起点。
+
+   一般放：
+   - body 的字体、字号、行高、文字颜色、背景色
+   - h1-h6、p、small、strong 等基础文字元素
+   - a 链接的默认颜色、悬停效果
+   - img、svg 等媒体元素的默认表现
+   - ul、ol、blockquote、hr、code 等常见内容元素
+   - .container 这类全站通用基础容器
+   - section、main 等常见结构元素的基础间距
+   - 少量全站通用的辅助类（如果不单独拆 helpers）
+
+   ========================================================================== */
+body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  background-color: var(--surface);
+}
+
+
+.container {
+  box-sizing: border-box;
+  max-width: var(--container);
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: space(1);
+}
+/* 在 .container 后面使用，保证能覆盖 */
+.container--wide    { --container: var(--container-wide); }
+.container--narrow  { --container: var(--container-narrow); }
+
+.font-meta {font-size: 0.875rem; font-weight: 400;}
+.font-body {font-size: 1rem; font-weight: 400;}
+.font-title-xs {font-size: 1.25rem; font-weight: 500;}
+.font-title-s {font-size: 1.5rem; font-weight: 600;}
+.font-title-l {font-size: 1.75rem; font-weight: 600;}
+.font-display {font-size: 2.5rem; font-weight: 700;}
+
+.section { position: relative; padding-block: space(4); }
+.section__inner { display: grid; gap: space(3); }
+.section__header { display: grid; gap: space(2); text-align: center; }
+.section__title { color: var(--on-surface); }
+.section__description { margin: 0 auto; max-width: 120ch; color: var(--secondary); }

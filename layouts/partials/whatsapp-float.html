@@ -1,0 +1,19 @@
+{{ with .Site.Params.phone }}
+  {{ $whatsappNumber := replaceRE "[^0-9]" "" . }}
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/{{ $whatsappNumber }}"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label='{{ i18n "whatsapp_contact" }}'
+  >
+    <img
+      class="whatsapp-float__icon"
+      src='{{ "images/icons/whatsapp.svg" | relURL }}'
+      alt=""
+      width="32"
+      height="32"
+      aria-hidden="true"
+    >
+  </a>
+{{ end }}

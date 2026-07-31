@@ -1,0 +1,44 @@
+{{ define "main" }}
+<main class="section case-studies-list" aria-labelledby="case-studies-list-page-title">
+  <div class="container">
+    <div class="section__inner">
+      <header class="section__header">
+        <h1 id="case-studies-list-page-title" class="section__title font-title-l">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="section__description font-body">{{ . }}</p>
+        {{ end }}
+      </header>
+
+      <ul class="case-studies-list__grid">
+        {{ range .RegularPages.ByDate.Reverse }}
+        {{ $item := . }}
+        {{ $summary := .Summary | plainify | truncate 160 }}
+        <li class="case-studies-list__item">
+          <a class="case-studies-list__card" href="{{ .RelPermalink }}">
+            {{ with .Params.image }}
+            <div class="case-studies-list__media">
+              <img class="case-studies-list__image" src="{{ . | relURL }}" alt="{{ $item.Title }}" loading="lazy"
+                decoding="async">
+            </div>
+            {{ end }}
+
+            <div class="case-studies-list__content">
+              <h2 class="case-studies-list__title font-title-xs">{{ .Title }}</h2>
+
+              {{ with $summary }}
+              <p class="case-studies-list__excerpt font-body">{{ . }}</p>
+              {{ end }}
+
+              <p class="case-studies-list__meta font-meta">
+                {{ with .Params.author }}<span class="case-studies-list__author">{{ i18n "author" }}: {{ . }}</span>{{ end }}
+                {{ with .Params.readingTime }}<span class="case-studies-list__reading-time">{{ i18n "readingTime" }}: {{ . }}</span>{{ end }}
+              </p>
+            </div>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</main>
+{{ end }}

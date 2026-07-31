@@ -1,0 +1,11 @@
+{{ define "main" }}
+<main class="section resources-page" aria-labelledby="page-title">
+  <div class="container container--narrow">
+    <article class="resources-page__article">
+      <h1 id="page-title" class="resources-page__title font-title-l">{{ .Title }}</h1>
+      {{ with .Description }}<p class="section__description">{{ . }}</p>{{ end }}
+      <div class="resources-page__content font-body">{{ .Content }}</div>
+    </article>
+  </div>
+</main>
+{{ end }}

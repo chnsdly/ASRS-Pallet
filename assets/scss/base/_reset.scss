@@ -1,0 +1,122 @@
+
+/* ==========================================================================
+   Reset
+   --------------------------------------------------------------------------
+   统一浏览器默认样式差异，减少不同浏览器带来的不可控表现。
+
+   这里只做必要的基础重置，例如盒模型、body 默认外边距、媒体元素显示、
+   表单字体继承、图片自适应等。不要在这里写品牌视觉、页面布局或组件样式。
+   ========================================================================== */
+
+
+/* 1. 让元素的宽高包含 padding 和 border，布局更好计算 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* 2. 避免手机浏览器自动把文字放大，减少移动端显示异常 */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+
+/* 3. 去掉页面四周默认空白 */
+body {
+  margin: 0;
+}
+
+
+/* 4. 去掉常见文字元素的默认外边距，避免版面出现不可控空隙
+   注意：不动普通 ul / ol，文章里的列表仍然保留缩进和圆点 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 5. 带 class 的列表通常是导航、卡片、菜单等组件，不需要默认圆点和缩进 */
+:where(ul[class], ol[class]) {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 6. 图片、视频等媒体元素不要超出父容器，避免撑破页面 */
+img,
+picture,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* 7. 图片按原比例缩放，不被拉伸变形 */
+img {
+  height: auto;
+}
+
+
+/* 8. 表单里的输入框、按钮等，使用和页面一致的字体 */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* 9. 合并表格边框，方便后续统一控制表格样式 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* 10. 文本输入框只允许上下拉伸，避免左右拉伸撑坏布局 */
+textarea {
+  resize: vertical;
+}
+
+
+/* 11. 遇到很长的型号、链接、参数时，允许自动换行，避免出现横向滚动 */
+:where(h1, h2, h3, h4, h5, h6, p, a, li, dt, dd, figcaption, th, td) {
+  overflow-wrap: break-word;
+}
+
+
+/* 12. 键盘操作时保留清晰的焦点提示，方便无障碍访问 */
+:focus-visible {
+  outline: var(--focus-outline, 2px solid currentColor);
+  outline-offset: var(--focus-offset, 2px);
+}
+
+
+/* 13. 如果用户系统设置了“减少动态效果”，就尽量关闭动画和过渡 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

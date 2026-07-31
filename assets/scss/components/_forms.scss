@@ -1,0 +1,105 @@
+.lead-form {
+  min-width: 0;
+}
+
+.lead-form__form {
+  display: grid;
+  gap: space(2);
+}
+
+.lead-form__fields {
+  display: grid;
+  gap: space(1.5);
+}
+
+.lead-form__field {
+  display: grid;
+  gap: space(0.75);
+  min-width: 0;
+}
+
+.lead-form__label {
+  color: var(--on-surface);
+}
+
+.lead-form__input {
+  width: 100%;
+  min-height: 2.5rem;
+  padding: 0.75rem 1rem;
+  border: var(--border);
+  border-radius: var(--radius-s);
+  background-color: color-mix(in oklab, white 88%, var(--surface));
+  color: var(--on-surface);
+  box-shadow: var(--shadow-inset);
+  transition:
+    border-color var(--transition-base),
+    background-color var(--transition-base),
+    box-shadow var(--transition-base),
+    color var(--transition-base);
+}
+
+.lead-form__field:focus-within .lead-form__label {
+  color: var(--brand);
+}
+
+.lead-form__input:hover {
+  border-color: color-mix(in oklab, var(--brand) 24%, #E7E5DD);
+  background-color: white;
+}
+
+.lead-form__input:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-offset);
+  border-color: color-mix(in oklab, var(--brand) 32%, #E7E5DD);
+  background-color: white;  
+}
+
+.lead-form__input:active {
+  border-color: color-mix(in oklab, var(--brand) 40%, #E7E5DD);
+  background-color: color-mix(in oklab, white 94%, var(--surface));
+}
+
+.lead-form__input--textarea {
+  min-height: 9rem;
+  line-height: 1.6;
+}
+
+.lead-form__captcha {
+  min-width: 0;
+}
+
+.lead-form__captcha .cf-turnstile {
+  max-width: 100%;
+}
+
+.lead-form__submit {
+  width: 100%;
+}
+
+.lead-form__honeypot {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+@include mq-up(tablet) {
+  .lead-form__fields {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lead-form__field--full {
+    grid-column: 1 / -1;
+  }
+
+  .lead-form__submit {
+    width: auto;
+    justify-self: start;
+  }
+}

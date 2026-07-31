@@ -1,0 +1,222 @@
+{{ $menu := .Site.Menus.main }}
+{{ $languages := .Site.Languages }}
+<header class="site-header" data-site-header>
+  <div class="site-header__bar">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="{{ "/" | relLangURL }}">
+        <span class="site-header__logo-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="site-header__wordmark">STORACK<small>{{ if eq .Lang "zh" }}立体库托盘{{ else }}AS/RS PALLETS{{ end }}</small></span>
+      </a>
+
+      <div class="site-header__actions">
+        <a class="site-header__quote" href='{{ "/contact/" | relLangURL }}'>{{ i18n "request_quote" | default "Request a Quote" }}</a>
+        {{ if gt (len $languages) 1 }}        <details class="site-header__language" data-language-switcher>
+          <summary class="site-header__icon-button">
+            <span class="site-header__language-label font-meta">{{ .Site.Language.LanguageName | default .Site.Language.Lang }}</span>
+            <svg class="site-header__language-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="1.8" />
+            </svg>
+          </summary>
+          <ul class="site-header__language-list">
+            {{ range $languages }}
+            {{ $langCode := .Lang }}
+            {{ $target := $langCode | relLangURL }}
+            {{ range $.AllTranslations }}
+            {{ if eq .Language.Lang $langCode }}{{ $target = .RelPermalink }}{{ end }}
+            {{ end }}
+            <li>
+              <a class="site-header__language-link font-meta {{ if eq $.Site.Language.Lang .Lang }} site-header__language-link--current{{ end }}"
+                href="{{ $target }}" lang="{{ or .LanguageCode .Lang }}" {{ if eq $.Site.Language.Lang .Lang
+                }}aria-current="true" {{ end }}>
+                {{ .LanguageName | default .Lang }}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        </details>
+        {{ end }}
+
+        <button class="site-header__menu-toggle" type="button" aria-expanded="false"
+          aria-controls="site-header-drawer" aria-label='{{ i18n "open_menu" | default "Open menu" }}' data-menu-toggle>
+          <span class="site-header__menu-toggle-box" aria-hidden="true">
+            <span class="site-header__menu-toggle-line"></span>
+            <span class="site-header__menu-toggle-line"></span>
+            <span class="site-header__menu-toggle-line"></span>
+          </span>
+        </button>
+      </div>
+
+      <nav class="site-header__nav" aria-label='{{ i18n "primary_navigation" | default "Primary navigation" }}'>
+        <ul class="site-header__nav-list">
+          {{ range $menu }}
+          {{ $itemKey := .Identifier | default (.Name | anchorize) }}
+          <li class="site-header__nav-item{{ if .HasChildren }} site-header__nav-item--has-children{{ end }}">
+            {{ if .HasChildren }}
+            <button class="site-header__nav-link site-header__nav-toggle{{ if or ($.IsMenuCurrent "main" .)
+              ($.HasMenuCurrent "main" .) }} site-header__nav-link--current{{ end }}" type="button">
+              <span>{{ .Name }}</span>
+              <svg class="site-header__nav-caret" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="1.8" />
+              </svg>
+            </button>
+            <ul class="site-header__submenu">
+              {{ range .Children }}
+              <li class="site-header__submenu-item">
+                <a class="site-header__submenu-link{{ if or ($.IsMenuCurrent " main" .) ($.HasMenuCurrent "main" .) }}
+                  site-header__submenu-link--current{{ end }}" href="{{ .URL | relLangURL }}" {{ if or
+                  ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}aria-current="page" {{ end }}>
+                  {{ .Name }}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+            {{ else }}
+            <a class="site-header__nav-link{{ if or ($.IsMenuCurrent " main" .) ($.HasMenuCurrent "main" .) }}
+              site-header__nav-link--current{{ end }}" href="{{ .URL | relLangURL }}" {{ if or ($.IsMenuCurrent "main"
+              .) ($.HasMenuCurrent "main" .) }}aria-current="page" {{ end }}>
+              {{ .Name }}
+            </a>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="site-header__drawer" id="site-header-drawer" data-menu-drawer hidden>
+    <div class="site-header__drawer-inner">
+      <div class="site-header__mobile-head">
+        <button class="site-header__back" type="button" data-menu-back hidden>
+          <span aria-hidden="true">&lt;</span>
+        </button>
+        <p class="site-header__mobile-title" data-menu-title></p>
+      </div>
+      <div class="site-header__mobile-panels">
+        <div class="site-header__mobile-panel site-header__mobile-panel--root" data-menu-panel="root">
+          <ul class="site-header__mobile-list">
+            {{ range $menu }}
+            {{ $itemKey := .Identifier | default (.Name | anchorize) }}
+            <li class="site-header__mobile-item">
+              {{ if .HasChildren }}
+              <button class="site-header__mobile-link site-header__mobile-link--submenu" type="button"
+                data-menu-open="{{ $itemKey }}">
+                <span>{{ .Name }}</span>
+                <svg class="site-header__mobile-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9 7l5 5-5 5" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="1.8" />
+                </svg>
+              </button>
+              {{ else }}
+              <a class="site-header__mobile-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+              {{ end }}
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+
+        {{ range $menu }}
+        {{ $itemKey := .Identifier | default (.Name | anchorize) }}
+        {{ if .HasChildren }}
+        <div class="site-header__mobile-panel" data-menu-panel="{{ $itemKey }}" hidden>
+          <ul class="site-header__mobile-list">
+            {{ range .Children }}
+            <li class="site-header__mobile-item">
+              <a class="site-header__mobile-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  (() => {
+    const header = document.querySelector('[data-site-header]');
+    if (!header) return;
+
+    const toggle = header.querySelector('[data-menu-toggle]');
+    const drawer = header.querySelector('[data-menu-drawer]');
+    const backButton = header.querySelector('[data-menu-back]');
+    const title = header.querySelector('[data-menu-title]');
+    const languageSwitcher = header.querySelector('[data-language-switcher]');
+    const menuTitles = {
+      root: {{ (i18n "menu" | default "菜单") | jsonify | safeJS }},
+      {{ range $menu }}{{ if .HasChildren }}{{ (.Identifier | default (.Name | anchorize)) | jsonify | safeJS }}: {{ .Name | jsonify | safeJS }},{{ end }}{{ end }}
+    };
+
+    let activePanel = 'root';
+
+    const closeLanguageSwitcher = () => {
+      if (languageSwitcher) languageSwitcher.removeAttribute('open');
+    };
+
+    const showPanel = (panelName) => {
+      activePanel = panelName;
+      header.querySelectorAll('[data-menu-panel]').forEach((panel) => {
+        panel.hidden = panel.dataset.menuPanel !== panelName;
+      });
+      backButton.hidden = panelName === 'root';
+      title.textContent = menuTitles[panelName] || menuTitles.root;
+    };
+
+    const closeDrawer = () => {
+      header.dataset.menuState = 'closed';
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', {{ (i18n "open_menu" | default "Open menu") | jsonify | safeJS }});
+      drawer.hidden = true;
+      document.body.classList.remove('is-menu-open');
+      showPanel('root');
+    };
+
+    const openDrawer = () => {
+      closeLanguageSwitcher();
+      drawer.hidden = false;
+      requestAnimationFrame(() => {
+        header.dataset.menuState = 'open';
+        toggle.setAttribute('aria-expanded', 'true');
+        toggle.setAttribute('aria-label', {{ (i18n "close_menu" | default "Close menu") | jsonify | safeJS }});
+        document.body.classList.add('is-menu-open');
+      });
+    };
+
+    toggle.addEventListener('click', () => {
+      const isOpen = header.dataset.menuState === 'open';
+      if (isOpen) {
+        closeDrawer();
+      } else {
+        openDrawer();
+      }
+    });
+
+    header.querySelectorAll('[data-menu-open]').forEach((button) => {
+      button.addEventListener('click', () => {
+        showPanel(button.dataset.menuOpen);
+      });
+    });
+
+    backButton.addEventListener('click', () => showPanel('root'));
+
+    document.addEventListener('click', (event) => {
+      if (!languageSwitcher || !languageSwitcher.hasAttribute('open')) return;
+      if (!languageSwitcher.contains(event.target)) {
+        closeLanguageSwitcher();
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 1024) {
+        closeDrawer();
+      }
+    });
+
+    showPanel('root');
+    closeDrawer();
+  })();
+</script>

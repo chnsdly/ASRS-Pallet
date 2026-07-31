@@ -1,0 +1,29 @@
+{{ define "main" }}
+<main class="section products-list" aria-labelledby="resources-list-page-title">
+  <div class="container">
+    <div class="section__inner">
+      <header class="section__header">
+        <h1 id="resources-list-page-title" class="section__title font-title-l">{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="section__description font-body">{{ . }}</p>
+        {{ end }}
+      </header>
+
+      <ul class="products-list__grid">
+        {{ range .Sections.ByWeight.ByTitle }}
+        <li class="products-list__item">
+          <a class="products-list__card" href="{{ .RelPermalink }}">
+            <div class="products-list__content">
+              <h2 class="font-body">{{ .Title }}</h2>
+              {{ with .Description }}
+              <p class="section__description font-body">{{ . }}</p>
+              {{ end }}
+            </div>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</main>
+{{ end }}

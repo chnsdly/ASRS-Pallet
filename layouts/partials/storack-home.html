@@ -1,0 +1,103 @@
+<main class="home-page">
+  {{ with .Params.home_hero }}
+  <section class="home-hero">
+    {{ with index .images 0 }}<img class="home-hero__bg" src="{{ . | relURL }}" alt="" fetchpriority="high">{{ end }}
+    <div class="container home-hero__inner">
+      {{ with .eyebrow }}<p class="home-hero__eyebrow font-meta">{{ . }}</p>{{ end }}
+      <h1 class="font-display">{{ .title }}</h1>
+      <p>{{ .description }}</p>
+      <div class="home-hero__actions">
+        <a class="button" href="{{ .button.url | relLangURL }}">{{ .button.label }}</a>
+        {{ with .secondary_button }}<a class="button button--ghost" href="{{ .url | relLangURL }}">{{ .label }}</a>{{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.home_values }}
+  <section class="home-values" aria-label="{{ .title }}">
+    <div class="container container--wide">
+      <ul class="home-values__grid">
+        {{ range $index, $item := .items }}
+        <li class="home-values__item">
+          <p class="home-values__number">0{{ add $index 1 }}</p>
+          <h2 class="home-values__title">{{ $item.title }}</h2>
+          <p class="home-values__copy">{{ $item.description }}</p>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ $featured := where (where .Site.RegularPages "Section" "product") "Params.featured" true }}
+  <section class="section products-list home-featured" aria-labelledby="featured-title">
+    <div class="container container--wide"><div class="section__inner">
+      <header class="section__header">
+        <p class="home-hero__eyebrow font-meta">{{ if eq .Lang "zh" }}产品矩阵{{ else }}PRODUCT MATRIX{{ end }}</p>
+        <h2 id="featured-title" class="section__title font-title-l">{{ .Params.home_featured.title }}</h2>
+        <p class="section__description font-body">{{ .Params.home_featured.description }}</p>
+      </header>
+      <ul class="products-list__grid">
+        {{ range $featured.ByWeight }}{{ $item := . }}
+        <li class="products-list__item"><a class="products-list__card" href="{{ .RelPermalink }}">
+          <div class="products-list__media"><img class="products-list__image" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy"></div>
+          <div class="products-list__content">
+            <h2>{{ .Title }}</h2>
+            <div class="product-card__meta"><span>{{ .Params.material }}</span><span>{{ .Params.structure }}</span></div>
+            <p class="product-card__link">{{ if eq $.Lang "zh" }}查看规格 →{{ else }}View specifications →{{ end }}</p>
+          </div>
+        </a></li>
+        {{ end }}
+      </ul>
+    </div></div>
+  </section>
+
+  {{ with .Params.home_asrs }}
+  <section class="section home-asrs">
+    <div class="container container--wide home-asrs__grid">
+      <div class="home-asrs__media"><img class="home-asrs__image" src="{{ .image | relURL }}" alt="{{ .image_alt }}" loading="lazy"></div>
+      <div class="home-asrs__content">
+        <p class="home-hero__eyebrow font-meta">{{ .eyebrow }}</p>
+        <h2 class="font-title-l">{{ .title }}</h2>
+        <p>{{ .description }}</p>
+        <ul class="home-asrs__list">{{ range .items }}<li>{{ . }}</li>{{ end }}</ul>
+        <a class="button" href="{{ .button_url | relLangURL }}">{{ .button_label }}</a>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.home_stats }}
+  <section class="section home-stats">
+    <div class="container"><div class="section__inner">
+      <header class="section__header"><h2 class="section__title font-title-l">{{ .title }}</h2><p class="section__description">{{ .description }}</p></header>
+      <ul class="home-stats__grid">{{ range .items }}<li class="home-stats__item"><p class="home-stats__value font-title-l">{{ .value }}<span class="font-body">{{ .suffix }}</span></p><p>{{ .label }}</p></li>{{ end }}</ul>
+    </div></div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.home_process }}
+  <section class="section home-process">
+    <div class="container container--wide"><div class="section__inner">
+      <header class="section__header"><p class="home-hero__eyebrow font-meta">{{ .eyebrow }}</p><h2 class="section__title font-title-l">{{ .title }}</h2><p class="section__description">{{ .description }}</p></header>
+      <ol class="home-process__grid">{{ range .items }}<li class="home-process__item"><h3>{{ .title }}</h3><p>{{ .description }}</p></li>{{ end }}</ol>
+    </div></div>
+  </section>
+  {{ end }}
+
+  {{ with .Site.GetPage "/resources/case-studies" }}
+  {{ $cases := first 3 .RegularPages.ByDate.Reverse }}
+  {{ if gt (len $cases) 0 }}
+  <section class="section case-studies-list home-case-studies">
+    <div class="container container--wide"><div class="section__inner">
+      <header class="section__header"><h2 class="section__title font-title-l">{{ if eq $.Lang "zh" }}从仓储场景出发{{ else }}Built Around Warehouse Scenarios{{ end }}</h2><p class="section__description">{{ if eq $.Lang "zh" }}查看不同自动化仓储条件下的托盘选型思路。{{ else }}See how pallet structures are matched to different automated storage conditions.{{ end }}</p></header>
+      <ul class="case-studies-list__grid">{{ range $cases }}{{ $item := . }}<li><a class="case-studies-list__card" href="{{ .RelPermalink }}"><div class="case-studies-list__media"><img class="case-studies-list__image" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy"></div><div class="case-studies-list__content"><h3 class="font-title-xs">{{ .Title }}</h3><p>{{ .Summary | plainify | truncate 120 }}</p></div></a></li>{{ end }}</ul>
+    </div></div>
+  </section>
+  {{ end }}{{ end }}
+
+  {{ with .Params.home_cta }}
+  <section class="section home-cta"><div class="container home-cta__inner"><div><p class="home-hero__eyebrow font-meta">{{ .eyebrow }}</p><h2 class="font-title-l">{{ .title }}</h2></div><a class="button" href="{{ .button_url | relLangURL }}">{{ .button_label }}</a></div></section>
+  {{ end }}
+</main>

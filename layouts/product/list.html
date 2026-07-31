@@ -1,0 +1,29 @@
+{{ define "main" }}
+<main class="section products-list" aria-labelledby="products-list-page-title">
+  <div class="container container--wide">
+    <div class="section__inner">
+      <header class="section__header">
+        <p class="home-hero__eyebrow font-meta">{{ if eq .Lang "zh" }}产品矩阵{{ else }}PRODUCT MATRIX{{ end }}</p>
+        <h1 id="products-list-page-title" class="section__title font-title-l">{{ .Title }}</h1>
+        {{ with .Description }}<p class="section__description font-body">{{ . }}</p>{{ end }}
+      </header>
+      <ul class="products-list__grid">
+        {{ range .RegularPages.ByWeight }}{{ $item := . }}
+        <li class="products-list__item">
+          <a class="products-list__card" href="{{ .RelPermalink }}">
+            <div class="products-list__media"><img class="products-list__image" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy" decoding="async"></div>
+            <div class="products-list__content">
+              <h2>{{ .Title }}</h2>
+              <p class="section__description">{{ .Description | truncate 120 }}</p>
+              <div class="product-card__meta"><span>{{ .Params.material }}</span><span>{{ .Params.structure }}</span><span>{{ .Params.entry }}</span></div>
+              <p class="product-card__link">{{ if eq $.Lang "zh" }}查看尺寸与参考载荷 →{{ else }}Sizes & reference loads →{{ end }}</p>
+            </div>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+      <p class="product-single__note">{{ if eq .Lang "zh" }}页面数值为前期占位参考。立体库项目请按具体支撑跨度、温度、载荷分布和设备接口确认最终规格。{{ else }}Published values are preliminary references. Confirm the final AS/RS specification against support span, temperature, load distribution and equipment interfaces.{{ end }}</p>
+    </div>
+  </div>
+</main>
+{{ end }}

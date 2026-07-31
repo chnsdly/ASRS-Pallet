@@ -1,0 +1,60 @@
+{{ $contact := .Site.Params }}
+
+<footer class="site-footer" aria-label='{{ i18n "footer_aria_label" }}'>
+  <div class="site-footer__main section">
+    <div class="container">
+      <div class="site-footer__grid">
+        <section class="site-footer__column site-footer__brand" aria-label="Storack">
+          <p class="site-footer__brand-name">STORACK</p>
+          <p class="site-footer__brand-copy">{{ if eq .Lang "zh" }}为立体仓储系统提供可确认、可追溯、可定制的 HDPE 塑料托盘。{{ else }}Rack-ready HDPE plastic pallets engineered around automated warehouse interfaces.{{ end }}</p>
+          <a class="site-footer__brand-cta" href='{{ "/contact/" | relLangURL }}'>{{ i18n "request_quote" }}</a>
+        </section>
+
+        <section class="site-footer__column" aria-labelledby="footer-menu-title">          <h2 class="site-footer__title font-title-xs" id="footer-menu-title">{{ i18n "footer_site_menu" }}</h2>
+          <ul class="site-footer__list">
+            {{ range .Site.Menus.main }}
+              <li>
+                <a class="site-footer__link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </section>
+
+        <section class="site-footer__column" aria-labelledby="footer-legal-title">
+          <h2 class="site-footer__title font-title-xs" id="footer-legal-title">{{ i18n "footer_legal" }}</h2>
+          <ul class="site-footer__list">
+            {{ range .Site.Menus.footer }}
+              <li>
+                <a class="site-footer__link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </section>
+
+        <section class="site-footer__column" aria-labelledby="footer-contact-title">
+          <h2 class="site-footer__title font-title-xs" id="footer-contact-title">{{ i18n "footer_contact" }}</h2>
+          <ul class="site-footer__list">
+            {{ with $contact.email }}
+              <li><a class="site-footer__link" href="mailto:{{ . }}">{{ i18n "email" }}: {{ . }}</a></li>
+            {{ end }}
+            {{ with $contact.phone }}
+              <li><a class="site-footer__link" href="tel:{{ . | replaceRE "\\s+" "" }}">{{ i18n "phone" }}: {{ . }}</a></li>
+            {{ end }}
+            {{ with $contact.business_hours }}
+              <li class="site-footer__meta">{{ i18n "business_hours" }}: {{ . }}</li>
+            {{ end }}
+            {{ with $contact.address }}
+              <li class="site-footer__meta">{{ i18n "address" }}: {{ . }}</li>
+            {{ end }}
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-footer__copyright">
+    <div class="container">
+      <p class="site-footer__copyright-text font-meta">{{ i18n "footer_copyright" }}</p>
+    </div>
+  </div>
+</footer>

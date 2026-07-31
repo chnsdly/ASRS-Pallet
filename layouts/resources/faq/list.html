@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main class="section insights-list faq-list" aria-labelledby="faq-list-page-title">
+  <div class="container container--narrow">
+    <header class="section__header"><h1 id="faq-list-page-title" class="section__title font-title-l">{{ .Title }}</h1><p class="section__description">{{ .Description }}</p></header>
+    <ul class="insights-list__list">      {{ range .RegularPages.ByDate.Reverse }}
+      {{ $summary := .Summary | plainify | truncate 220 }}
+      <li class="insights-list__item">
+        <a class="insights-list__card faq-list__card" href="{{ .RelPermalink }}">
+          <div class="insights-list__content">
+            <h2 class="insights-list__title font-title-xs">{{ .Title }}</h2>
+            {{ with $summary }}
+            <p class="insights-list__excerpt font-body">{{ . }}</p>
+            {{ end }}
+          </div>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</main>
+{{ end }}

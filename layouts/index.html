@@ -1,0 +1,433 @@
+{{ define "main" }}
+{{ partial "storack-home.html" . }}
+{{ if false }}
+<main class="home-page"><!---------- 首页大图 ---------->
+  {{ with .Params.home_hero }}
+    {{ if .enable }}
+    {{ $heroImages := slice }}
+    {{ range .images }}
+      {{ $heroImages = $heroImages | append . }}
+    {{ end }}
+    {{ $heroTotal := len $heroImages }}
+    <section class="home-hero" data-home-hero>
+      <div class="home-hero__slides" data-home-hero-track>
+        {{ range $index, $image := $heroImages }}
+        <div class="home-hero__slide{{ if eq $index 0 }} is-active{{ end }}" data-home-hero-slide>
+          {{ partial "image.html" (dict
+            "src" $image
+            "alt" ""
+            "class" "home-hero__bg"
+            "sizes" "100vw"
+            "widths" (slice 768 1280 1600 1920)
+            "loading" (cond (eq $index 0) "eager" "lazy")
+            "fetch" (cond (eq $index 0) "high" "auto")
+          ) }}
+        </div>
+        {{ end }}
+      </div>
+      <div class="container home-hero__inner">
+          {{ with .title }}
+          <h1 class="font-display">{{ . }}</h1>
+          {{ end }}
+
+          {{ with .description }}
+          <p class="font-title-xs">{{ . }}</p>
+          {{ end }}
+          
+          {{ with .button }}
+          <div class="home-hero__action">
+            <a class="button" href="{{ .url | relLangURL }}">
+              {{ .label }}
+            </a>
+          </div>
+          {{ end }}
+
+      </div>
+      {{ if gt $heroTotal 1 }}
+      <button class="home-hero__nav home-hero__nav--prev" type="button" aria-label="Previous slide" data-home-hero-prev>&lsaquo;</button>
+      <button class="home-hero__nav home-hero__nav--next" type="button" aria-label="Next slide" data-home-hero-next>&rsaquo;</button>
+      <div class="home-hero__dots" role="tablist" aria-label="Hero slides">
+        {{ range $index, $_ := $heroImages }}
+        <button
+          class="home-hero__dot{{ if eq $index 0 }} is-active{{ end }}"
+          type="button"
+          role="tab"
+          aria-label="Go to slide {{ add $index 1 }}"
+          aria-selected="{{ if eq $index 0 }}true{{ else }}false{{ end }}"
+          data-home-hero-dot="{{ $index }}"
+        ></button>
+        {{ end }}
+      </div>
+      {{ end }}
+    </section>
+    {{ if gt $heroTotal 1 }}
+    <script>
+      (() => {
+        const hero = document.querySelector('[data-home-hero]');
+        if (!hero) return;
+
+        const track = hero.querySelector('[data-home-hero-track]');
+        const slides = Array.from(hero.querySelectorAll('[data-home-hero-slide]'));
+        const dots = Array.from(hero.querySelectorAll('[data-home-hero-dot]'));
+        const prevButton = hero.querySelector('[data-home-hero-prev]');
+        const nextButton = hero.querySelector('[data-home-hero-next]');
+        const total = slides.length;
+
+        if (!track || total < 2) return;
+
+        let current = 0;
+        const update = (next) => {
+          current = (next + total) % total;
+          track.style.transform = `translateX(-${current * 100}%)`;
+
+          slides.forEach((slide, index) => {
+            slide.classList.toggle('is-active', index === current);
+          });
+
+          dots.forEach((dot, index) => {
+            const active = index === current;
+            dot.classList.toggle('is-active', active);
+            dot.setAttribute('aria-selected', active ? 'true' : 'false');
+          });
+        };
+
+        prevButton?.addEventListener('click', () => update(current - 1));
+        nextButton?.addEventListener('click', () => update(current + 1));
+        dots.forEach((dot, index) => {
+          dot.addEventListener('click', () => update(index));
+        });
+      })();
+    </script>
+    {{ end }}
+    {{ end }}
+  {{ end }}
+
+
+<!---------- Trusted by ---------->
+  {{ with .Params.home_trusted }}
+  {{ if .enable }}
+  <section class="section home-trusted" aria-labelledby="home-trusted-title">
+    <div class="container">
+      <div class="section__inner">
+        <div class="section__header">
+          {{ with .title }}
+          <h2 id="home-trusted-title" class="section__title font-title-l">{{ . }}</h2>
+          {{ end }}
+      
+          {{ with .description }}
+          <p class="section__description font-body">{{ . }}</p>
+          {{ end }}
+        </div>
+        {{ with .logos }}
+        <ul class="home-trusted__list">
+          {{ range . }}
+          <li class="home-trusted__item">
+            <span class="home-trusted__logo-link home-trusted__logo-link--disabled">
+              <img class="home-trusted__logo" src="{{ .logo | relURL }}" alt="{{ .name }}" loading="lazy" decoding="async">
+            </span>
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+
+
+<!---------- Featured Products ---------->
+  {{ $featuredProducts := where (where .Site.RegularPages "Section" "product") "Params.featured" true }}
+  {{ if gt (len $featuredProducts) 0 }}
+  <section class="section home-featured" aria-labelledby="home-featured-title">
+    <div class="container">
+      <div class="section__inner">
+        <div class="section__header">
+          <h2 id="home-featured-title" class="section__title font-title-l">{{ with .Params.home_featured.title }}{{ . }}{{
+            else }}Featured Products{{ end }}</h2>
+          {{ with .Params.home_featured.description }}
+          <p class="section__description font-body">{{ . }}</p>
+          {{ end }}
+        </div>
+      
+        <ul class="products-list__grid">
+          {{ range $featuredProducts.ByWeight }}
+          {{ $item := . }}
+          <li class="products-list__item">
+            <a class="products-list__card" href="{{ .RelPermalink }}">
+              {{ with .Params.image }}
+              <div class="products-list__media">
+                <img class="products-list__image" src="{{ . | relURL }}" alt="{{ $item.Title }}" loading="lazy"
+                  decoding="async">
+              </div>
+              {{ end }}
+              <div class="products-list__content">
+                <h2 class="font-body">{{ .Title }}</h2>
+              </div>
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+
+<!---------- Stats ---------->
+  {{ with .Params.home_stats }}
+  {{ if .enable }}
+  <section class="section home-stats" data-home-stats>
+    <div class="container">
+      <div class="section__inner">
+        <div class="section__header">
+          {{ with .title }}
+          <h2 class="section__title font-title-l">{{ . }}</h2>
+          {{ end }}
+          {{ with .description }}
+          <p class="section__description font-body">{{ . }}</p>
+          {{ end }}
+        </div>
+        <ul class="home-stats__grid">
+          {{ range .items }}
+          <li class="home-stats__item">
+            <p class="home-stats__value font-title-l">
+              <span class="home-stats__number" data-count-up data-target="{{ .value }}">0</span>
+              {{ with .suffix }}
+              <span class="home-stats__suffix font-body">{{ . }}</span>
+              {{ end }}
+            </p>
+            {{ with .label }}
+            <p class="home-stats__label font-body">{{ . }}</p>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }} 
+
+<!---------- Company ---------->
+  {{ with .Params.home_company }}
+  {{ if .enable }}
+  <section class="section home-company">
+    <div class="container">
+      <div class="section__inner">
+        {{ $company := . }}
+          <div class="home-company__overview">
+            {{ with .image }}
+            <div class="home-company__media">
+              <img class="home-company__image" src="{{ . | relURL }}" alt="{{ $company.title }}" loading="lazy"
+                decoding="async">
+            </div>
+            {{ end }}
+      
+            <div class="home-company__summary">
+              {{ with .title }}
+              <h3 id="home-company-title" class="home-company__title font-title-xs">{{ . }}</h3>
+              {{ end }}
+              {{ with .description }}
+              <p class="font-body">{{ . }}</p>
+              {{ end }}
+              <a class="button home-company__quote" href='{{ "/contact/" | relLangURL }}'>
+                {{ i18n "contact_us" | default "Contact Us" }}
+              </a>
+            </div>
+          </div>
+        {{ end }}
+      
+        {{ with .factory_gallery }}
+          <div class="home-company__factory-gallery" tabindex="0" aria-label="Factory gallery">
+            <div class="home-company__factory-track">
+              {{ range . }}
+              <div class="home-company__factory-item">
+                <img class="home-company__factory-image" src="{{ .image | relURL }}" alt="{{ .name }}" loading="lazy" decoding="async">
+              </div>
+              {{ end }}
+              {{ range . }}
+              <div class="home-company__factory-item" aria-hidden="true">
+                <img class="home-company__factory-image" src="{{ .image | relURL }}" alt="" loading="lazy" decoding="async">
+              </div>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }} 
+
+<!---------- Test Reports ---------->
+  {{ with .Params.home_reports }}
+  {{ if .enable }}
+  <section class="section home-reports" aria-labelledby="home-reports-title">
+    <div class="container">
+      <div class="section__inner">
+        <div class="section__header">
+          {{ with .title }}
+          <h2 id="home-reports-title" class="section__title font-title-l">{{ . }}</h2>
+          {{ end }}
+          {{ with .description }}
+          <p class="section__description font-body">{{ . }}</p>
+          {{ end }}
+        </div>
+        {{ with .images }}
+        <ul class="home-reports__list">
+          {{ range . }}
+          <li class="home-reports__item">
+            <img class="home-reports__image" src="{{ .image | relURL }}" alt="{{ .name }}" loading="lazy" decoding="async">
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
+<!---------- Featured Case Studies ---------->
+  {{ with .Site.GetPage "/resources/case-studies" }}
+  {{ $featuredCaseStudies := where .RegularPages "Params.featured" true }}
+  {{ if gt (len $featuredCaseStudies) 0 }}
+  <section class="section case-studies-list home-case-studies" aria-labelledby="home-case-studies-title">
+    <div class="container">
+        <ul class="case-studies-list__grid">
+          {{ range $featuredCaseStudies.ByDate.Reverse }}
+          {{ $item := . }}
+          {{ $summary := .Summary | plainify | truncate 160 }}
+          <li class="case-studies-list__item">
+            <a class="case-studies-list__card" href="{{ .RelPermalink }}">
+              {{ with .Params.image }}
+              <div class="case-studies-list__media">
+                <img class="case-studies-list__image" src="{{ . | relURL }}" alt="{{ $item.Title }}" loading="lazy"
+                  decoding="async">
+              </div>
+              {{ end }}
+
+              <div class="case-studies-list__content">
+                <h2 class="case-studies-list__title font-title-xs">{{ .Title }}</h2>
+
+                {{ with $summary }}
+                <p class="case-studies-list__excerpt font-body">{{ . }}</p>
+                {{ end }}
+
+                <p class="case-studies-list__meta font-meta">
+                  {{ with .Params.author }}<span class="case-studies-list__author">{{ i18n "author" }}: {{ . }}</span>{{ end }}
+                  {{ with .Params.readingTime }}<span class="case-studies-list__reading-time">{{ i18n "readingTime" }}: {{ . }}</span>{{ end }}
+                </p>
+              </div>
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+
+<!---------- Featured FAQs ---------->
+  {{ with .Site.GetPage "/resources/faq" }}
+  {{ $featuredFaqs := where .RegularPages "Params.featured" true }}
+  {{ if gt (len $featuredFaqs) 0 }}
+  <section class="section insights-list faq-list" aria-labelledby="home-featured-faq-title">
+    <div class="container">
+      <div class="section__inner">
+        <div class="section__header">
+          <h2 id="home-featured-faq-title" class="section__title font-title-l">{{ with $.Params.home_featured_faq.title }}{{ . }}{{ else }}{{ if eq $.Lang "zh" }}精选问答{{ else }}Featured FAQs{{ end }}{{ end }}</h2>
+          {{ with $.Params.home_featured_faq.description }}
+          <p class="section__description font-body">{{ . }}</p>
+          {{ end }}
+        </div>
+
+        <ul class="insights-list__list">
+          {{ range $featuredFaqs.ByDate.Reverse }}
+          {{ $summary := .Summary | plainify | truncate 220 }}
+          <li class="insights-list__item">
+            <a class="insights-list__card faq-list__card" href="{{ .RelPermalink }}">
+              <div class="insights-list__content">
+                <h2 class="insights-list__title font-title-xs">{{ .Title }}</h2>
+                {{ with $summary }}
+                <p class="insights-list__excerpt font-body">{{ . }}</p>
+                {{ end }}
+              </div>
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  {{ end }}
+  
+<script>
+  (() => {
+    const section = document.querySelector("[data-home-stats]");
+    if (!section) return;
+    section.classList.add("home-stats--js");
+
+    const counters = section.querySelectorAll("[data-count-up]");
+    if (!counters.length) return;
+
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const formatNumber = (value) => new Intl.NumberFormat().format(value);
+    const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+    const animated = new WeakSet();
+
+    const setFinalValue = (counter) => {
+      const target = Number(counter.dataset.target || 0);
+      counter.textContent = `${formatNumber(target)}`;
+    };
+
+    if (prefersReducedMotion) {
+      counters.forEach(setFinalValue);
+      return;
+    }
+
+    const animateCounter = (counter) => {
+      if (animated.has(counter)) return;
+      animated.add(counter);
+
+      const target = Number(counter.dataset.target || 0);
+      const duration = 1200 + Math.random() * 600;
+      const start = performance.now();
+
+      const step = (now) => {
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = easeOutCubic(progress);
+        const current = Math.round(target * eased);
+        counter.textContent = `${formatNumber(current)}`;
+
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          counter.textContent = `${formatNumber(target)}`;
+        }
+      };
+
+      requestAnimationFrame(step);
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          section.classList.add("home-stats--visible");
+          counters.forEach(animateCounter);
+          observer.disconnect();
+        });
+      },
+      { threshold: 0.25 }
+    );
+
+    observer.observe(section);
+  })();
+</script>
+
+</main>
+{{ end }}
+{{ end }}

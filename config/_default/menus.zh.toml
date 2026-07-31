@@ -1,0 +1,87 @@
+[[main]]
+name = "首页"
+pageRef = "/"
+weight = 10
+
+[[main]]
+name = "产品中心"
+pageRef = "/product"
+identifier = "product"
+weight = 20
+
+  [[main]]
+  name = "网格川字"
+  pageRef = "/product/grid-3runner"
+  parent = "product"
+  weight = 21
+
+  [[main]]
+  name = "平板川字"
+  pageRef = "/product/solid-3runner"
+  parent = "product"
+  weight = 22
+
+  [[main]]
+  name = "平板川字（加强）"
+  pageRef = "/product/solid-3runner-reinforced"
+  parent = "product"
+  weight = 23
+
+  [[main]]
+  name = "网格田字"
+  pageRef = "/product/grid-full-perimeter"
+  parent = "product"
+  weight = 24
+
+[[main]]
+name = "立体库指南"
+pageRef = "/resources"
+identifier = "resources"
+weight = 30
+
+  [[main]]
+  name = "选型知识"
+  pageRef = "/resources/insights"
+  parent = "resources"
+  weight = 31
+
+  [[main]]
+  name = "应用场景"
+  pageRef = "/resources/case-studies"
+  parent = "resources"
+  weight = 32
+  [[main]]
+  name = "常见问题"
+  pageRef = "/resources/faq"
+  parent = "resources"
+  weight = 33
+
+[[main]]
+name = "关于我们"
+pageRef = "/about"
+weight = 40
+
+[[main]]
+name = "联系我们"
+pageRef = "/contact"
+weight = 50
+
+[[footer]]
+name = "隐私政策"
+pageRef = "/footer/privacy-policy"
+weight = 1
+
+[[footer]]
+name = "网站条款"
+pageRef = "/footer/terms-conditions"
+weight = 2
+
+[[footer]]
+name = "Cookie 政策"
+pageRef = "/footer/cookie-policy"
+weight = 3
+
+[[footer]]
+name = "免责声明"
+pageRef = "/footer/disclaimer"
+weight = 4
