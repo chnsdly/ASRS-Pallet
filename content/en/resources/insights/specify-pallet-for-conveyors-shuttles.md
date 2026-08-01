@@ -4,7 +4,7 @@ description: "The interface dimensions integrators should confirm before selecti
 date: 2026-07-12
 author: "Storack Engineering"
 readingTime: "6 min"
-image: "/images/resources/insights/conveyor-interface-placeholder.webp"
+image: "/images/rack.jpg"
 ---
 Automated handling depends on repeatable interfaces. Start with conveyor type, roller or chain pitch, pallet travel direction, transfer points and locator geometry.
 

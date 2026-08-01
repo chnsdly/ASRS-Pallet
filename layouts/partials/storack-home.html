@@ -3,9 +3,11 @@
   <section class="home-hero">
     {{ with index .images 0 }}<img class="home-hero__bg" src="{{ . | relURL }}" alt="" fetchpriority="high">{{ end }}
     <div class="container home-hero__inner">
-      {{ with .eyebrow }}<p class="home-hero__eyebrow font-meta">{{ . }}</p>{{ end }}
-      <h1 class="font-display">{{ .title }}</h1>
-      <p>{{ .description }}</p>
+      <div class="home-hero__lockup">
+        <p class="home-hero__brand">{{ .brand | default "STORACK" }}</p>
+        <h1 class="home-hero__title">{{ .display_title | default "AS/RS PLASTIC PALLETS" }}</h1>
+        <p class="home-hero__tagline">{{ .display_tagline | default "ENGINEERED FOR AUTOMATION" }}</p>
+      </div>
       <div class="home-hero__actions">
         <a class="button" href="{{ .button.url | relLangURL }}">{{ .button.label }}</a>
         {{ with .secondary_button }}<a class="button button--ghost" href="{{ .url | relLangURL }}">{{ .label }}</a>{{ end }}
@@ -65,15 +67,6 @@
         <a class="button" href="{{ .button_url | relLangURL }}">{{ .button_label }}</a>
       </div>
     </div>
-  </section>
-  {{ end }}
-
-  {{ with .Params.home_stats }}
-  <section class="section home-stats">
-    <div class="container"><div class="section__inner">
-      <header class="section__header"><h2 class="section__title font-title-l">{{ .title }}</h2><p class="section__description">{{ .description }}</p></header>
-      <ul class="home-stats__grid">{{ range .items }}<li class="home-stats__item"><p class="home-stats__value font-title-l">{{ .value }}<span class="font-body">{{ .suffix }}</span></p><p>{{ .label }}</p></li>{{ end }}</ul>
-    </div></div>
   </section>
   {{ end }}
 

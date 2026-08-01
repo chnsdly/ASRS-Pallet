@@ -4,7 +4,7 @@ description: "为什么每个货架载荷都必须同时说明支撑跨度、温
 date: 2026-07-20
 author: "Storack 工程团队"
 readingTime: "5 分钟"
-image: "/images/resources/insights/rack-load-placeholder.webp"
+image: "/images/rack.jpg"
 ---
 货架载荷只有在测试条件明确时才有意义。即使承载相同质量，如果货架横梁间距更大、载荷集中或仓库温度更高，托盘挠度也可能完全不同。
 

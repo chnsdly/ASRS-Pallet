@@ -3,7 +3,7 @@ title: "自动化冷库中的通风托盘"
 description: "兼顾通风、排水和低温搬运的网格托盘示例选型。"
 date: 2026-06-18
 featured: true
-image: "/images/resources/case-studies/case-2.webp"
+image: "/images/rack.jpg"
 author: "Storack 应用团队"
 readingTime: "3 分钟"
 ---
@@ -11,4 +11,4 @@ readingTime: "3 分钟"
 
 代表性样品在使用温度下预处理，并通过货架和输送接口测试后再确认。
 
-*本页为示例应用场景，后续可替换为经确认的真实客户资料。*
+*本应用场景用于说明选型方法，最终规格仍需结合具体项目评审与验证。*

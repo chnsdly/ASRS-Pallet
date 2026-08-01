@@ -3,7 +3,7 @@ title: "混合输送线上的田字底托盘"
 description: "在滚筒、链条和挡停器之间保持底部稳定接触的示例场景。"
 date: 2026-06-09
 featured: true
-image: "/images/resources/case-studies/case-3.webp"
+image: "/images/rack.jpg"
 author: "Storack 应用团队"
 readingTime: "3 分钟"
 ---
@@ -11,4 +11,4 @@ readingTime: "3 分钟"
 
 团队标出全部转接点、确认运行方向，并让带载样品通过关键位置后再安排生产。
 
-*本页为示例应用场景，后续可替换为经确认的真实客户资料。*
+*本应用场景用于说明选型方法，最终规格仍需结合具体项目评审与验证。*

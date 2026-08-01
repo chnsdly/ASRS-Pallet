@@ -9,10 +9,10 @@
       </a>
 
       <div class="site-header__actions">
-        <a class="site-header__quote" href='{{ "/contact/" | relLangURL }}'>{{ i18n "request_quote" | default "Request a Quote" }}</a>
-        {{ if gt (len $languages) 1 }}        <details class="site-header__language" data-language-switcher>
-          <summary class="site-header__icon-button">
-            <span class="site-header__language-label font-meta">{{ .Site.Language.LanguageName | default .Site.Language.Lang }}</span>
+        {{ if gt (len $languages) 1 }}
+        <details class="site-header__language" data-language-switcher>
+          <summary class="site-header__language-trigger" aria-label='{{ i18n "language_selector" | default "Select language" }}'>
+            <span class="site-header__language-label font-meta">{{ i18n "language_short_label" | default .Site.Language.Lang }}</span>
             <svg class="site-header__language-icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                 stroke-width="1.8" />
@@ -64,7 +64,7 @@
             <ul class="site-header__submenu">
               {{ range .Children }}
               <li class="site-header__submenu-item">
-                <a class="site-header__submenu-link{{ if or ($.IsMenuCurrent " main" .) ($.HasMenuCurrent "main" .) }}
+                <a class="site-header__submenu-link{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
                   site-header__submenu-link--current{{ end }}" href="{{ .URL | relLangURL }}" {{ if or
                   ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}aria-current="page" {{ end }}>
                   {{ .Name }}
@@ -73,7 +73,7 @@
               {{ end }}
             </ul>
             {{ else }}
-            <a class="site-header__nav-link{{ if or ($.IsMenuCurrent " main" .) ($.HasMenuCurrent "main" .) }}
+            <a class="site-header__nav-link{{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
               site-header__nav-link--current{{ end }}" href="{{ .URL | relLangURL }}" {{ if or ($.IsMenuCurrent "main"
               .) ($.HasMenuCurrent "main" .) }}aria-current="page" {{ end }}>
               {{ .Name }}

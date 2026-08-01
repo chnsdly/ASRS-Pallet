@@ -4,7 +4,7 @@ description: "围绕挠度控制配置钢管、避免无效增重的实用方法
 date: 2026-07-04
 author: "Storack 工程团队"
 readingTime: "4 分钟"
-image: "/images/resources/insights/steel-reinforcement-placeholder.webp"
+image: "/images/rack.jpg"
 ---
 钢管加强只有针对明确的弯曲方向和支撑条件时才最有价值。钢管更多，并不必然意味着系统表现更好。
 

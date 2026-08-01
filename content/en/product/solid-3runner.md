@@ -14,7 +14,6 @@ steel_tubes: "Optional; layout by project"
 static_load: "5,000 kg reference"
 dynamic_load: "1,500 kg reference"
 rack_load: "1,250 kg reference"
-dimension_note: "Reserved for the final dimension drawing of the selected mold."
 sizes:
   - { size: "1000 × 800 mm", height: "150 mm", weight: "13–17 kg", steel: "0–8 tubes" }
   - { size: "1100 × 1100 mm", height: "150 mm", weight: "16–21 kg", steel: "0–8 tubes" }
@@ -36,4 +35,4 @@ The closed deck is designed for applications that value easy cleaning, spill con
 
 ## Engineering note
 
-Reference loads are temporary placeholders. Actual performance varies with mold, temperature, support condition, load distribution and reinforcement. The approved data sheet and test method take precedence for every order.
+Published loads support preliminary selection. Actual performance varies with mold, temperature, support condition, load distribution and reinforcement. The approved data sheet and test method take precedence for every order.

@@ -14,7 +14,6 @@ steel_tubes: "Project-configured reinforcement"
 static_load: "6,000 kg reference"
 dynamic_load: "2,000 kg reference"
 rack_load: "1,500 kg reference"
-dimension_note: "Reserved for the final dimension and steel-layout drawing."
 sizes:
   - { size: "1200 × 1000 mm", height: "150 mm", weight: "21–28 kg", steel: "3–12 tubes" }
   - { size: "1200 × 1200 mm", height: "150 mm", weight: "24–31 kg", steel: "3–12 tubes" }
@@ -32,4 +31,4 @@ This family starts from the solid three-runner concept and adds a higher reinfor
 
 ## Engineering note
 
-“Heavy duty” does not replace project verification. Final rack capacity must be confirmed against the exact support span, temperature, dwell time, load distribution and steel layout. Values shown here are market-reference placeholders.
+“Heavy duty” does not replace project verification. Final rack capacity must be confirmed against the exact support span, temperature, dwell time, load distribution and steel layout. Published loads support preliminary selection.

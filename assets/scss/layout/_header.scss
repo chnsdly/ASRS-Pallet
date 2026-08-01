@@ -40,29 +40,28 @@ body.is-menu-open {
   margin-left: auto;
 }
 
-.site-header__icon-button {
-  width: 100%;
-  min-width: 1rem;
-  min-height: 1rem;
+.site-header__language-trigger {
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  padding-left: space(1);
-  box-shadow: var(--shadow-inset);
-  border: var(--border);
-  background-color: #ffffff;
+  justify-content: center;
+  gap: 0.2rem;
+  min-height: 2.75rem;
+  padding: 0.25rem;
+  border: 0;
+  background: transparent;
   color: var(--on-surface);
   cursor: pointer;
   transition:
     color var(--transition-base),
-    background-color var(--transition-base),
-    border-color var(--transition-base),
     transform var(--transition-base);
 }
 
-.site-header__icon-button:hover,
-.site-header__icon-button:focus-visible,
-.site-header__icon-button:active,
+.site-header__language-trigger:hover,
+.site-header__language-trigger:focus-visible,
+.site-header__language-trigger:active {
+  color: var(--brand);
+}
+
 .site-header__nav-link:hover,
 .site-header__nav-link:focus-visible,
 .site-header__nav-link:active,
@@ -82,7 +81,7 @@ body.is-menu-open {
   background-color: color-mix(in oklab, var(--surface) 92%, black);
 }
 
-.site-header__icon-button:focus-visible,
+.site-header__language-trigger:focus-visible,
 .site-header__nav-link:focus-visible,
 .site-header__submenu-link:focus-visible,
 .site-header__mobile-link:focus-visible,
@@ -92,7 +91,7 @@ body.is-menu-open {
   outline-offset: var(--focus-offset);
 }
 
-.site-header__icon-button:active,
+.site-header__language-trigger:active,
 .site-header__nav-link:active,
 .site-header__submenu-link:active,
 .site-header__mobile-link:active,
@@ -121,7 +120,7 @@ body.is-menu-open {
 }
 
 .site-header__language-icon {
-  width: 1.3rem;
+  width: 1rem;
   height: 1rem;
   transition: transform var(--transition-base);
 }
@@ -133,15 +132,15 @@ body.is-menu-open {
 .site-header__language-list {
   position: absolute;
   top: calc(100% + #{space(0.5)});
-  left: 0;
+  left: auto;
   right: 0;
-  width: 100%;
-  min-width: 100%;
+  width: max-content;
+  min-width: 6rem;
   margin: 0;
   box-sizing: border-box;
   padding: space(1);
   border: var(--border);
-  background-color: #ffffff;
+  background-color: var(--card);
   box-shadow: var(--shadow-inset);
   display: grid;
   gap: space(1);
@@ -340,7 +339,7 @@ body.is-menu-open {
 @include mq-up(laptop) {
   .site-header__actions {
     order: 3;
-    margin-left: 0;
+    margin-left: clamp(1.5rem, 3vw, 3rem);
   }
 
   .site-header__menu-toggle,

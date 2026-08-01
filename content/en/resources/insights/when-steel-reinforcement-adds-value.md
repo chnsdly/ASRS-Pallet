@@ -4,7 +4,7 @@ description: "A practical guide to using steel tubes for deflection control with
 date: 2026-07-04
 author: "Storack Engineering"
 readingTime: "4 min"
-image: "/images/resources/insights/steel-reinforcement-placeholder.webp"
+image: "/images/rack.jpg"
 ---
 Steel reinforcement is most valuable when it responds to a defined bending direction and support condition. More tubes do not automatically mean a better system.
 

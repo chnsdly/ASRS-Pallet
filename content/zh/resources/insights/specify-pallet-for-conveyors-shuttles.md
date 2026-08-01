@@ -4,7 +4,7 @@ description: "自动化集成商在选托盘前应确认的关键接口尺寸。
 date: 2026-07-12
 author: "Storack 工程团队"
 readingTime: "6 分钟"
-image: "/images/resources/insights/conveyor-interface-placeholder.webp"
+image: "/images/rack.jpg"
 ---
 自动化搬运依赖可重复的接口。首先应明确输送机类型、滚筒或链条节距、托盘运行方向、转接点和定位机构尺寸。
 

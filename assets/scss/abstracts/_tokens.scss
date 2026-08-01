@@ -9,14 +9,18 @@
      色彩
      ========================================================================== */
 
-  --brand:        #1279e8;   /* 品牌色 */
-  --on-brand:     #FAFAF7;   /* 品牌色上的文本/图标 */
-  --surface:      #FAFAF7;   /* 页面默认底色：提亮整体背景 */
-  --on-surface:   #121212;   /* 正文前景色 */
-
-  --card:         color-mix(in oklab, var(--surface) 38%, white);
-  --secondary:        color-mix(in oklab, var(--on-surface) 70%, var(--surface) 30%);
-  --img-bg: linear-gradient(to top, #EAF4FF 0%, #B9DAFA 50%, #76AFE8 100%); /* 透明图片的背景色 */
+  --brand:          #0b6b4f;
+  --brand-dark:     #073e31;
+  --accent:         #ff9d2e;
+  --on-brand:       #ffffff;
+  --surface:        #f5f4ee;
+  --surface-muted:  #eaf0ec;
+  --surface-accent: color-mix(in oklab, var(--surface) 88%, var(--accent));
+  --on-surface:     #17231f;
+  --secondary:      #5d6964;
+  --card:           #ffffff;
+  --border-color:   #d9dfda;
+  --img-bg:         linear-gradient(145deg, #eef4f0 0%, #d9e9e0 100%);
 
 
   /* ==========================================================================
@@ -37,15 +41,15 @@
 
   --font-sans: "Inter", "Noto Sans SC", Arial, sans-serif;
 
-  --border:       1px solid #E7E5DD;   /* 全站统一边框 */
+  --border:       1px solid var(--border-color);
 
-  --radius-s: 4px;  /* 按钮、输入框、小标签 */
-  --radius-m: 8px;  /* 卡片 */
-  --radius-l: 16px;  /* 大面板 */
+  --radius-s: 2px;  /* 按钮、输入框、小标签 */
+  --radius-m: 4px;  /* 卡片 */
+  --radius-l: 10px; /* 大面板 */
   --radius-pill: 999px; /* 胶囊 */
 
-  --shadow: 0 1px 2px rgba(18, 18, 18, 0.03), 0 10px 28px rgba(18, 18, 18, 0.05);
-  --shadow-hover: 0 2px 4px rgba(18, 18, 18, 0.04), 0 18px 40px rgba(18, 18, 18, 0.08);
+  --shadow: 0 10px 28px rgba(10, 46, 35, 0.08);
+  --shadow-hover: 0 18px 44px rgba(10, 46, 35, 0.14);
   --shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.32), inset 0 1px 2px rgba(18, 18, 18, 0.08), inset 0 0 0 1px rgba(18, 18, 18, 0.04);
 
 

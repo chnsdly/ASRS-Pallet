@@ -14,7 +14,6 @@ steel_tubes: "Optional; layout by project"
 static_load: "4,000 kg reference"
 dynamic_load: "1,500 kg reference"
 rack_load: "1,000 kg reference"
-dimension_note: "Reserved for the final dimension drawing of the selected mold."
 sizes:
   - { size: "1100 × 1100 mm", height: "150 mm", weight: "14–18 kg", steel: "0–8 tubes" }
   - { size: "1200 × 800 mm", height: "150 mm", weight: "13–17 kg", steel: "0–8 tubes" }
@@ -36,4 +35,4 @@ The open grid deck reduces material weight and supports airflow, drainage and ea
 
 ## Engineering note
 
-Published loads are temporary market-reference values, not a universal rating. Final capacity depends on temperature, load distribution, support span, steel-tube configuration and test method. Confirm every AS/RS application against the approved drawing and test agreement.
+Published loads support preliminary selection and are not a universal rating. Final capacity depends on temperature, load distribution, support span, steel-tube configuration and test method. Confirm every AS/RS application against the approved drawing and test agreement.

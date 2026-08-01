@@ -3,7 +3,7 @@ title: "高位库长时间货架存储"
 description: "纸箱货物长期存放于横梁货架时的示例选型路径。"
 date: 2026-06-26
 featured: true
-image: "/images/resources/case-studies/case-1.webp"
+image: "/images/rack.jpg"
 author: "Storack 应用团队"
 readingTime: "3 分钟"
 ---
@@ -11,4 +11,4 @@ readingTime: "3 分钟"
 
 确认内容包括载荷分布图、钢管布局、最长存放时间与样品货架测试，并在定型前核对输送转接点和传感识别面。
 
-*本页为示例应用场景，后续可替换为经确认的真实客户资料。*
+*本应用场景用于说明选型方法，最终规格仍需结合具体项目评审与验证。*

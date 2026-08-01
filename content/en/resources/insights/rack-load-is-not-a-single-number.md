@@ -4,7 +4,7 @@ description: "Why support span, temperature, dwell time and load distribution mu
 date: 2026-07-20
 author: "Storack Engineering"
 readingTime: "5 min"
-image: "/images/resources/insights/rack-load-placeholder.webp"
+image: "/images/rack.jpg"
 ---
 A rack-load value only becomes meaningful when its test conditions are known. Two pallets carrying the same mass can deflect very differently if the rack beams are farther apart, the load is concentrated, or the warehouse operates at a higher temperature.
 

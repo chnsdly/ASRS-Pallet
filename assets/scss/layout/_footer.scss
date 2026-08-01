@@ -1,8 +1,8 @@
 .site-footer {
   margin-top: space(8);
-  border-top: var(--border);
-  background: linear-gradient(to bottom, #F4FAFF 0%, #DCEEFF 100%);
-  color: var(--on-surface);
+  border-top: 0;
+  background: var(--brand-dark);
+  color: color-mix(in oklab, var(--on-brand) 80%, transparent);
 }
 
 .site-footer__main {
@@ -11,6 +11,7 @@
 
 .site-footer__grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   padding-inline: space(2);
   gap: space(4);
 }
@@ -21,6 +22,7 @@
 
 .site-footer__title {
   margin-bottom: space(1.5);
+  color: var(--on-brand);
 }
 
 .site-footer__list {
@@ -30,7 +32,7 @@
 
 .site-footer__link,
 .site-footer__meta {
-  color: var(--on-surface);
+  color: color-mix(in oklab, var(--on-brand) 80%, transparent);
   line-height: 1.6;
 }
 
@@ -45,7 +47,7 @@
 .site-footer__link:hover,
 .site-footer__link:focus-visible,
 .site-footer__link:active {
-  color: var(--brand);
+  color: var(--accent);
 }
 
 .site-footer__link:focus-visible {
@@ -58,18 +60,37 @@
 }
 
 .site-footer__copyright {
-  border-top: var(--border);
+  border-top: 1px solid color-mix(in oklab, var(--on-brand) 12%, transparent);
+  background: color-mix(in oklab, var(--brand-dark) 82%, black);
 }
 
 .site-footer__copyright-text {
   margin: 0;
   padding-block: space(2.5);
-  color: var(--on-surface);
+  color: color-mix(in oklab, var(--on-brand) 70%, transparent);
+}
+
+.site-footer__brand-name {
+  color: var(--on-brand);
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.site-footer__brand-copy {
+  max-width: 24rem;
+  margin-top: 0.9rem;
+}
+
+.site-footer__brand-cta {
+  display: inline-block;
+  margin-top: 1.2rem;
+  color: var(--accent);
+  font-weight: 800;
 }
 
 @include mq-up(tablet) {
   .site-footer__grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: space(3);
   }
 }

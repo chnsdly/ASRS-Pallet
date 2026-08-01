@@ -33,13 +33,15 @@
         <div><dt>{{ if eq .Lang "zh" }}货架载荷{{ else }}Rack load{{ end }}</dt><dd>{{ .Params.rack_load }}</dd></div>
         <div><dt>{{ if eq .Lang "zh" }}定制{{ else }}Customization{{ end }}</dt><dd>{{ if eq .Lang "zh" }}颜色 / Logo / 标识 / 钢管{{ else }}Color / logo / marking / steel{{ end }}</dd></div>
       </dl>
-      <p class="product-single__note">{{ if eq .Lang "zh" }}以上均为临时市场参考值；不同规格、钢管方案及工况对应不同载荷。最终以双方确认的参数表、图纸与测试条件为准。{{ else }}All values are temporary market references. Ratings vary by size, steel layout and operating condition; the approved data sheet, drawing and test conditions take precedence.{{ end }}</p>
+      <p class="product-single__note">{{ if eq .Lang "zh" }}以上为初步选型参考；不同规格、钢管方案及工况对应不同载荷。最终以双方确认的参数表、图纸与测试条件为准。{{ else }}These values support preliminary selection. Ratings vary by size, steel layout and operating condition; the approved data sheet, drawing and test conditions take precedence.{{ end }}</p>
     </section>
 
-    <section class="product-single__details" aria-labelledby="dimension-title">
-      <h2 id="dimension-title" class="product-single__details-title font-title-s">{{ if eq .Lang "zh" }}尺寸图{{ else }}Dimension Drawing{{ end }}</h2>
-      {{ with .Params.dimension_image }}<img class="product-single__dimension-image" src="{{ . | relURL }}" alt="{{ $.Title }} dimensions">{{ else }}<div class="product-single__dimension"><p><strong>{{ if eq $.Lang "zh" }}尺寸图预留位置{{ else }}DIMENSION DRAWING RESERVED{{ end }}</strong><span>{{ $.Params.dimension_note }}</span></p></div>{{ end }}
-    </section>
+    {{ with .Params.dimension_image }}
+      <section class="product-single__details" aria-labelledby="dimension-title">
+        <h2 id="dimension-title" class="product-single__details-title font-title-s">{{ if eq $.Lang "zh" }}尺寸图{{ else }}Dimension Drawing{{ end }}</h2>
+        <img class="product-single__dimension-image" src="{{ . | relURL }}" alt="{{ $.Title }} {{ if eq $.Lang "zh" }}尺寸图{{ else }}dimension drawing{{ end }}">
+      </section>
+    {{ end }}
 
     <section class="product-single__details product-single__content font-body" aria-labelledby="details-title">
       <h2 id="details-title" class="product-single__details-title font-title-s">{{ if eq .Lang "zh" }}结构与应用说明{{ else }}Structure & Application Notes{{ end }}</h2>

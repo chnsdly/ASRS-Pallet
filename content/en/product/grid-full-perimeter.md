@@ -14,7 +14,6 @@ steel_tubes: "Optional; layout by project"
 static_load: "4,000 kg reference"
 dynamic_load: "1,500 kg reference"
 rack_load: "1,000 kg reference"
-dimension_note: "Reserved for the final dimension drawing of the selected mold."
 sizes:
   - { size: "1100 × 1100 mm", height: "150 mm", weight: "15–20 kg", steel: "0–8 tubes" }
   - { size: "1200 × 800 mm", height: "150 mm", weight: "14–18 kg", steel: "0–8 tubes" }
@@ -36,4 +35,4 @@ The full-perimeter base provides continuous bottom contact for stable stacking a
 
 ## Engineering note
 
-Reference values are temporary. Final capacity depends on the selected mold, temperature, loading pattern, support span and reinforcement. Always use the approved project specification for purchase and operation.
+Published loads support preliminary selection. Final capacity depends on the selected mold, temperature, loading pattern, support span and reinforcement. Always use the approved project specification for purchase and operation.

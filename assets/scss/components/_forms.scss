@@ -43,19 +43,19 @@
 }
 
 .lead-form__input:hover {
-  border-color: color-mix(in oklab, var(--brand) 24%, #E7E5DD);
+  border-color: color-mix(in oklab, var(--brand) 24%, var(--border-color));
   background-color: white;
 }
 
 .lead-form__input:focus-visible {
   outline: var(--focus-outline);
   outline-offset: var(--focus-offset);
-  border-color: color-mix(in oklab, var(--brand) 32%, #E7E5DD);
+  border-color: color-mix(in oklab, var(--brand) 32%, var(--border-color));
   background-color: white;  
 }
 
 .lead-form__input:active {
-  border-color: color-mix(in oklab, var(--brand) 40%, #E7E5DD);
+  border-color: color-mix(in oklab, var(--brand) 40%, var(--border-color));
   background-color: color-mix(in oklab, white 94%, var(--surface));
 }
 
