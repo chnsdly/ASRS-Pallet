@@ -1,19 +1,43 @@
 <main class="home-page">
   {{ with .Params.home_hero }}
-  <section class="home-hero">
-    {{ with index .images 0 }}<img class="home-hero__bg" src="{{ . | relURL }}" alt="" fetchpriority="high">{{ end }}
-    <div class="container home-hero__inner">
-      <div class="home-hero__lockup">
-        <p class="home-hero__brand">{{ .brand | default "STORACK" }}</p>
-        <h1 class="home-hero__title">{{ .display_title | default "AS/RS PLASTIC PALLETS" }}</h1>
-        <p class="home-hero__tagline">{{ .display_tagline | default "ENGINEERED FOR AUTOMATION" }}</p>
-      </div>
-      <div class="home-hero__actions">
-        <a class="button" href="{{ .button.url | relLangURL }}">{{ .button.label }}</a>
-        {{ with .secondary_button }}<a class="button button--ghost" href="{{ .url | relLangURL }}">{{ .label }}</a>{{ end }}
-      </div>
+  {{ $hero := . }}
+  {{ $slides := .slides }}
+  <section class="home-hero" data-home-hero aria-roledescription="{{ if eq $.Lang "zh" }}轮播{{ else }}carousel{{ end }}" aria-label="{{ if eq $.Lang "zh" }}首页主视觉{{ else }}Homepage highlights{{ end }}">
+    <div class="home-hero__slides" data-home-hero-track aria-live="off">
+      {{ range $index, $slide := $slides }}
+      <article id="home-hero-slide-{{ $index }}" class="home-hero__slide home-hero__slide--{{ .alignment | default "left" }}{{ if eq $index 0 }} is-active{{ end }}" data-home-hero-slide aria-hidden="{{ if eq $index 0 }}false{{ else }}true{{ end }}" aria-label="{{ if eq $.Lang "zh" }}第 {{ add $index 1 }} 张，共 {{ len $slides }} 张{{ else }}Slide {{ add $index 1 }} of {{ len $slides }}{{ end }}"{{ if ne $index 0 }} inert{{ end }}>
+        <img class="home-hero__bg" src="{{ .image | relURL }}" alt=""{{ if eq $index 0 }} fetchpriority="high"{{ else }} loading="lazy"{{ end }}>
+        <div class="container home-hero__inner">
+          <div class="home-hero__lockup">
+            {{ with .brand }}<p class="home-hero__brand">{{ . }}</p>{{ end }}
+            {{ if eq $index 0 }}
+            <h1 class="home-hero__title">{{ .title }}</h1>
+            {{ else }}
+            <p class="home-hero__title">{{ .title }}</p>
+            {{ end }}
+            <p class="home-hero__tagline">{{ .tagline }}</p>
+          </div>
+          {{ if .show_actions }}
+          <div class="home-hero__actions">
+            <a class="button" href="{{ $hero.button.url | relLangURL }}">{{ $hero.button.label }}</a>
+            {{ with $hero.secondary_button }}<a class="button button--ghost" href="{{ .url | relLangURL }}">{{ .label }}</a>{{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </article>
+      {{ end }}
     </div>
+    {{ if gt (len $slides) 1 }}
+    <button class="home-hero__nav home-hero__nav--prev" type="button" data-home-hero-prev aria-label="{{ if eq $.Lang "zh" }}上一张{{ else }}Previous slide{{ end }}">&#8249;</button>
+    <button class="home-hero__nav home-hero__nav--next" type="button" data-home-hero-next aria-label="{{ if eq $.Lang "zh" }}下一张{{ else }}Next slide{{ end }}">&#8250;</button>
+    <div class="home-hero__dots" role="group" aria-label="{{ if eq $.Lang "zh" }}选择轮播页{{ else }}Choose a slide{{ end }}">
+      {{ range $index, $slide := $slides }}
+      <button class="home-hero__dot{{ if eq $index 0 }} is-active{{ end }}" type="button" data-home-hero-dot data-slide-index="{{ $index }}" aria-label="{{ if eq $.Lang "zh" }}显示第 {{ add $index 1 }} 张{{ else }}Show slide {{ add $index 1 }}{{ end }}" aria-controls="home-hero-slide-{{ $index }}" aria-current="{{ if eq $index 0 }}true{{ else }}false{{ end }}"></button>
+      {{ end }}
+      </div>
+    {{ end }}
   </section>
+  <script src="{{ "js/home-hero.js" | relURL }}" defer></script>
   {{ end }}
 
   {{ with .Params.home_values }}

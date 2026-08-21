@@ -2,10 +2,17 @@
 title: "Storack | AS/RS Plastic Pallets"
 description: "Rack-ready HDPE plastic pallets for automated storage and retrieval systems, with steel reinforcement and project-specific configuration support."
 home_hero:
-  images: ["images/company/background.webp"]
-  brand: "STORACK"
-  display_title: "AS/RS PLASTIC PALLETS"
-  display_tagline: "ENGINEERED FOR AUTOMATION"
+  slides:
+    - image: "images/company/background0.webp"
+      title: "Dedicated to AS/RS Plastic Pallets, Delivering Safe, Durable Load-Carrying Solutions for Smart Warehousing."
+      tagline: "Quality First | Customer Focus | Circular by Design | Success Through Integrity"
+      alignment: "center"
+    - image: "images/company/background.webp"
+      brand: "STORACK"
+      title: "AS/RS PLASTIC PALLETS"
+      tagline: "ENGINEERED FOR AUTOMATION"
+      alignment: "left"
+      show_actions: true
   button: { label: "Explore pallet families", url: "/product/" }
   secondary_button: { label: "Send your requirements", url: "/contact/" }
 home_values:

@@ -2,7 +2,17 @@
 title: "Storack｜立体库塑料托盘"
 description: "面向自动化立体仓库的 HDPE 塑料托盘，支持钢管加强与按项目配置。"
 home_hero:
-  images: ["images/company/background.webp"]
+  slides:
+    - image: "images/company/background0.webp"
+      title: "专注立体库塑料托盘，为智能仓储提供安全耐用的载具解决方案。"
+      tagline: "品质为本｜客户为先｜绿色循环｜诚信共赢"
+      alignment: "center"
+    - image: "images/company/background.webp"
+      brand: "STORACK"
+      title: "AS/RS PLASTIC PALLETS"
+      tagline: "ENGINEERED FOR AUTOMATION"
+      alignment: "left"
+      show_actions: true
   eyebrow: "为自动化而设计的托盘"
   title: "稳定的托盘，是立体库可靠运行的基础。"
   description: "Storack 专注注塑 HDPE 立体库塑料托盘。我们协助集成商与仓储运营方在量产前确认结构、挠度、货架接口与钢管加强方案。"
