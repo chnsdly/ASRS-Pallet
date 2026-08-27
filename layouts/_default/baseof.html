@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.LanguageCode }}">
   <head>
+    {{ $socialImage := "images/og.png" | absURL }}
+    {{ with .Params.image }}{{ $socialImage = . | absURL }}{{ end }}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ if .IsHome }}{{ .Title | default .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
@@ -10,11 +12,11 @@
     <meta property="og:title" content="{{ if .IsHome }}{{ .Title | default .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
     <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ i18n "site_description" }}{{ end }}">
     <meta property="og:url" content="{{ .Permalink }}">
-    <meta property="og:image" content="{{ "images/og.png" | absURL }}">
+    <meta property="og:image" content="{{ $socialImage }}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ if .IsHome }}{{ .Title | default .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
     <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ i18n "site_description" }}{{ end }}">
-    <meta name="twitter:image" content="{{ "images/og.png" | absURL }}">
+    <meta name="twitter:image" content="{{ $socialImage }}">
     <meta name="theme-color" content="#073e31">
     {{ $scss := resources.Get "scss/main.scss" | toCSS (dict "targetPath" "css/style.css") }}
     <link rel="stylesheet" href="{{ $scss.RelPermalink }}">

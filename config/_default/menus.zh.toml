@@ -16,22 +16,28 @@ weight = 20
   weight = 21
 
   [[main]]
+  name = "加强型网格川字"
+  pageRef = "/product/grid-3runner-reinforced"
+  parent = "product"
+  weight = 22
+
+  [[main]]
   name = "平板川字"
   pageRef = "/product/solid-3runner"
   parent = "product"
-  weight = 22
+  weight = 23
 
   [[main]]
   name = "平板川字（加强）"
   pageRef = "/product/solid-3runner-reinforced"
   parent = "product"
-  weight = 23
+  weight = 24
 
   [[main]]
   name = "网格田字"
   pageRef = "/product/grid-full-perimeter"
   parent = "product"
-  weight = 24
+  weight = 25
 
 [[main]]
 name = "立体库指南"
@@ -50,11 +56,18 @@ weight = 30
   pageRef = "/resources/case-studies"
   parent = "resources"
   weight = 32
+
+  [[main]]
+  name = "客户案例"
+  pageRef = "/resources/customer-cases"
+  parent = "resources"
+  weight = 33
+
   [[main]]
   name = "常见问题"
   pageRef = "/resources/faq"
   parent = "resources"
-  weight = 33
+  weight = 34
 
 [[main]]
 name = "关于我们"

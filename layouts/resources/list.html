@@ -10,7 +10,7 @@
       </header>
 
       <ul class="products-list__grid">
-        {{ range .Sections.ByWeight.ByTitle }}
+        {{ range .Sections.ByWeight }}
         <li class="products-list__item">
           <a class="products-list__card" href="{{ .RelPermalink }}">
             <div class="products-list__content">

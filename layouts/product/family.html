@@ -1,0 +1,76 @@
+{{ define "main" }}
+<main class="section product-family" aria-labelledby="product-family-title">
+  <div class="container">
+    <div class="section__inner">
+      <section class="product-family__hero">
+        <div class="product-family__media">
+          <img class="product-family__image" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+        </div>
+        <div class="product-family__summary">
+          <p class="product-family__eyebrow font-meta">{{ i18n "product_family_eyebrow" }}</p>
+          <h1 id="product-family-title" class="product-family__title">{{ .Title }}</h1>
+          <p class="product-family__lead font-body">{{ .Description }}</p>
+          <dl class="product-family__quick">
+            <div><dt>{{ i18n "product_material" }}</dt><dd>{{ .Params.material }}</dd></div>
+            <div><dt>{{ i18n "product_process" }}</dt><dd>{{ .Params.process }}</dd></div>
+            <div><dt>{{ i18n "product_structure" }}</dt><dd>{{ .Params.structure }}</dd></div>
+            <div><dt>{{ i18n "product_entry" }}</dt><dd>{{ .Params.entry }}</dd></div>
+            <div><dt>{{ i18n "product_colors" }}</dt><dd>{{ .Params.colors }}</dd></div>
+            <div><dt>{{ i18n "product_steel_tubes" }}</dt><dd>{{ .Params.steel_tubes }}</dd></div>
+          </dl>
+          <a class="button product-family__quote" href='{{ "/contact/" | relLangURL }}'>{{ i18n "request_quote" }}</a>
+        </div>
+      </section>
+
+      <section class="product-family__section product-family__content font-body" aria-labelledby="family-story-title">
+        <div class="product-family__section-heading">
+          <p class="font-meta">{{ i18n "family_structure_eyebrow" }}</p>
+          <h2 id="family-story-title" class="font-title-s">{{ i18n "family_structure_title" }}</h2>
+        </div>
+        <div class="product-family__prose">{{ .Content }}</div>
+      </section>
+
+      <section class="product-family__section" aria-labelledby="family-models-title">
+        <div class="product-family__section-heading">
+          <p class="font-meta">{{ i18n "family_models_eyebrow" }}</p>
+          <h2 id="family-models-title" class="font-title-s">{{ i18n "family_models_title" }}</h2>
+        </div>
+        <ul class="product-model-grid">
+          {{ range .RegularPages.ByWeight }}
+          <li class="product-model-card">
+            <a class="product-model-card__link" href="{{ .RelPermalink }}">
+              <div class="product-model-card__media"><img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy" decoding="async"></div>
+              <div class="product-model-card__body">
+                <h3>{{ .Title }}</h3>
+                <p>{{ .Description | truncate 105 }}</p>
+                <dl class="product-model-card__facts"><div><dt>{{ i18n "product_dimensions" }}</dt><dd>{{ replace .Params.size " mm" "" }} × {{ .Params.height }}</dd></div><div><dt>{{ i18n "product_material" }}</dt><dd>{{ .Params.material | default $.Params.material }}</dd></div></dl>
+                <span class="product-model-card__action">{{ i18n "view_model_details" }} →</span>
+              </div>
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </section>
+
+      <section class="product-family__section" aria-labelledby="family-specs-title">
+        <div class="product-family__section-heading">
+          <p class="font-meta">{{ i18n "family_specs_eyebrow" }}</p>
+          <h2 id="family-specs-title" class="font-title-s">{{ i18n "family_specs_title" }}</h2>
+        </div>
+        <div class="product-family__table-wrap">
+          <table class="product-family__table">
+            <thead><tr><th>{{ i18n "product_model" }}</th><th>{{ i18n "product_size" }}</th><th>{{ i18n "product_height" }}</th><th>{{ i18n "product_reference_weight" }}</th><th>{{ i18n "product_steel_tube_range" }}</th></tr></thead>
+            <tbody>{{ range .Params.sizes }}<tr><td>{{ .model }}</td><td>{{ .size }}</td><td>{{ .height }}</td><td>{{ .weight }}</td><td>{{ .steel }}</td></tr>{{ end }}</tbody>
+          </table>
+        </div>
+        {{ with .Params.gallery }}
+        <div class="product-family__diagrams">
+          {{ range . }}<figure><img src="{{ .image | relURL }}" alt="{{ .alt }}" loading="lazy"><figcaption>{{ .caption }}</figcaption></figure>{{ end }}
+        </div>
+        {{ end }}
+        <p class="product-family__note">{{ i18n "family_reference_note" }}</p>
+      </section>
+    </div>
+  </div>
+</main>
+{{ end }}

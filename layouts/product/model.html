@@ -1,0 +1,54 @@
+{{ define "main" }}
+<main class="section product-model" aria-labelledby="product-model-title">
+  <div class="container">
+    <div class="product-model__inner">
+      <section class="product-model__hero">
+        <div class="product-model__media">
+          <img class="product-model__image" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+        </div>
+        <div class="product-model__summary">
+          <p class="product-model__eyebrow font-meta">{{ .Parent.Params.model_eyebrow | default (i18n "model_page_eyebrow") }}</p>
+          <h1 id="product-model-title" class="product-model__title">{{ .Title }}</h1>
+          <p class="product-model__lead">{{ .Description }}</p>
+          <a class="button product-model__quote" href='{{ "/contact/" | relLangURL }}'>{{ i18n "request_quote" }}</a>
+        </div>
+      </section>
+
+      <section class="product-model__parameter-panel" aria-label="{{ i18n "product_parameters" }}">
+        <dl class="product-model__parameters">
+          <div><dt>{{ i18n "product_dimensions" }}</dt><dd>{{ replace .Params.size " mm" "" }} × {{ .Params.height }}</dd></div>
+          <div><dt>{{ i18n "product_reference_weight" }}</dt><dd>{{ .Params.reference_weight }}</dd></div>
+          <div><dt>{{ i18n "product_material" }}</dt><dd>{{ .Params.material | default .Parent.Params.material }}</dd></div>
+          <div><dt>{{ i18n "product_process" }}</dt><dd>{{ .Params.process | default .Parent.Params.process }}</dd></div>
+          <div><dt>{{ i18n "product_colors" }}</dt><dd>{{ .Params.colors | default .Parent.Params.colors }}</dd></div>
+          <div><dt>{{ i18n "product_structure" }}</dt><dd>{{ .Params.structure | default .Parent.Params.structure }}</dd></div>
+          <div><dt>{{ i18n "product_entry" }}</dt><dd>{{ .Params.entry }}</dd></div>
+          <div><dt>{{ i18n "product_steel_tube_range" }}</dt><dd>{{ .Params.steel_tubes }}</dd></div>
+          <div><dt>{{ i18n "product_static_load" }}</dt><dd>{{ .Params.static_load }}</dd></div>
+          <div><dt>{{ i18n "product_dynamic_load" }}</dt><dd>{{ .Params.dynamic_load }}</dd></div>
+          <div><dt>{{ i18n "product_rack_load" }}</dt><dd>{{ .Params.rack_load }}</dd></div>
+        </dl>
+      </section>
+
+      <section class="product-model__section product-model__content" aria-labelledby="model-fit-title">
+        <div class="product-model__section-heading"><p class="font-meta">{{ i18n "model_features_eyebrow" }}</p><h2 id="model-fit-title" class="font-title-s">{{ i18n "model_features_title" }}</h2></div>
+        <div class="product-model__prose font-body">{{ .Content }}</div>
+      </section>
+
+      {{ with .Params.gallery }}
+      <section class="product-model__section" aria-labelledby="model-gallery-title">
+        <div class="product-model__section-heading"><p class="font-meta">{{ i18n "model_gallery_eyebrow" }}</p><h2 id="model-gallery-title" class="font-title-s">{{ i18n "model_gallery_title" }}</h2></div>
+        <div class="product-model__gallery">
+          {{ range . }}<figure class="product-model__gallery-item"><img src="{{ .image | relURL }}" alt="{{ .alt }}" loading="lazy"><figcaption>{{ .caption }}</figcaption></figure>{{ end }}
+        </div>
+      </section>
+      {{ end }}
+
+      <section class="product-model__closing">
+        <div><p class="font-meta">{{ i18n "reference_configuration" }}</p><p>{{ i18n "model_reference_note" }}</p></div>
+        <a class="product-model__back" href="{{ .Parent.RelPermalink }}">← {{ i18n "back_to_family" }} {{ .Parent.LinkTitle }}</a>
+      </section>
+    </div>
+  </div>
+</main>
+{{ end }}
