@@ -11,8 +11,7 @@
           <div class="home-company__overview">
             {{ with .image }}
             <div class="home-company__media">
-              <img class="home-company__image" src="{{ . | relURL }}" alt="{{ $company.title }}" loading="lazy"
-                decoding="async">
+              {{ partial "editorial-image.html" (dict "src" . "alt" $company.title "class" "home-company__image") }}
             </div>
             {{ end }}
       
@@ -28,17 +27,17 @@
               </a>
             </div>
           </div>
-        {{ end }}
       </div>
     </div>
   </section>
+  {{ end }}
   {{ end }} 
 
 <!---------- AS/RS Pallet Support ---------->
   {{ with .Params.about_support }}  {{ if .enable }}
   <section class="section about-support">
     {{ with .background_image }}
-    <img class="about-support__background" src="{{ . | relURL }}" alt="" loading="lazy" decoding="async">
+    {{ partial "editorial-image.html" (dict "src" . "alt" "" "class" "about-support__background" "sizes" "100vw") }}
     {{ end }}
     <div class="container">
       <div class="section__inner about-support__inner">
@@ -106,7 +105,7 @@
           <li class="about-production__item">
             <article class="about-production__card" tabindex="0"{{ if .disabled }} aria-disabled="true"{{ end }}>
               {{ with .image }}
-              <img class="about-production__image" src="{{ . | relURL }}" alt="{{ $item.title }}" loading="lazy" decoding="async">
+              {{ partial "editorial-image.html" (dict "src" . "alt" $item.title "class" "about-production__image") }}
               {{ end }}
               <div class="about-production__content">
                 <h3 class="about-production__title font-title-xs">{{ .title }}</h3>

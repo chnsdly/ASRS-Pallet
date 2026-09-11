@@ -18,8 +18,7 @@
           <a class="case-studies-list__card" href="{{ .RelPermalink }}">
             {{ with .Params.image }}
             <div class="case-studies-list__media">
-              <img class="case-studies-list__image" src="{{ . | relURL }}" alt="{{ $item.Title }}" loading="lazy"
-                decoding="async">
+              {{ partial "editorial-image.html" (dict "src" . "alt" ($item.Params.image_alt | default $item.Title) "class" "case-studies-list__image" "sizes" "(max-width: 767px) 100vw, 33vw") }}
             </div>
             {{ end }}
 

@@ -56,7 +56,6 @@
   </section>
   {{ end }}
 
-  {{ $featured := where (where .Site.RegularPages "Section" "product") "Params.featured" true }}
   <section class="section products-list home-featured" aria-labelledby="featured-title">
     <div class="container container--wide"><div class="section__inner">
       <header class="section__header">
@@ -65,15 +64,20 @@
         <p class="section__description font-body">{{ .Params.home_featured.description }}</p>
       </header>
       <ul class="products-list__grid">
-        {{ range $featured.ByWeight }}{{ $item := . }}
+        {{ range .Site.Data.home_featured }}
+        {{ $modelRef := . }}
+        {{ with $.Site.GetPage $modelRef }}
         <li class="products-list__item"><a class="products-list__card" href="{{ .RelPermalink }}">
           <div class="products-list__media"><img class="products-list__image" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy"></div>
           <div class="products-list__content">
-            <h2>{{ .Title }}</h2>
-            <div class="product-card__meta"><span>{{ .Params.material }}</span><span>{{ .Params.structure }}</span></div>
+            <h3>{{ .Title }}</h3>
+            <div class="product-card__meta"><span>{{ .Params.size }}</span><span>{{ .Params.structure | default .Parent.Params.structure }}</span></div>
             <p class="product-card__link">{{ if eq $.Lang "zh" }}查看规格 →{{ else }}View specifications →{{ end }}</p>
           </div>
         </a></li>
+        {{ else }}
+          {{ errorf "Homepage model not found for %s: %s" $.Lang $modelRef }}
+        {{ end }}
         {{ end }}
       </ul>
     </div></div>
@@ -108,7 +112,7 @@
   {{ if gt (len $cases) 0 }}
   <section class="section case-studies-list home-case-studies">
     <div class="container container--wide"><div class="section__inner">
-      <header class="section__header"><h2 class="section__title font-title-l">{{ if eq $.Lang "zh" }}从仓储场景出发{{ else }}Built Around Warehouse Scenarios{{ end }}</h2><p class="section__description">{{ if eq $.Lang "zh" }}查看不同自动化仓储条件下的托盘选型思路。{{ else }}See how pallet structures are matched to different automated storage conditions.{{ end }}</p></header>
+      <header class="section__header"><h2 class="section__title font-title-l">{{ if eq $.Lang "zh" }}仓储场景中的托盘应用{{ else }}Built Around Warehouse Scenarios{{ end }}</h2><p class="section__description">{{ if eq $.Lang "zh" }}结合不同自动化仓储条件，呈现托盘结构与实际工况的适配思路。{{ else }}See how pallet structures are matched to different automated storage conditions.{{ end }}</p></header>
       <ul class="case-studies-list__grid">{{ range $cases }}{{ $item := . }}<li><a class="case-studies-list__card" href="{{ .RelPermalink }}"><div class="case-studies-list__media"><img class="case-studies-list__image" src="{{ .Params.image | relURL }}" alt="{{ .Title }}" loading="lazy"></div><div class="case-studies-list__content"><h3 class="font-title-xs">{{ .Title }}</h3><p>{{ .Summary | plainify | truncate 120 }}</p></div></a></li>{{ end }}</ul>
     </div></div>
   </section>

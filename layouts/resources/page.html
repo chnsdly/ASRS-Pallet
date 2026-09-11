@@ -4,7 +4,7 @@
     <article class="resources-page__article">
       {{ with .Params.image }}
       <div class="resources-page__media">
-        <img class="resources-page__image" src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy" decoding="async">
+        {{ partial "editorial-image.html" (dict "src" . "alt" ($.Params.image_alt | default $.Title) "class" "resources-page__image" "sizes" "(max-width: 767px) 100vw, 896px" "loading" "eager") }}
       </div>
       {{ end }}
 

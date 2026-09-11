@@ -23,8 +23,8 @@ home_values:
     - { title: "Repeatable handling", description: "Consistent entry, deck and base geometry supports conveyors, forks and sensors." }
     - { title: "Project confirmation", description: "Drawings, samples and load conditions are reviewed before final specification." }
 home_featured:
-  title: "Pallet structures for rack-based storage"
-  description: "Choose the deck and base that suit hygiene, unit-load, handling and racking requirements. Each family can be configured with steel tubes."
+  title: "Eight models across five pallet families"
+  description: "Explore eight selected models covering grid, solid, reinforced and full-perimeter structures. Compare footprints and review the specifications for your warehouse."
 home_asrs:
   eyebrow: "DESIGN AROUND THE SYSTEM"
   title: "The pallet must work with more than the load."

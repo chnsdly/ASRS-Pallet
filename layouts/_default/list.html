@@ -1,1 +1,18 @@
-
+{{ define "main" }}
+<main class="section resources-page" aria-labelledby="page-title">
+  <div class="container container--narrow">
+    <header class="section__header">
+      <h1 id="page-title" class="section__title font-title-l">{{ .Title }}</h1>
+      {{ with .Description }}<p class="section__description">{{ . }}</p>{{ end }}
+    </header>
+    <div class="resources-page__content font-body">
+      {{ .Content }}
+      <ul>
+        {{ range .Pages.ByTitle }}
+        <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ with .Description }} — {{ . }}{{ end }}</li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</main>
+{{ end }}

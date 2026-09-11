@@ -4,12 +4,12 @@ layout: "about"
 description: "A plastic pallet manufacturer in Linyi, Shandong, focused on rack and automated warehouse applications."
 home_company:
   enable: true
-  image: "images/rack.jpg"
+  image: "images/company/hdpe-plastic-pallet-manufacturing-workshop.webp"
   title: "Plastic pallets developed around automated warehouse interfaces"
   description: "Based in Hedong District, Linyi, Shandong, Storack is a manufacturer of injection-molded HDPE plastic pallets for rack storage, conveyors, stacker cranes and shuttle systems. Our working method begins with the application: unit load, support span, handling direction, operating temperature and replenishment plan. We then match a mold platform, steel-tube layout and functional options, helping overseas customers move from requirement to repeatable supply with fewer specification gaps."
 about_support:
   enable: true
-  background_image: "images/company/background.webp"
+  background_image: "images/company/asrs-pallet-engineering-support.webp"
   title: "Support through the full pallet decision"
   description: "A practical framework for distributors, automation integrators and warehouse operators."
   items:
@@ -24,8 +24,8 @@ about_production:
   title: "From material preparation to shipment"
   description: "From material preparation and injection molding to inspection and export packing, each stage follows the approved order and project requirements."
   items:
-    - { image: "images/rack.jpg", title: "Material & color preparation", description: "HDPE resin, masterbatch and production requirements are prepared against the approved order." }
-    - { image: "images/rack.jpg", title: "Injection molding", description: "Process parameters are controlled to support stable geometry, deck quality and runner formation." }
-    - { image: "images/rack.jpg", title: "Inspection & load verification", description: "Dimensions, appearance, weight and agreed performance items are checked before release." }
-    - { image: "images/rack.jpg", title: "Marking & export packing", description: "Finished pallets are marked, protected and prepared around container-loading requirements." }
+    - { image: "images/company/hdpe-resin-color-masterbatch-preparation.webp", title: "Material & color preparation", description: "HDPE resin, masterbatch and production requirements are prepared against the approved order." }
+    - { image: "images/company/plastic-pallet-injection-molding-production.webp", title: "Injection molding", description: "Process parameters are controlled to support stable geometry, deck quality and runner formation." }
+    - { image: "images/company/plastic-pallet-dimensional-load-inspection.webp", title: "Inspection & load verification", description: "Dimensions, appearance, weight and agreed performance items are checked before release." }
+    - { image: "images/company/plastic-pallet-export-packing-loading.webp", title: "Marking & export packing", description: "Finished pallets are marked, protected and prepared around container-loading requirements." }
 ---

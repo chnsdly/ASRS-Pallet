@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ if .IsHome }}{{ .Title | default .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ i18n "site_description" }}{{ end }}">
-    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="robots" content="{{ if or .Params.noindex (eq .Kind "404") }}noindex,follow{{ else }}index,follow,max-image-preview:large{{ end }}">
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
     <meta property="og:title" content="{{ if .IsHome }}{{ .Title | default .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
     <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ i18n "site_description" }}{{ end }}">

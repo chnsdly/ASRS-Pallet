@@ -1,4 +1,35 @@
+.about-page .home-company__overview {
+  display: grid;
+  gap: space(4);
+  align-items: center;
+}
 
+.about-page .home-company__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.about-page .home-company__summary {
+  display: grid;
+  gap: space(3);
+  line-height: 1.8;
+}
+
+.about-page .home-company__quote { width: fit-content; }
+
+@include mq-up(desktop) {
+  .about-page .home-company__overview {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.about-support {
+  isolation: isolate;
+  overflow: hidden;
+}
 
 .about-support::before {
   content: "";

@@ -1,0 +1,6 @@
+{{- $src := .src -}}
+{{- $small := replaceRE `\.webp$` "-768.webp" $src -}}
+<img src="{{ $src | relURL }}"
+  {{ if fileExists (printf "static/%s" (strings.TrimPrefix "/" $small)) }}srcset="{{ $small | relURL }} 768w, {{ $src | relURL }} 1536w" sizes="{{ .sizes | default "(max-width: 767px) 100vw, 50vw" }}"{{ end }}
+  width="1536" height="1024" alt="{{ .alt | default "" }}"
+  class="{{ .class }}" loading="{{ .loading | default "lazy" }}" decoding="async">

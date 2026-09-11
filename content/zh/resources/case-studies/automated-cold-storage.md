@@ -3,7 +3,8 @@ title: "自动化冷库中的通风托盘"
 description: "兼顾通风、排水和低温搬运的网格托盘示例选型。"
 date: 2026-06-18
 featured: true
-image: "/images/rack.jpg"
+image: "/images/resources/case-studies/automated-cold-storage-ventilated-pallets.webp"
+image_alt: "自动化冷库内承载纸箱货物的通风网格塑料托盘"
 author: "Storack 应用团队"
 readingTime: "3 分钟"
 ---

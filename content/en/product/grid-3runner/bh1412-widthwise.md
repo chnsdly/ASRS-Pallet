@@ -12,7 +12,6 @@ steel_tubes: "5–10 tubes"
 static_load: "5,000 kg"
 dynamic_load: "1,800 kg"
 rack_load: "1,400 kg"
-data_status: "placeholder"
 weight: 62
 image: "/images/products/grid-3runner/bh1412-grid-deck-3-runner-widthwise-1400x1200mm-plastic-pallet-main.jpg"
 gallery:

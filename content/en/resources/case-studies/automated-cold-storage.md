@@ -3,7 +3,8 @@ title: "Ventilated Pallet for Automated Cold Storage"
 description: "An illustrative grid-pallet selection for airflow, drainage and low-temperature handling."
 date: 2026-06-18
 featured: true
-image: "/images/rack.jpg"
+image: "/images/resources/case-studies/automated-cold-storage-ventilated-pallets.webp"
+image_alt: "Ventilated grid plastic pallets carrying cartons in an automated cold store"
 author: "Storack Applications"
 readingTime: "3 min"
 ---

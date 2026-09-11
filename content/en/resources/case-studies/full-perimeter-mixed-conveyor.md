@@ -3,7 +3,8 @@ title: "Full-Perimeter Base on a Mixed Conveyor Line"
 description: "An illustrative case for stable bottom contact across rollers, chains and pallet stops."
 date: 2026-06-09
 featured: true
-image: "/images/rack.jpg"
+image: "/images/resources/case-studies/full-perimeter-pallet-mixed-conveyor-transfer.webp"
+image_alt: "Full-perimeter plastic pallet carrying cartons across a roller and chain conveyor"
 author: "Storack Applications"
 readingTime: "3 min"
 ---

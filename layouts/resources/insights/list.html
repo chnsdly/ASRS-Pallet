@@ -9,7 +9,7 @@
           <a class="insights-list__card" href="{{ .RelPermalink }}">
             {{ with .Params.image }}
             <div class="insights-list__media">
-              <img class="insights-list__image" src="{{ . | relURL }}" alt="{{ $item.Title }}" loading="lazy" decoding="async">
+              {{ partial "editorial-image.html" (dict "src" . "alt" ($item.Params.image_alt | default $item.Title) "class" "insights-list__image") }}
             </div>
             {{ end }}
 

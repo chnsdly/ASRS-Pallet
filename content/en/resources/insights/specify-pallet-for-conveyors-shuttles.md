@@ -4,7 +4,8 @@ description: "The interface dimensions integrators should confirm before selecti
 date: 2026-07-12
 author: "Storack Engineering"
 readingTime: "6 min"
-image: "/images/rack.jpg"
+image: "/images/resources/insights/conveyor-shuttle-pallet-interface.webp"
+image_alt: "Grid-deck plastic pallet at a roller conveyor and shuttle transfer interface"
 ---
 Automated handling depends on repeatable interfaces. Start with conveyor type, roller or chain pitch, pallet travel direction, transfer points and locator geometry.
 

@@ -3,7 +3,8 @@ title: "混合输送线上的田字底托盘"
 description: "在滚筒、链条和挡停器之间保持底部稳定接触的示例场景。"
 date: 2026-06-09
 featured: true
-image: "/images/rack.jpg"
+image: "/images/resources/case-studies/full-perimeter-pallet-mixed-conveyor-transfer.webp"
+image_alt: "网格田字塑料托盘承载纸箱经过滚筒与链条输送线"
 author: "Storack 应用团队"
 readingTime: "3 分钟"
 ---

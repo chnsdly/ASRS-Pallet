@@ -3,7 +3,8 @@ title: "高位库长时间货架存储"
 description: "纸箱货物长期存放于横梁货架时的示例选型路径。"
 date: 2026-06-26
 featured: true
-image: "/images/rack.jpg"
+image: "/images/resources/case-studies/high-bay-storage-reinforced-pallets.webp"
+image_alt: "高位货架巷道中承载缠膜纸箱货物的蓝色塑料托盘"
 author: "Storack 应用团队"
 readingTime: "3 分钟"
 ---

@@ -3,7 +3,8 @@ title: "High-Bay Warehouse with Long Rack Dwell Time"
 description: "An illustrative selection path for boxed goods stored on rack beams for extended periods."
 date: 2026-06-26
 featured: true
-image: "/images/rack.jpg"
+image: "/images/resources/case-studies/high-bay-storage-reinforced-pallets.webp"
+image_alt: "Blue plastic pallets supporting wrapped cartons in a high-bay storage aisle"
 author: "Storack Applications"
 readingTime: "3 min"
 ---
