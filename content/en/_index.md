@@ -1,5 +1,5 @@
 ---
-title: "Storack | AS/RS Plastic Pallets"
+title: "BAOHENG | AS/RS Plastic Pallets"
 description: "Rack-ready HDPE plastic pallets for automated storage and retrieval systems, with steel reinforcement and project-specific configuration support."
 home_hero:
   slides:
@@ -8,7 +8,7 @@ home_hero:
       tagline: "Quality First | Customer Focus | Circular by Design | Success Through Integrity"
       alignment: "center"
     - image: "images/company/background.webp"
-      brand: "STORACK"
+      brand: "BAOHENG"
       title: "AS/RS PLASTIC PALLETS"
       tagline: "ENGINEERED FOR AUTOMATION"
       alignment: "left"
@@ -28,7 +28,7 @@ home_featured:
 home_asrs:
   eyebrow: "DESIGN AROUND THE SYSTEM"
   title: "The pallet must work with more than the load."
-  description: "In an AS/RS, the pallet interacts with conveyors, stacker cranes, shuttles, rack beams, locators and sensors. Storack reviews these interfaces as one operating system—not as isolated specifications."
+  description: "In an AS/RS, the pallet interacts with conveyors, stacker cranes, shuttles, rack beams, locators and sensors. BAOHENG reviews these interfaces as one operating system—not as isolated specifications."
   image: "images/rack.jpg"
   image_alt: "Automated storage and pallet handling system"
   items:

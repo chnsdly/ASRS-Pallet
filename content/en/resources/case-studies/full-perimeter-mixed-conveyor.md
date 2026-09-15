@@ -5,7 +5,7 @@ date: 2026-06-09
 featured: true
 image: "/images/resources/case-studies/full-perimeter-pallet-mixed-conveyor-transfer.webp"
 image_alt: "Full-perimeter plastic pallet carrying cartons across a roller and chain conveyor"
-author: "Storack Applications"
+author: "BAOHENG Applications"
 readingTime: "3 min"
 ---
 A mixed conveyor line used rollers, chains and mechanical stops. The full-perimeter base offered a broader contact pattern, but runner positions and transfer clearances still required drawing review.

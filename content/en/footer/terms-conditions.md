@@ -1,6 +1,6 @@
 ---
 title: "Terms & Conditions"
-description: "Terms governing use of the Storack website."
+description: "Terms governing use of the BAOHENG website."
 ---
 Website content is provided for general product and project-planning information. Specifications, reference loads, images, colors and availability may change and do not form a binding offer. A purchase is governed by the final quotation, approved drawing, technical agreement and order confirmation.
 

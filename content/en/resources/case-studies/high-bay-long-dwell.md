@@ -5,7 +5,7 @@ date: 2026-06-26
 featured: true
 image: "/images/resources/case-studies/high-bay-storage-reinforced-pallets.webp"
 image_alt: "Blue plastic pallets supporting wrapped cartons in a high-bay storage aisle"
-author: "Storack Applications"
+author: "BAOHENG Applications"
 readingTime: "3 min"
 ---
 For a high-bay warehouse storing boxed goods, the main risk was long-term deflection across a defined beam span. A reinforced solid three-runner platform was shortlisted for its continuous deck and expanded tube options.

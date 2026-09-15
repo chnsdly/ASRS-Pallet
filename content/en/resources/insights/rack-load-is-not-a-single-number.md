@@ -2,7 +2,7 @@
 title: "Rack Load Is Not a Single Number"
 description: "Why support span, temperature, dwell time and load distribution must accompany every rack-load claim."
 date: 2026-07-20
-author: "Storack Engineering"
+author: "BAOHENG Engineering"
 readingTime: "5 min"
 image: "/images/resources/insights/rack-load-support-span-testing.webp"
 image_alt: "Loaded blue plastic pallet supported on rack beams during a deflection check"

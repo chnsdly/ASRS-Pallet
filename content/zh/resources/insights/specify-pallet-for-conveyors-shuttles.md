@@ -2,7 +2,7 @@
 title: "输送线与穿梭车托盘如何确认规格"
 description: "自动化集成商在选托盘前应确认的关键接口尺寸。"
 date: 2026-07-12
-author: "Storack 工程团队"
+author: "BAOHENG 工程团队"
 readingTime: "6 分钟"
 image: "/images/resources/insights/conveyor-shuttle-pallet-interface.webp"
 image_alt: "网格塑料托盘位于滚筒输送机与穿梭车的交接接口"

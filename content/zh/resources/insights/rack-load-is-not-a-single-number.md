@@ -2,7 +2,7 @@
 title: "货架载荷不是一个孤立数字"
 description: "为什么每个货架载荷都必须同时说明支撑跨度、温度、时间与载荷分布。"
 date: 2026-07-20
-author: "Storack 工程团队"
+author: "BAOHENG 工程团队"
 readingTime: "5 分钟"
 image: "/images/resources/insights/rack-load-support-span-testing.webp"
 image_alt: "蓝色塑料托盘在货架横梁支撑下进行载荷挠度检查"

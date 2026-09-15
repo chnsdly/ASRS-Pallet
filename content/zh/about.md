@@ -1,12 +1,12 @@
 ---
-title: "关于 Storack"
+title: "关于 BAOHENG"
 layout: "about"
 description: "位于山东临沂、聚焦货架与自动化仓储应用的塑料托盘生产厂家。"
 home_company:
   enable: true
   image: "images/company/hdpe-plastic-pallet-manufacturing-workshop.webp"
   title: "围绕自动化仓储接口开发塑料托盘"
-  description: "Storack 位于山东省临沂市河东区，是一家面向货架存储、输送线、堆垛机和穿梭车系统的注塑 HDPE 塑料托盘生产厂家。我们的工作从应用条件开始：单元载荷、支撑跨度、搬运方向、环境温度与后续补货计划。再据此匹配模具平台、钢管布局与功能选项，帮助海外客户减少规格偏差，建立可重复的供应方案。"
+  description: "BAOHENG 位于山东省临沂市河东区，是一家面向货架存储、输送线、堆垛机和穿梭车系统的注塑 HDPE 塑料托盘生产厂家。我们的工作从应用条件开始：单元载荷、支撑跨度、搬运方向、环境温度与后续补货计划。再据此匹配模具平台、钢管布局与功能选项，帮助海外客户减少规格偏差，建立可重复的供应方案。"
 about_support:
   enable: true
   background_image: "images/company/asrs-pallet-engineering-support.webp"

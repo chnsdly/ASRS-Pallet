@@ -5,7 +5,7 @@ date: 2026-06-18
 featured: true
 image: "/images/resources/case-studies/automated-cold-storage-ventilated-pallets.webp"
 image_alt: "自动化冷库内承载纸箱货物的通风网格塑料托盘"
-author: "Storack 应用团队"
+author: "BAOHENG 应用团队"
 readingTime: "3 分钟"
 ---
 某冷库物流流程需要排水、目视检查和四向叉取，因此评估网格川字托盘。项目核对重点包括低温下材料表现、货架跨度与防滑需求。

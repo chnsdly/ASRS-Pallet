@@ -1,12 +1,12 @@
 ---
-title: "About Storack"
+title: "About BAOHENG"
 layout: "about"
 description: "A plastic pallet manufacturer in Linyi, Shandong, focused on rack and automated warehouse applications."
 home_company:
   enable: true
   image: "images/company/hdpe-plastic-pallet-manufacturing-workshop.webp"
   title: "Plastic pallets developed around automated warehouse interfaces"
-  description: "Based in Hedong District, Linyi, Shandong, Storack is a manufacturer of injection-molded HDPE plastic pallets for rack storage, conveyors, stacker cranes and shuttle systems. Our working method begins with the application: unit load, support span, handling direction, operating temperature and replenishment plan. We then match a mold platform, steel-tube layout and functional options, helping overseas customers move from requirement to repeatable supply with fewer specification gaps."
+  description: "Based in Hedong District, Linyi, Shandong, BAOHENG is a manufacturer of injection-molded HDPE plastic pallets for rack storage, conveyors, stacker cranes and shuttle systems. Our working method begins with the application: unit load, support span, handling direction, operating temperature and replenishment plan. We then match a mold platform, steel-tube layout and functional options, helping overseas customers move from requirement to repeatable supply with fewer specification gaps."
 about_support:
   enable: true
   background_image: "images/company/asrs-pallet-engineering-support.webp"

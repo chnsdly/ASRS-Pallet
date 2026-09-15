@@ -1,5 +1,5 @@
 ---
-title: "联系 Storack"
+title: "联系 BAOHENG"
 layout: "contact"
 description: "提交立体库托盘工况，获取结构与钢管加强建议。"
 form:

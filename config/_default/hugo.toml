@@ -1,5 +1,5 @@
-baseURL = 'https://www.storack.com/'
-title = 'Storack'
+baseURL = 'https://www.baohengasrs.com/'
+title = 'BAOHENG'
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
@@ -17,9 +17,9 @@ disableKinds = ['taxonomy', 'term']
     contentDir = 'content/zh'
     weight = 2
     [languages.zh.params]
-      company_name = "Storack"
+      company_name = "BAOHENG"
       email = "weibenlong6@gmail.com"
       phone = "+86 178 6161 6766"
       business_hours = "周一至周六 08:00–18:00（GMT+8）"
       address = "中国山东省临沂市河东区"
-# Storack multilingual configuration
+# BAOHENG multilingual configuration

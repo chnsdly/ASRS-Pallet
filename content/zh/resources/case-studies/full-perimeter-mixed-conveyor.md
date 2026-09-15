@@ -5,7 +5,7 @@ date: 2026-06-09
 featured: true
 image: "/images/resources/case-studies/full-perimeter-pallet-mixed-conveyor-transfer.webp"
 image_alt: "网格田字塑料托盘承载纸箱经过滚筒与链条输送线"
-author: "Storack 应用团队"
+author: "BAOHENG 应用团队"
 readingTime: "3 分钟"
 ---
 某混合输送线同时采用滚筒、链条和机械挡停器。田字底提供更连续的接触面，但底梁位置和转接间隙仍需通过图纸核对。

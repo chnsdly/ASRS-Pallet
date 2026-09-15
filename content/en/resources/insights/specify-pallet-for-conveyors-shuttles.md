@@ -2,7 +2,7 @@
 title: "How to Specify a Pallet for Conveyors and Shuttles"
 description: "The interface dimensions integrators should confirm before selecting an automated warehouse pallet."
 date: 2026-07-12
-author: "Storack Engineering"
+author: "BAOHENG Engineering"
 readingTime: "6 min"
 image: "/images/resources/insights/conveyor-shuttle-pallet-interface.webp"
 image_alt: "Grid-deck plastic pallet at a roller conveyor and shuttle transfer interface"

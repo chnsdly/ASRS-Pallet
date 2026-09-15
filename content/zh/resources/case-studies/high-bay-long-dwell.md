@@ -5,7 +5,7 @@ date: 2026-06-26
 featured: true
 image: "/images/resources/case-studies/high-bay-storage-reinforced-pallets.webp"
 image_alt: "高位货架巷道中承载缠膜纸箱货物的蓝色塑料托盘"
-author: "Storack 应用团队"
+author: "BAOHENG 应用团队"
 readingTime: "3 分钟"
 ---
 某高位库用于存放纸箱货物，主要风险是托盘在确定横梁跨度下长期存储产生挠度。项目优先评估平板川字加强型，利用连续台面和更大的钢管配置空间控制变形。

@@ -1,5 +1,5 @@
 ---
-title: "Contact Storack"
+title: "Contact BAOHENG"
 layout: "contact"
 description: "Send your AS/RS pallet conditions for a structure and reinforcement review."
 form:

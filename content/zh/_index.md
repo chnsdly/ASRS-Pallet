@@ -1,5 +1,5 @@
 ---
-title: "Storack｜立体库塑料托盘"
+title: "BAOHENG｜立体库塑料托盘"
 description: "面向自动化立体仓库的 HDPE 塑料托盘，支持钢管加强与按项目配置。"
 home_hero:
   slides:
@@ -8,14 +8,14 @@ home_hero:
       tagline: "品质为本｜客户为先｜绿色循环｜诚信共赢"
       alignment: "center"
     - image: "images/company/background.webp"
-      brand: "STORACK"
+      brand: "BAOHENG"
       title: "AS/RS PLASTIC PALLETS"
       tagline: "ENGINEERED FOR AUTOMATION"
       alignment: "left"
       show_actions: true
   eyebrow: "为自动化而设计的托盘"
   title: "稳定的托盘，是立体库可靠运行的基础。"
-  description: "Storack 专注注塑 HDPE 立体库塑料托盘。我们协助集成商与仓储运营方在量产前确认结构、挠度、货架接口与钢管加强方案。"
+  description: "BAOHENG 专注注塑 HDPE 立体库塑料托盘。我们协助集成商与仓储运营方在量产前确认结构、挠度、货架接口与钢管加强方案。"
   button: { label: "查看产品系列", url: "/product/" }
   secondary_button: { label: "提交项目需求", url: "/contact/" }
 home_values:
@@ -31,7 +31,7 @@ home_featured:
 home_asrs:
   eyebrow: "围绕系统做选型"
   title: "托盘要适配的，不只是货物。"
-  description: "在立体库中，托盘需要同时与输送机、堆垛机、穿梭车、货架横梁、定位机构和传感器配合。Storack 从整套运行接口出发核对托盘方案。"
+  description: "在立体库中，托盘需要同时与输送机、堆垛机、穿梭车、货架横梁、定位机构和传感器配合。BAOHENG 从整套运行接口出发核对托盘方案。"
   image: "images/rack.jpg"
   image_alt: "自动化立体仓库与托盘输送系统"
   items:

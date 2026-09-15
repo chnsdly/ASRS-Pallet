@@ -5,7 +5,7 @@ date: 2026-06-18
 featured: true
 image: "/images/resources/case-studies/automated-cold-storage-ventilated-pallets.webp"
 image_alt: "Ventilated grid plastic pallets carrying cartons in an automated cold store"
-author: "Storack Applications"
+author: "BAOHENG Applications"
 readingTime: "3 min"
 ---
 A grid three-runner pallet was considered for a cold-storage flow requiring drainage, visual inspection and four-way forklift access. The project review focused on low-temperature material behavior, rack span and anti-slip requirements.
