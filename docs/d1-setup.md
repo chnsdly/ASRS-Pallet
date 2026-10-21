@@ -9,6 +9,7 @@
 5. 为 `baohengasrs.com` 配置独立 Turnstile widget。将公开的 sitekey 写入 `config/_default/params.toml`；把私密的 secret 仅存入 ASRS Pages 的 `TURNSTILE_SECRET` 变量。
 6. 部署 ASRS 代码，检查 `/api/lead` 已作为 Pages Function 发布。
 7. 在真实域名提交一条明确标记为测试的线索，确认跳转感谢页，并在 ASRS D1 查询到该行。测试后可删除该行。
-8. 决定日常线索查看方式：先可用 D1 Console；如需网页后台和 CSV 导出，再为 ASRS 增加独立管理页及访问密钥。
+8. 在 ASRS Pages 的 Production 环境添加加密密钥 `ADMIN_KEY`，值使用密码管理器生成的至少 24 位随机密码。不要把密码写进仓库或发送到聊天中。
+9. 部署后访问 `https://www.baohengasrs.com/admin/leads`，输入管理员密码查看询盘。页面只读，每页 20 条，可翻页；登录会话有效 1 小时。
 
 可选：`N8N_WEBHOOK_URL` 仅在需要自动通知时配置，不影响 D1 入库。
