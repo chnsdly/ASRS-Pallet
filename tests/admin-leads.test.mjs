@@ -49,6 +49,24 @@ test("unauthenticated and incorrect-password requests never reveal leads", async
   }
 });
 
+test("login accepts the ASRS custom-domain origin behind Pages routing only", async () => {
+  const body = new URLSearchParams({ action: "login", adminKey: "incorrect" });
+  const routed = await onRequestPost({
+    request: new Request("https://asrs-pallet.pages.dev/admin/leads", {
+      method: "POST", headers: { Origin: "https://www.baohengasrs.com" }, body,
+    }), env,
+  });
+  assert.equal(routed.status, 401);
+  const foreign = await onRequestPost({
+    request: new Request(url, {
+      method: "POST", headers: { Origin: "https://untrusted.example" },
+      body: new URLSearchParams({ action: "login", adminKey }),
+    }), env,
+  });
+  assert.equal(foreign.status, 403);
+  assert.equal(foreign.headers.get("Cache-Control"), "no-store");
+});
+
 test("successful login opens read-only escaped leads and logout clears session", async () => {
   const login = await post({ action: "login", adminKey });
   assert.equal(login.status, 303);
