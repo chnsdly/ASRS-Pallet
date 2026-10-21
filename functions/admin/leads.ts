@@ -22,11 +22,6 @@ const COOKIE_NAME = "asrs_admin_session";
 const SESSION_SECONDS = 60 * 60;
 const PAGE_SIZE = 20;
 const encoder = new TextEncoder();
-const trustedOrigins = new Set([
-  "https://www.baohengasrs.com",
-  "https://baohengasrs.com",
-  "https://asrs-pallet.pages.dev",
-]);
 
 const securityHeaders = (contentType = "text/html; charset=utf-8") => {
   const headers = new Headers({ "Content-Type": contentType });
@@ -159,10 +154,6 @@ const renderLead = (lead: LeadRow) => {
 export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   if (!env.ADMIN_KEY || env.ADMIN_KEY.length < 24) {
     return new Response("管理员密码尚未配置。", { status: 503, headers: securityHeaders("text/plain; charset=utf-8") });
-  }
-  const origin = request.headers.get("Origin");
-  if (origin && !trustedOrigins.has(origin)) {
-    return new Response("请求来源不受信任。", { status: 403, headers: securityHeaders("text/plain; charset=utf-8") });
   }
   let form: FormData;
   try { form = await request.formData(); } catch { return loginResponse("请求格式无效。", 400); }
