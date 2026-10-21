@@ -26,6 +26,7 @@
       {{ end }}
     {{ end }}
 
+    {{ if .Params.article_schema }}{{ partial "article-schema.html" . }}{{ end }}
   </head>
   <body>
     {{ partial "header.html" . }}

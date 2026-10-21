@@ -1,0 +1,70 @@
+BAOHENG | AS/RS PLASTIC PALLET RFQ CHECKLIST
+Revision: 2026-10-21 | Language: English
+Guide: https://www.baohengasrs.com/resources/insights/asrs-plastic-pallet-selection-guide/
+Enquiries: https://www.baohengasrs.com/contact/
+
+Fill in what you know. Mark unknown fields TO CONFIRM.
+Use the full family + model + configuration when naming a pallet.
+This is a requirements worksheet, not a test report or product approval.
+
+1. PROJECT
+Company / contact:
+Project country:
+New installation or replacement:
+Required quantity:
+Target schedule:
+Current pallet family / model, if known:
+Available photographs / drawing references:
+
+2. UNIT LOAD
+Goods weight (kg):
+Packaging weight excluding pallet (kg):
+Payload including packaging, excluding pallet (kg):
+Pallet weight (kg):
+Total loaded mass including pallet (kg):
+Package type / number of packages:
+Loaded footprint and height (mm):
+Contact pattern / local contact areas:
+Centre of gravity / off-centre load:
+Overhang / load securing method:
+Other load patterns needing review:
+
+3. PALLET AND SUPPORT
+Required length x width x height (mm):
+Fork / lifting clearances (mm):
+Travel and entry directions:
+Drawing revision / required tolerances:
+Rack, rail or platform support:
+Clear support span (mm):
+Contact width and position (mm):
+Support direction (attach a sketch):
+Longest loaded storage time:
+
+4. EQUIPMENT INTERFACES
+System provider / equipment reference:
+Roller spacing or chain positions:
+Shuttle / stacker crane / lift interfaces:
+Transfer gaps and changes of direction:
+Lifting points / stops / centring guides:
+Sensor position and target surface:
+Equipment-specific limits / acceptance document:
+
+5. ENVIRONMENT AND CONFIGURATION
+Normal / minimum / maximum temperatures by process stage:
+Cleaning method / relevant chemicals:
+Required deck and base design:
+Material specification to confirm:
+Reinforcement quantity / position / specification:
+Required certificates or other records, if applicable:
+Mandatory features:
+Preferred colour / logo / label / RFID requirements:
+
+6. SAMPLE AND QUOTATION
+Sample configuration / ID / drawing revision:
+Trial load, support, environment and duration:
+Critical handling transitions to check:
+Acceptance criteria and responsible parties:
+Required inspection or test records:
+Open items before production approval:
+Packing / destination / delivery scope for quotation:
+Agreed configuration and change-review process:

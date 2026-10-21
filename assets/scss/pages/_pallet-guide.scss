@@ -1,0 +1,38 @@
+.pallet-guide {
+  color: var(--on-surface);
+
+  &__hero { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 2rem; }
+  &__heading { display: grid; gap: 1.25rem; }
+  &__eyebrow { color: var(--brand); font-size: .8rem; font-weight: 750; letter-spacing: .08em; }
+  h1 { font-size: clamp(1.9rem, 3.5vw, 2.8rem); line-height: 1.16; letter-spacing: -.025em; }
+  &__intro { color: var(--secondary); line-height: 1.7; }
+  &__cover { background: white; border: var(--border); border-radius: var(--radius-m); overflow: hidden; }
+  &__cover img { width: 100%; height: auto; }
+  figcaption { padding: 1rem 1.25rem; color: var(--secondary); font-size: .8rem; line-height: 1.65; border-top: var(--border); }
+  &__toc { margin-block: 2.5rem; padding: 1.25rem 1.5rem; border: var(--border); border-left: 4px solid var(--brand); background: var(--surface-muted); }
+  &__toc summary { font-weight: 750; cursor: pointer; }
+  &__toc ul { display: grid; gap: .55rem; padding-left: 1.25rem; margin-bottom: 0; }
+  &__toc a { color: var(--brand-dark); text-decoration: underline; text-underline-offset: .15em; font-size: .9rem; }
+  &__body { line-height: 1.85; gap: 1.25rem; }
+  &__body > :first-child { font-size: 1.1rem; }
+  &__body h2 { font-size: clamp(1.3rem, 2.2vw, 1.65rem); line-height: 1.4; padding-top: .5rem; scroll-margin-top: 8rem; }
+  &__body :is(ul, ol) { margin-block: 0; }
+  &__body table { display: block; width: 100%; overflow-x: auto; border: var(--border); background: var(--card); font-size: .9rem; line-height: 1.65; }
+  &__body :is(th, td) { padding: .85rem 1rem; min-width: 10rem; border-bottom: var(--border); text-align: left; vertical-align: top; }
+  &__body th { background: var(--brand-dark); color: white; font-weight: 650; }
+  &__body tr:last-child td { border-bottom: 0; }
+  &__body tbody tr:nth-child(even) { background: var(--surface-muted); }
+  &__figure { margin-block: .75rem; border: var(--border); border-radius: var(--radius-m); overflow: hidden; background: white; }
+  &__figure img { width: 100%; height: auto; }
+  &__download { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; padding: 1.5rem; background: var(--surface-muted); border: var(--border); }
+  &__download .button { color: white; text-decoration: none; line-height: 1.4; }
+  &__download > span { color: var(--secondary); font-size: .85rem; }
+}
+
+@media (max-width: 680px) {
+  .pallet-guide__hero { grid-template-columns: 1fr; gap: 1.5rem; }
+  .pallet-guide__cover { max-width: 30rem; }
+  .pallet-guide__toc { padding: 1rem; }
+  .pallet-guide__body :is(th, td) { min-width: 8rem; padding: .7rem; }
+  .pallet-guide__download { padding: 1rem; }
+}

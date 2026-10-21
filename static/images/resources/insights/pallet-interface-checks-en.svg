@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 680" width="1000" height="680" role="img" aria-labelledby="title desc">
+  <title id="title">Three pallet interfaces to confirm</title>
+  <desc id="desc">Conceptual underside view of three horizontal runners crossing two vertical rack supports. The clear span is measured between the inside faces of the supports. No dimensions or rated loads are specified.</desc>
+  <defs>
+    <pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><rect width="12" height="12" fill="#dce3df"/><path d="M0 0V12" stroke="#a8b7af" stroke-width="3"/></pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#0b6b4f"/></marker>
+  </defs>
+  <rect width="1000" height="680" fill="#f5f4ee"/>
+  <g font-family="Arial, sans-serif" fill="#17231f">
+    <text x="52" y="66" font-size="32" font-weight="700">Look below the footprint.</text>
+    <text x="52" y="104" font-size="21" fill="#5d6964">Conceptual underside view · Not a product drawing</text>
+    <rect x="170" y="185" width="660" height="300" rx="12" fill="#e5eee8" stroke="#a5bbae" stroke-width="2"/>
+    <path d="M185 260H815M185 335H815M185 410H815M250 200V470M375 200V470M500 200V470M625 200V470M750 200V470" stroke="#cbd9d0" stroke-width="2"/>
+    <rect x="265" y="155" width="50" height="360" fill="url(#hatch)" stroke="#83958b" stroke-width="2"/>
+    <rect x="685" y="155" width="50" height="360" fill="url(#hatch)" stroke="#83958b" stroke-width="2"/>
+    <g fill="#0b6b4f"><rect x="190" y="210" width="620" height="50" rx="4"/><rect x="190" y="310" width="620" height="50" rx="4"/><rect x="190" y="410" width="620" height="50" rx="4"/></g>
+    <path d="M205 235H795M205 335H795M205 435H795" stroke="#9bd7b7" stroke-width="3" stroke-dasharray="10 8"/>
+    <path d="M315 490V568M685 490V568" stroke="#83958b" stroke-width="2"/>
+    <path d="M325 552H675" stroke="#0b6b4f" stroke-width="3" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+    <text x="500" y="595" font-size="25" text-anchor="middle" font-weight="700">03 · Clear support span</text>
+    <g fill="#ff9d2e"><circle cx="145" cy="235" r="22"/><circle cx="760" cy="170" r="22"/></g>
+    <g fill="#17231f" font-size="19" text-anchor="middle" font-weight="700"><text x="145" y="242">01</text><text x="760" y="177">02</text></g>
+    <path d="M167 235H188M739 170H735" stroke="#b97827" stroke-width="2"/>
+    <rect x="0" y="628" width="1000" height="52" fill="#073e31"/>
+    <g fill="white" font-size="21"><text x="52" y="662">01  Runner contact lines</text><text x="530" y="662">02  Rack support position &amp; width</text></g>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{ $zh := eq .Lang "zh" }}
+<main class="section pallet-guide" aria-labelledby="guide-title">
+  <div class="container container--narrow">
+    <article>
+      <header class="pallet-guide__hero">
+        <div class="pallet-guide__heading">
+          <a class="pallet-guide__eyebrow" href="{{ "resources/insights/" | relLangURL }}">{{ if $zh }}选型与采购指南{{ else }}SELECTION & PROCUREMENT{{ end }}</a>
+          <h1 id="guide-title">{{ .Title }}</h1>
+          <p class="pallet-guide__intro">{{ .Params.intro }}</p>
+          <div class="resources-page__meta font-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
+            <span>{{ .Params.author }}</span>
+            <span>{{ .Params.readingTime }}</span>
+          </div>
+        </div>
+        <figure class="pallet-guide__cover">
+          <img src="{{ .Params.image | relURL }}" width="1024" height="768" alt="{{ .Params.image_alt }}" fetchpriority="high" decoding="async">
+          <figcaption>{{ .Params.image_caption }}</figcaption>
+        </figure>
+      </header>
+      <details class="pallet-guide__toc" open>
+        <summary>{{ if $zh }}本文导航{{ else }}In this guide{{ end }}</summary>
+        {{ .TableOfContents }}
+      </details>
+      <div class="resources-page__content pallet-guide__body font-body">
+        {{ .Content }}
+      </div>
+    </article>
+  </div>
+</main>
+{{ end }}
