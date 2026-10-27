@@ -1,0 +1,96 @@
+AS/RS PALLET SAMPLE ACCEPTANCE CHECKLIST
+BAOHENG | Revision 2026-10-27
+Guide: https://www.baohengasrs.com/resources/insights/asrs-pallet-sample-testing-checklist/
+
+Use one copy per sample configuration. This editable planning template is not
+a standard test procedure, certification or a completed test report.
+Agree methods and acceptance limits with the pallet supplier and system provider.
+Use PASS / PENDING / FAIL / NOT APPLICABLE and explain every exception.
+
+1. PROJECT AND RESPONSIBILITY
+Project / location:
+Buyer / contact:
+Pallet supplier / contact:
+System provider / contact:
+Test plan reference / revision:
+Review date / witnesses:
+Person authorised to approve:
+
+2. SAMPLE IDENTITY
+Sample ID(s) / quantity:
+Product family + model:
+Drawing reference / revision:
+Supplier quotation reference:
+Material specification:
+Deck / underside configuration:
+Reinforcement specification / quantity / positions:
+Specified and measured pallet mass:
+Available batch identification / sample date:
+Top / underside / side / marking photograph references:
+Does this match the proposed production configuration? Evidence / status:
+
+3. LOAD AND ENVIRONMENT
+Payload (goods + packaging, excluding pallet):
+Total loaded mass (including pallet):
+Package type / layout / deck contact pattern:
+Loaded height / overhang / off-centre loading:
+Securing method / stretch wrap:
+Normal and extreme operating temperatures by process stage:
+Longest loaded storage time:
+Cleaning / exposure / special documentation requirements:
+
+4. DIMENSIONS AND CONDITION
+Record each as: feature | drawing requirement | agreed tolerance | measured value
+| measuring method / equipment | photograph reference | status.
+Length:
+Width:
+Height:
+Fork openings / pickup clearance:
+Runner contact widths and positions:
+Critical edge / guide / stop dimensions:
+Loaded envelope / profile-check result:
+Visible damage / condition:
+Other agreed features:
+
+5. RACK AND LOAD-PERFORMANCE REVIEW
+Support type / direction / clear span:
+Support contact width / positions / drawing reference:
+Load distribution / temperature / duration:
+Applicable report reference / tested configuration / review conclusion:
+Additional evaluation procedure and agreed limits (if required):
+Measurement positions / equipment:
+Observations under load / after unloading:
+Evidence reference / exceptions / status:
+
+6. EQUIPMENT TRIAL
+Approved trial procedure / operating conditions:
+Travel orientations / load patterns / agreed cycle count:
+Equipment settings / trial date / sample IDs:
+Record each as: station | load | conditions | acceptance criteria | actual result
+| exception / video reference | status.
+Infeed / centring / profile check:
+Conveyor transitions / transfer gaps / accumulation:
+Lift / shuttle / stacker-crane pickup:
+Rack placement / retrieval:
+Outfeed:
+Sensor detection / positioning / package movement:
+Other relevant stations:
+
+7. OPEN ITEMS AND RETEST
+Item / observation / owner / action / review date:
+Change made before retest:
+Retest procedure / sample ID / evidence / result:
+Untested conditions (keep PENDING):
+
+8. RELEASE
+Final status: APPROVED / PENDING / REJECTED
+Approved sample ID(s) / drawing revision / complete specification:
+Applicable load / support / equipment route / environment:
+Restrictions / unresolved items:
+Material / tooling / reinforcement changes requiring renewed review:
+Production conformity and batch inspection requirements:
+Approval name / role / date / signature:
+Supplier and system provider acknowledgement:
+
+Attach the photographs, measurements, reports and trial records referenced above.
+Retain the approved specification with the quotation and purchase order.

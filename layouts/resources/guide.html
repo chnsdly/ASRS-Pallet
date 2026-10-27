@@ -15,7 +15,7 @@
           </div>
         </div>
         <figure class="pallet-guide__cover">
-          <img src="{{ .Params.image | relURL }}" width="1024" height="768" alt="{{ .Params.image_alt }}" fetchpriority="high" decoding="async">
+          <img src="{{ .Params.image | relURL }}" width="{{ .Params.image_width | default 1024 }}" height="{{ .Params.image_height | default 768 }}" alt="{{ .Params.image_alt }}" fetchpriority="high" decoding="async">
           <figcaption>{{ .Params.image_caption }}</figcaption>
         </figure>
       </header>
