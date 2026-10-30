@@ -1,0 +1,53 @@
+BAOHENG | AS/RS PLASTIC PALLET INSPECTION RECORD
+Template revision: 2026-10-30
+Guide: https://www.baohengasrs.com/resources/insights/asrs-plastic-pallet-inspection-checklist/
+
+Use one record per identifiable pallet or issue. Mark unknowns TO CONFIRM.
+This record does not define acceptance limits or authorise return to service.
+
+1. IDENTIFICATION
+Record ID:
+Inspection date / inspector:
+Pallet asset ID / batch:
+Manufacturer / family / model:
+Drawing and configuration revision:
+Identification photograph:
+
+2. OPERATING CONTEXT
+Station / route / travel and pickup orientation:
+Payload and total unit mass / loading pattern:
+Support arrangement / span:
+Operating temperature:
+Incident or exposure history / date:
+
+3. CONDITION - record observations; NOT INSPECTED where inaccessible
+Deck and corners / photo references:
+Runners and underside / photo references:
+Fork and pickup openings / photo references:
+Surface / contamination / cavities / debris:
+Permanent change in shape or suspected material deterioration:
+Equipment contact surfaces / guides / stops / detection features:
+Associated transfer fault / station / timestamp:
+
+4. REVIEW BASIS
+Manufacturer criteria / document and revision:
+System provider criteria / document and revision:
+Measurement location / method / condition / result:
+Unresolved questions:
+
+5. HOLD AND FOLLOW-UP
+Status: HOLD / RELEASED / RETIRED
+Hold identification and physical location:
+Method preventing unintended reuse:
+Assigned reviewer / next action:
+Target review date:
+
+6. DISPOSITION
+Review result and supporting evidence:
+Approved repair method, if applicable / responsible organisation:
+Required reinspection or compatibility validation / results:
+Final disposition / date / approver:
+Replacement enquiry reference or disposal arrangement:
+
+Inspect only under the site's safe handling and machinery isolation procedures.
+Unresolved conditions remain on hold. Follow applicable manufacturer and system instructions.
