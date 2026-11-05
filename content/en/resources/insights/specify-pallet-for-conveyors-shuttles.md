@@ -20,6 +20,8 @@ Runner positions must maintain stable contact throughout movement. Confirm that 
 
 Share sensor position, expected target surface and any centering mechanism. Color and surface geometry can affect optical detection.
 
+Use the [pallet color and sensor detection checklist]({{< relref "resources/insights/asrs-pallet-color-sensor-detection.md" >}}) to record sensing targets and plan a trial before approving the production configuration.
+
 ## Approve by interface
 
 Review a dimensional drawing, then run a sample through all critical transitions under a representative unit load. A successful static test alone does not prove conveyor compatibility.

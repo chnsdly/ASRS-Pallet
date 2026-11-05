@@ -1,0 +1,66 @@
+AS/RS PALLET SENSOR VALIDATION AND PURCHASING RECORD
+Revision: 2026-11-05 | BAOHENG
+
+Planning template. This is not a completed test report or a universal acceptance standard.
+The system provider defines the trial procedure, quantities and acceptance criteria.
+
+1. PROJECT AND PALLET
+Project / site: ____________________  Record ID: ____________________
+Pallet family / model: ______________  Drawing revision: ______________
+Sample ID / supplier quotation: ______________________________________
+Material specification: ______________________________________________
+Color reference / finish / sample condition: __________________________
+Differences from proposed production configuration: ___________________
+_____________________________________________________________________
+
+2. DETECTION STATION (COPY THIS SECTION FOR EACH STATION)
+Station ID / task: ___________________________________________________
+Target: pallet base / goods / wrapped load / label / other: ____________
+Sensor manufacturer / model: _________________________________________
+Sensing method / relevant manual: _____________________________________
+Mounting drawing or photo ID: ________________________________________
+Target face / target height / working distance: _______________________
+Travel direction / permitted position variation: ______________________
+Openings, ribs, film or labels crossing the sensing zone: ______________
+Background / reflector arrangement, if applicable: _____________________
+Expected entry / presence / exit sequence: ____________________________
+Continuous presence required? ________________________________________
+
+3. AGREED TRIAL PLAN
+Responsible system provider / witness: ________________________________
+Procedure / acceptance specification reference: _______________________
+Empty-pallet cases and orientations: __________________________________
+Loaded cases, packaging and wrap arrangement: _________________________
+Speed / stop / restart sequence: ______________________________________
+Position variation and operating conditions included: _________________
+Lighting / temperature / surface condition: ___________________________
+Sample quantity / repeat count: ______________________________________
+Allowable errors / required margin / decision rule: ___________________
+Excluded conditions / unresolved questions: ___________________________
+_____________________________________________________________________
+
+4. RESULTS (ONE ENTRY FOR EACH CASE)
+Date / station / sample / case ID: ____________________________________
+Conditions actually used / deviations from plan: ______________________
+Expected signal: _____________________________________________________
+Observed sensor indication AND controller input/event: ________________
+Missing, extra or interrupted signals: ________________________________
+Photo / video / controller log references: ____________________________
+Corrective action / change before repeat trial: _______________________
+Repeat result / evidence reference: ___________________________________
+
+5. PURCHASING RELEASE
+Decision: approved / conditional / unresolved
+Approved configuration, stations and conditions: ______________________
+Open issues / owner / due date: _______________________________________
+Approver / organization / date: _______________________________________
+Production configuration linked to this approval: _____________________
+Reviewer for later color, finish, geometry, packaging or sensor changes:
+_____________________________________________________________________
+Change requiring review / required repeat checks: _____________________
+
+Retain this record with the pallet sample acceptance record. Sensing approval
+does not establish load performance, rack suitability or personnel safety.
+Follow the site's approved procedure and keep personnel clear of moving equipment.
+
+Guide: https://www.baohengasrs.com/resources/insights/asrs-pallet-color-sensor-detection/
