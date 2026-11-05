@@ -7,6 +7,7 @@ lastmod: 2026-10-28T09:00:00+08:00
 author: "BAOHENG"
 readingTime: "7 min"
 layout: "guide"
+show_toc: true
 translationKey: "asrs-pallet-unit-load-dimensions"
 article_schema: true
 image: "/images/resources/insights/asrs-pallet-unit-load-diagram-en.png"

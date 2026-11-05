@@ -2,6 +2,9 @@
 title: "How to Specify a Pallet for Conveyors and Shuttles"
 description: "The interface dimensions integrators should confirm before selecting an automated warehouse pallet."
 date: 2026-07-12
+layout: "guide"
+image_width: 1536
+image_height: 1024
 author: "BAOHENG Engineering"
 readingTime: "6 min"
 image: "/images/resources/insights/conveyor-shuttle-pallet-interface.webp"

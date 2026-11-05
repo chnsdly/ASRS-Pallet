@@ -7,22 +7,27 @@
         <div class="pallet-guide__heading">
           <a class="pallet-guide__eyebrow" href="{{ "resources/insights/" | relLangURL }}">{{ if $zh }}选型与采购指南{{ else }}SELECTION & PROCUREMENT{{ end }}</a>
           <h1 id="guide-title">{{ .Title }}</h1>
-          <p class="pallet-guide__intro">{{ .Params.intro }}</p>
+          {{ with or .Params.intro .Description }}<p class="pallet-guide__intro">{{ . }}</p>{{ end }}
           <div class="resources-page__meta font-meta">
             <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
             <span>{{ .Params.author }}</span>
             <span>{{ .Params.readingTime }}</span>
           </div>
         </div>
+        {{ with .Params.image }}
+        {{ $small := replaceRE `(\.webp|\.png)$` `-768$1` . }}
         <figure class="pallet-guide__cover">
-          <img src="{{ .Params.image | relURL }}" width="{{ .Params.image_width | default 1024 }}" height="{{ .Params.image_height | default 768 }}" alt="{{ .Params.image_alt }}" fetchpriority="high" decoding="async">
-          <figcaption>{{ .Params.image_caption }}</figcaption>
+          <img src="{{ . | relURL }}" {{ if and (ne $small .) (fileExists (printf "static/%s" (strings.TrimPrefix "/" $small))) }}srcset="{{ $small | relURL }} 768w, {{ . | relURL }} 1536w" sizes="(max-width: 767px) 100vw, 896px"{{ end }} width="{{ $.Params.image_width | default 1024 }}" height="{{ $.Params.image_height | default 768 }}" alt="{{ $.Params.image_alt | default $.Title }}" fetchpriority="high" decoding="async">
+          {{ with $.Params.image_caption }}<figcaption>{{ . }}</figcaption>{{ end }}
         </figure>
+        {{ end }}
       </header>
+      {{ if .Params.show_toc }}
       <details class="pallet-guide__toc" open>
         <summary>{{ if $zh }}本文导航{{ else }}In this guide{{ end }}</summary>
         {{ .TableOfContents }}
       </details>
+      {{ end }}
       <div class="resources-page__content pallet-guide__body font-body">
         {{ .Content }}
       </div>

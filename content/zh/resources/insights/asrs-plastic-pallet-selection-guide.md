@@ -7,6 +7,7 @@ lastmod: 2026-10-21
 author: "BAOHENG"
 readingTime: "9 分钟"
 layout: "guide"
+show_toc: true
 translationKey: "asrs-plastic-pallet-selection-guide"
 article_schema: true
 image: "/images/products/grid-3runner/bh1210-grid-deck-3-runner-1200x1000mm-plastic-pallet-main.jpg"

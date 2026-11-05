@@ -1,13 +1,13 @@
 .pallet-guide {
   color: var(--on-surface);
 
-  &__hero { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 2rem; }
+  &__hero { display: grid; gap: 2rem; margin-bottom: 2.5rem; }
   &__heading { display: grid; gap: 1.25rem; }
   &__eyebrow { color: var(--brand); font-size: .8rem; font-weight: 750; letter-spacing: .08em; }
   h1 { font-size: clamp(1.9rem, 3.5vw, 2.8rem); line-height: 1.16; letter-spacing: -.025em; }
   &__intro { color: var(--secondary); line-height: 1.7; }
-  &__cover { background: white; border: var(--border); border-radius: var(--radius-m); overflow: hidden; }
-  &__cover img { width: 100%; height: auto; }
+  &__cover { width: 100%; max-width: 48rem; margin: 0 auto; background: white; border: var(--border); border-radius: var(--radius-m); overflow: hidden; }
+  &__cover img { display: block; width: 100%; height: auto; }
   figcaption { padding: 1rem 1.25rem; color: var(--secondary); font-size: .8rem; line-height: 1.65; border-top: var(--border); }
   &__toc { margin-block: 2.5rem; padding: 1.25rem 1.5rem; border: var(--border); border-left: 4px solid var(--brand); background: var(--surface-muted); }
   &__toc summary { font-weight: 750; cursor: pointer; }
@@ -30,8 +30,7 @@
 }
 
 @media (max-width: 680px) {
-  .pallet-guide__hero { grid-template-columns: 1fr; gap: 1.5rem; }
-  .pallet-guide__cover { max-width: 30rem; }
+  .pallet-guide__hero { gap: 1.5rem; }
   .pallet-guide__toc { padding: 1rem; }
   .pallet-guide__body :is(th, td) { min-width: 8rem; padding: .7rem; }
   .pallet-guide__download { padding: 1rem; }

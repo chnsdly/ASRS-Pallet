@@ -2,6 +2,9 @@
 title: "什么时候值得增加钢管"
 description: "围绕挠度控制配置钢管、避免无效增重的实用方法。"
 date: 2026-07-04
+layout: "guide"
+image_width: 1536
+image_height: 1024
 author: "BAOHENG 工程团队"
 readingTime: "4 分钟"
 image: "/images/resources/insights/steel-reinforced-hdpe-pallet-construction.webp"

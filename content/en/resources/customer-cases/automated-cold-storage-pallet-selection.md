@@ -1,54 +1,86 @@
 ---
-title: "Subzero Storage, Condensation and Automation: What Should a Cold-Store Pallet Specification Cover?"
-description: "A structured approach to low-temperature behavior, drainage, slip control, equipment interfaces and sample conditioning for automated cold storage."
-summary: "A cold-store pallet has to do more than tolerate low temperature. This case study brings condensation, drainage, unit-load stability and automated handling into one validation plan."
+title: "Cold Storage Plastic Pallets for AS/RS: A Selection and Testing Guide"
+description: "Choose plastic pallets for automated cold storage: specify temperatures, rack supports, conveyor interfaces, moisture and a representative sample trial."
+summary: "A practical guide to matching a cold-store pallet to the temperature cycle, unit load, rack and automated handling route."
 date: 2026-09-12
+lastmod: 2026-11-02
 featured: true
-image: "/images/resources/customer-cases/automated-cold-storage-pallet-selection.webp"
-image_alt: "Wrapped cartons on a blue grid three-runner plastic pallet in an automated cold store"
-author: "BAOHENG Applications"
-readingTime: "8 min"
+author: "BAOHENG"
+readingTime: "7 min"
+layout: "guide"
+show_toc: true
+translationKey: "automated-cold-storage-pallet-selection"
+article_schema: true
+image: "/images/resources/customer-cases/cold-storage-asrs-pallet-guide.webp"
+image_width: 1536
+image_height: 1024
+image_alt: "Blue plastic pallet carrying wrapped cartons on a conveyor in an automated cold-storage illustration"
+image_caption: "AI-generated illustration; not a BAOHENG facility or customer installation."
+intro: "Specify the temperature cycle, load and equipment interfaces together, then agree a representative trial before approving a cold-store pallet."
 ---
-An automated cold store receives unit loads assembled in an ambient staging area and conveys them into subzero storage. Each pallet experiences temperature changes, condensation, lift-truck handling and extended rack dwell. The initial requirement says only “low-temperature plastic pallet,” which is not enough to define the application.
+**A plastic pallet for an automated cold store must fit the whole route: the cold room, rack supports, conveyors, transfer equipment and the actual unit load.** A minimum temperature alone does not establish impact resistance, rack capacity or reliable transfer.
 
-*This is an illustrative cold-storage scenario, not a specific customer installation. It does not establish a material temperature rating or load guarantee. Actual temperature range, cycle frequency and validation conditions must be reviewed for each project.*
+This guide helps buyers and integrators prepare a project specification. It describes an illustrative application, not a completed customer project or a guarantee for a particular pallet.
 
-## Separate continuous cold exposure from thermal cycling
+## 1. Map the temperature cycle {#temperature}
 
-A pallet held at a stable subzero temperature faces a different duty cycle from one that repeatedly moves between ambient and frozen zones. Frequent transitions add condensation, possible icing and changes in surface friction. They may also affect labels, sensor response and packaging behavior.
+Record the lowest and highest temperatures at each stage, time in each zone, transition frequency and where handling occurs. A pallet stored continuously in a freezer may face a different duty from one repeatedly moving through an ambient staging area. Include defrost periods, cleaning and time spent waiting at the entrance where relevant.
 
-The specification should state minimum and maximum operating temperatures, time spent in each zone, expected cycles per day and whether test samples must be conditioned at the operating temperature. A single static test performed at room temperature cannot represent the complete cold-store route.
+Ask the supplier for the operating-temperature information **for the exact pallet and material configuration**, including its basis and any restrictions. Do not infer a temperature rating from the material name alone. The UK HSE's [Pallet safety guidance](https://www.hse.gov.uk/pubns/pm15.pdf) notes that plastic pallets handled roughly in the cold can suffer brittle fracture; it recommends checking for cracks and other mechanical damage. Site-specific handling and manufacturer guidance still apply.
 
-## A grid deck supports airflow and drainage—not every load type
+## 2. Describe the load and rack support {#rack}
 
-The open surface of a [grid three-runner pallet]({{< relref "/product/grid-3runner" >}}) can support airflow, drainage and visual inspection while reducing broad areas where water might collect. That makes it a logical candidate for many cold-store projects.
+Provide the total loaded mass, packaging type, load footprint, centre of gravity and expected storage duration. Include a photograph or drawing of the load bottom: cartons, drums and bags can contact the deck in different ways even at the same total weight.
 
-Its suitability still depends on the unit load. The bottom of a carton or reusable container must span the openings without local instability. Flexible sacks, small-footprint cases or moisture-softened packaging may require more continuous support. Where a solid deck is preferred, drainage and slip control need to be addressed separately.
+For each rack position, identify support direction, beam or rail spacing, contact width and pallet orientation. Ask what the stated rack rating covers: the pallet configuration, load distribution, support arrangement, temperature, duration and deflection criteria. A catalogue figure without those conditions is not enough to approve a different setup. See the [rack-load guide]({{< relref "resources/insights/rack-load-is-not-a-single-number.md" >}}) and [unit-load dimensions guide]({{< relref "resources/insights/asrs-pallet-unit-load-dimensions.md" >}}).
 
-## Condensation affects the load, pallet and equipment
+## 3. Match the deck and base to the route {#interfaces}
 
-Moisture can reduce friction under cartons and create a wet interface between the pallet and conveyor. Anti-slip elements only help when they are positioned under the actual load footprint. The project should identify likely collection points, floor and machine drainage, and whether film tails or wet packaging can enter moving equipment.
+| Decision | Information to check |
+| --- | --- |
+| Grid or solid deck | An open deck can aid drainage and inspection; check that the real load is adequately supported over openings. For a solid deck, review water collection and cleaning needs. |
+| Base and orientation | Mark runner direction and contact surfaces at roller conveyors, chain transfers, lifts and rack positions. Do not assume pallets of the same footprint have interchangeable bases. |
+| Pickup and detection | Check fork or shuttle clearances, stops, guides, sensors and labels against the approved drawings. |
+| Reinforcement | If specified, identify its position and configuration; discuss exposure, cleaning and any corrosion concerns with the supplier. |
 
-Sensors also need to be tested in representative conditions. A target surface may behave differently when wet, frosted or viewed against a reflective cold-room background. Approval should use the final color and surface geometry in an environment close to actual operation.
+Compare candidate [grid three-runner]({{< relref "product/grid-3runner/_index.md" >}}) and [solid three-runner]({{< relref "product/solid-3runner/_index.md" >}}) families against the equipment drawings. Selection remains subject to the exact model and project conditions. The [conveyor and shuttle guide]({{< relref "resources/insights/specify-pallet-for-conveyors-shuttles.md" >}}) explains what to collect.
 
-## Automation interfaces remain central
+## 4. Plan for moisture and handling {#moisture}
 
-Low-temperature requirements do not override conveyor requirements. The pallet must maintain predictable contact across rollers, chains, lifts, stacker-crane forks and storage supports. Dimensional stability after temperature conditioning also matters where centering and clearance windows are tight.
+Temperature transitions can create condensation or frost. Identify where water might collect, how the pallet is cleaned and dried, and whether packaging or labels remain fit for use. Review load stability and pallet movement on the actual contact surfaces when wet or frosted; do not assume an anti-slip feature works under every condition.
 
-If steel reinforcement is included, tube material, finish, enclosure and placement should be confirmed as part of the cold-store environment. The final sample should use the intended structure, color, anti-slip components and reinforcement layout.
+Record impact-prone points such as forklift entries and transfers. Inspect pallets at agreed points and hold damaged or uncertain units for review under the site procedure. Use the [inspection checklist]({{< relref "resources/insights/asrs-plastic-pallet-inspection-checklist.md" >}}) to document the affected area and decision.
 
-## Build the validation plan around three groups of conditions
+## 5. Agree the sample trial before ordering {#trial}
 
-- **Environment:** temperature conditioning, condensation, drainage and repeated thermal transitions.
-- **Unit load:** least favorable center of gravity, packaging condition, dwell time and slip control.
-- **Interface:** empty and loaded travel through every transfer, with sensing and positioning checks.
+Use a sample matching the intended model, material, base, reinforcement and other options. Agree responsibilities, conditioning temperature and duration, sample quantity, measurements and pass/fail limits with the pallet supplier and equipment provider before testing.
 
-The test load should reproduce both total mass and actual deck contact. A few concentrated test weights may create a different structural condition from the real carton pattern. Before and after testing, record sample temperature, dimensions, visible condition and operating behavior.
+1. **Condition and record:** identify each sample, its initial condition and temperature history. Measure the dimensions relevant to the route.
+2. **Reproduce the load:** use the agreed mass, distribution and contact pattern. Include representative packaging and temperature transitions where practical.
+3. **Check the route:** assess empty and loaded movement through applicable infeed, transfers, pickup and storage interfaces under agreed conditions. Record sensing, clearance and any unusual contact.
+4. **Review after the trial:** record visible condition, dimensions and any deflection using the agreed method and timing. Log exceptions, approver and configuration revision.
 
-Where the route includes defrost periods or ambient buffer zones, include them in the review. One successful pass demonstrates only that cycle. Repetition and acceptance limits should be agreed before the sample trial begins.
+One successful pass only demonstrates that particular pass; it does not establish lifetime performance. Arrange the trial safely under the equipment owner's procedures. For a more detailed record, use the [sample testing checklist]({{< relref "resources/insights/asrs-pallet-sample-testing-checklist.md" >}}).
 
-## Decision outcome
+## Frequently asked questions {#faq}
 
-The priority is not to find a pallet described only as “freezer grade.” It is to combine temperature, condensation, load footprint, drainage, slip control and machine contact into one approval basis. A grid deck is often a sensible starting point, but it is not the default answer for every frozen unit load.
+### Is HDPE automatically suitable for every freezer?
 
-For a cold-store review, prepare the temperature range, zone-to-zone cycle, load-bottom photographs, equipment route and rack-support drawing. BAOHENG can use these inputs to shortlist structures and define representative sample checks. Send the project through [Contact]({{< relref "/contact" >}}).
+No. Ask for the intended pallet's material and temperature information, then review the actual handling, load and test conditions. A resin name alone does not approve a complete pallet for a specific route.
+
+### Does a rack-load rating at room temperature apply in a freezer?
+
+Not automatically. Obtain the conditions behind the rating and agree how the proposed temperature, support, load and dwell time will be evaluated.
+
+### Is a grid deck always the best choice?
+
+No. It can help drainage and inspection, but the load must be supported adequately. Compare the actual packaging and cleaning requirements with both deck designs.
+
+## Prepare a cold-store pallet enquiry {#enquiry}
+
+Send BAOHENG the temperature profile and cycle, loaded mass and footprint, packaging photos, storage duration, rack support drawing, conveyor and pickup interfaces, cleaning conditions and required quantity. Mark unknowns as “to confirm” and include any equipment-provider acceptance criteria. [Contact us]({{< relref "contact.md" >}}) to discuss candidate configurations and the information needed for a sample trial.
+
+## Source and image note {#sources}
+
+- [UK HSE, Pallet safety (PM15)](https://www.hse.gov.uk/pubns/pm15.pdf), page 12: plastic-pallet condition checks and cold-handling considerations. This is general guidance, not a statement of local legal requirements.
+- The route checklist and sample plan are editorial tools, not test results or universal acceptance criteria. The cover is AI-generated.
