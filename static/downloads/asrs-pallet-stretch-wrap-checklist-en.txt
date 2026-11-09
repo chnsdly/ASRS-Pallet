@@ -1,0 +1,55 @@
+AS/RS PALLET STRETCH-WRAP AND INTERFACE REVIEW
+BAOHENG | Planning and acceptance record | 9 November 2026
+
+This is a project record, not a test procedure or an equipment approval.
+Packaging and automation providers must define the acceptance criteria.
+
+PROJECT AND CONFIGURATION
+Project / site:
+Review date / responsible reviewers:
+Pallet family and model / drawing revision:
+Sample IDs / travel and pickup orientation:
+Goods / loading pattern / packaging:
+Payload mass / complete unit mass:
+Finished wrapped length x width x total height:
+Film specification / batch reference:
+Wrapper model / recipe reference:
+Film anchoring area / lower-edge position / finish method:
+
+DRAWING AND PHOTO REFERENCES
+Four-side finished-load photos:
+Marked pickup openings and equipment travel path:
+Marked underside support and conveying contact areas:
+Marked stop, guide and centring faces:
+Marked sensing targets and label-reading areas:
+
+CRITERIA TO AGREE BEFORE THE TRIAL
+Load-restraint assessment method and requirement:
+Film start / finish attachment and loose-tail criterion:
+Approved finished profile and positioning allowance:
+Required pickup, support and sensing clearances:
+Loads / operating conditions / speeds / repeat counts:
+Safe inspection and rework location / site procedure:
+
+OBSERVATIONS (PASS / HOLD / NOT TESTED; ATTACH EVIDENCE)
+Film start and finish secured at wrapper exit:
+Film condition after handling sequence:
+Pickup entry / withdrawal without film interference:
+No film interference at required support and transfer contacts:
+No interference at stops, guides or centring faces:
+Finished outside profile within agreed requirement:
+Load restraint / movement / packaging damage observations:
+Presence detection and identification-reading results:
+Station IDs / event references for exceptions:
+Before-and-after photo references:
+
+RELEASE AND CHANGE REVIEW
+Decision: approved / conditional / unresolved
+Approved configuration and trial scope:
+Exceptions / actions / owner / due date:
+Packaging reviewer / date:
+Automation reviewer / date:
+Pallet configuration confirmation / date:
+Who reviews later pallet, goods, film, recipe or route changes:
+
+Article: https://www.baohengasrs.com/resources/insights/asrs-pallet-stretch-wrap-clearance/

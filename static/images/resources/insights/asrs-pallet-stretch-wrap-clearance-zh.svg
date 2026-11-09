@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024">
+  <title>检查缠膜后的整托货物</title>
+  <style>text{font-family:Arial,'Microsoft YaHei',sans-serif}</style>
+  <rect width="1536" height="1024" fill="#edf4ef"/>
+  <rect width="1536" height="14" fill="#176e61"/>
+  <text x="72" y="79" font-size="21" fill="#176e61" font-weight="700" letter-spacing="2">AS/RS  /  包装与设备接口核对</text>
+  <text x="72" y="151" font-size="53" fill="#113d32" font-weight="700" >检查缠膜后的整托货物</text>
+  <text x="72" y="201" font-size="29" fill="#526d66" font-weight="400" >膜尾固定 · 取货入口 · 底部接触</text>
+  <rect x="64" y="244" width="1408" height="567" rx="28" fill="white"/>
+  <path d="M944 292 V761" stroke="#dfebe4" stroke-width="2"/>
+  <ellipse cx="502" cy="730" rx="333" ry="16" fill="#dce6df"/>
+  <rect x="224" y="320" width="178" height="87" rx="5" fill="#e8d5b9" stroke="#b99d76" stroke-width="2"/><path d="M313 322 v83" stroke="#c9af8c" stroke-width="10" opacity=".6"/><rect x="406" y="320" width="178" height="87" rx="5" fill="#e8d5b9" stroke="#b99d76" stroke-width="2"/><path d="M495 322 v83" stroke="#c9af8c" stroke-width="10" opacity=".6"/><rect x="588" y="320" width="178" height="87" rx="5" fill="#e8d5b9" stroke="#b99d76" stroke-width="2"/><path d="M677 322 v83" stroke="#c9af8c" stroke-width="10" opacity=".6"/><rect x="224" y="411" width="178" height="87" rx="5" fill="#dbc5a4" stroke="#b99d76" stroke-width="2"/><path d="M313 413 v83" stroke="#c9af8c" stroke-width="10" opacity=".6"/><rect x="406" y="411" width="178" height="87" rx="5" fill="#dbc5a4" stroke="#b99d76" stroke-width="2"/><path d="M495 413 v83" stroke="#c9af8c" stroke-width="10" opacity=".6"/><rect x="588" y="411" width="178" height="87" rx="5" fill="#dbc5a4" stroke="#b99d76" stroke-width="2"/><path d="M677 413 v83" stroke="#c9af8c" stroke-width="10" opacity=".6"/><rect x="224" y="502" width="178" height="87" rx="5" fill="#e8d5b9" stroke="#b99d76" stroke-width="2"/><path d="M313 504 v83" stroke="#c9af8c" stroke-width="10" opacity=".6"/><rect x="406" y="502" width="178" height="87" rx="5" fill="#e8d5b9" stroke="#b99d76" stroke-width="2"/><path d="M495 504 v83" stroke="#c9af8c" stroke-width="10" opacity=".6"/><rect x="588" y="502" width="178" height="87" rx="5" fill="#e8d5b9" stroke="#b99d76" stroke-width="2"/><path d="M677 504 v83" stroke="#c9af8c" stroke-width="10" opacity=".6"/>
+  <rect x="211" y="311" width="580" height="301" rx="8" fill="#c5e6ed" opacity=".25" stroke="#81b3c3" stroke-width="3"/>
+  <path d="M214 350 Q504 366 780 348" fill="none" stroke="#81b3c3" stroke-width="4" opacity=".8"/><path d="M215 357 Q500 373 780 355" fill="none" stroke="white" stroke-width="3" opacity=".8"/><path d="M214 395 Q504 411 780 393" fill="none" stroke="#81b3c3" stroke-width="4" opacity=".8"/><path d="M215 402 Q500 418 780 400" fill="none" stroke="white" stroke-width="3" opacity=".8"/><path d="M214 440 Q504 456 780 438" fill="none" stroke="#81b3c3" stroke-width="4" opacity=".8"/><path d="M215 447 Q500 463 780 445" fill="none" stroke="white" stroke-width="3" opacity=".8"/><path d="M214 485 Q504 501 780 483" fill="none" stroke="#81b3c3" stroke-width="4" opacity=".8"/><path d="M215 492 Q500 508 780 490" fill="none" stroke="white" stroke-width="3" opacity=".8"/><path d="M214 530 Q504 546 780 528" fill="none" stroke="#81b3c3" stroke-width="4" opacity=".8"/><path d="M215 537 Q500 553 780 535" fill="none" stroke="white" stroke-width="3" opacity=".8"/><path d="M214 575 Q504 591 780 573" fill="none" stroke="#81b3c3" stroke-width="4" opacity=".8"/><path d="M215 582 Q500 598 780 580" fill="none" stroke="white" stroke-width="3" opacity=".8"/>
+  <rect x="188" y="603" width="626" height="30" rx="6" fill="#2e7ba2"/>
+  <rect x="202" y="633" width="91" height="65" rx="4" fill="#266a8f"/>
+  <rect x="451" y="633" width="91" height="65" rx="4" fill="#266a8f"/>
+  <rect x="700" y="633" width="91" height="65" rx="4" fill="#266a8f"/>
+  <rect x="194" y="690" width="107" height="18" rx="3" fill="#1e5c7e"/>
+  <rect x="443" y="690" width="107" height="18" rx="3" fill="#1e5c7e"/>
+  <rect x="692" y="690" width="107" height="18" rx="3" fill="#1e5c7e"/>
+  <rect x="311" y="642" width="123" height="48" rx="6" fill="#f1f6f3" stroke="#83aa9e" stroke-width="2" stroke-dasharray="7 5"/>
+  <path d="M781 578 C842 591 790 638 842 665 Q867 680 850 698" fill="none" stroke="#bd503e" stroke-width="13" opacity=".82"/>
+  <path d="M198 718 H803" stroke="#176e61" stroke-width="3" stroke-dasharray="9 7"/>
+  <circle cx="851" cy="609" r="28" fill="#b84c39" stroke="white" stroke-width="5"/><text x="851" y="618" font-size="25" fill="white" font-weight="700" text-anchor="middle">01</text>
+  <circle cx="371" cy="666" r="28" fill="#176e61" stroke="white" stroke-width="5"/><text x="371" y="675" font-size="25" fill="white" font-weight="700" text-anchor="middle">02</text>
+  <circle cx="649" cy="718" r="28" fill="#176e61" stroke="white" stroke-width="5"/><text x="649" y="727" font-size="25" fill="white" font-weight="700" text-anchor="middle">03</text>
+  <text x="498" y="775" font-size="21" fill="#61776f" font-weight="400" text-anchor="middle">通用正视示意 · 红色膜尾表示异常</text>
+  <circle cx="1016" cy="373" r="28" fill="#b84c39" stroke="white" stroke-width="5"/><text x="1016" y="382" font-size="25" fill="white" font-weight="700" text-anchor="middle">01</text><text x="1064" y="380" font-size="28" fill="#163e36" font-weight="700" >固定膜头与膜尾</text><text x="1064" y="420" font-size="23" fill="#526d66" font-weight="400" >搬运后再次检查</text><circle cx="1016" cy="511" r="28" fill="#176e61" stroke="white" stroke-width="5"/><text x="1016" y="520" font-size="25" fill="white" font-weight="700" text-anchor="middle">02</text><text x="1064" y="518" font-size="28" fill="#163e36" font-weight="700" >保留设备取货入口</text><text x="1064" y="558" font-size="23" fill="#526d66" font-weight="400" >核对实际进出路径</text><circle cx="1016" cy="649" r="28" fill="#176e61" stroke="white" stroke-width="5"/><text x="1016" y="658" font-size="25" fill="white" font-weight="700" text-anchor="middle">03</text><text x="1064" y="656" font-size="28" fill="#163e36" font-weight="700" >核对底部支撑接触</text><text x="1064" y="696" font-size="23" fill="#526d66" font-weight="400" >检查托盘底面缠膜</text>
+  <rect x="64" y="842" width="1408" height="87" rx="18" fill="#123f34"/>
+  <text x="768" y="896" font-size="31" fill="white" font-weight="700" text-anchor="middle">货物固定效果 ＋ 设备通行条件</text>
+  <text x="768" y="977" font-size="23" fill="#526d66" font-weight="400" text-anchor="middle">检查示意图 · 不按比例 · 不规定通用缠膜高度</text>
+  </svg>

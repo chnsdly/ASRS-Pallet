@@ -3,7 +3,7 @@ title: "Pallet Load Size and Overhang in AS/RS: A Practical Specification Guide"
 description: "Specify pallet load dimensions, overhang, weight and contact pattern for an automated warehouse. Use the checklist to prepare a clearer pallet enquiry."
 summary: "Measure the complete unit load, describe how it contacts the pallet and compare it with the warehouse route before selecting an AS/RS pallet."
 date: 2026-10-28T09:00:00+08:00
-lastmod: 2026-10-28T09:00:00+08:00
+lastmod: 2026-11-09T14:39:00+08:00
 author: "BAOHENG"
 readingTime: "7 min"
 layout: "guide"
@@ -20,6 +20,8 @@ intro: "The pallet is only part of the footprint. Describe the complete loaded u
 **To specify an AS/RS pallet, record the loaded unit's maximum length, width, height and total mass, as well as how the goods contact the deck.** Compare that information with the pallet, storage supports and every handling interface. The pallet footprint alone does not describe the space or support the load needs.
 
 A pallet may fit a conveyor while its cartons, wrap or leaning load exceed a guide or profile check. Two loads of equal mass can also contact the deck differently. This guide helps warehouse buyers and integrators prepare a shared description before choosing a pallet or arranging a trial.
+
+For film tails, pickup access and underside contact areas, use the [stretch-wrap and clearance checklist]({{< relref "resources/insights/asrs-pallet-stretch-wrap-clearance.md" >}}) alongside the dimensional review.
 
 ## 1. Measure the complete unit load {#measure}
 
