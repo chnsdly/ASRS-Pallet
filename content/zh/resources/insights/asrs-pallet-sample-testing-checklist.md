@@ -3,7 +3,7 @@ title: "AS/RS 托盘样品测试：批量采购前的验收清单"
 description: "立体库塑料托盘样品怎么验收？从配置核对、尺寸测量、货架工况到输送线与穿梭车试运行，梳理批量采购前的检查步骤，附免费验收清单。"
 summary: "面向仓库采购和自动化集成商：核对样品配置、测量关键接口、评审满载工况，并用可下载清单记录验收结论与待确认项。"
 date: 2026-10-27T09:00:00+08:00
-lastmod: 2026-10-27T09:00:00+08:00
+lastmod: 2026-11-13T12:05:00+08:00
 author: "BAOHENG"
 readingTime: "8 分钟"
 layout: "guide"
@@ -36,7 +36,7 @@ intro: "验收的应是仓库实际使用的托盘配置。把样品检查、工
 
 目录来源：[BH1210 网格三川字]({{< relref "product/grid-3runner/bh1210.md" >}})与 [BH1210 平板三川字]({{< relref "product/solid-3runner/bh1210.md" >}})。这些尺寸用于识别候选产品，具体设备适配仍需评审。
 
-{{< guide-figure src="/images/products/grid-3runner/bh1210-grid-deck-3-runner-1200x1000mm-plastic-pallet-main.jpg" alt="BH1210 网格三川字托盘实际目录照片，底面可见三条连续支撑" caption="现有 BH1210 网格三川字目录照片，展示底面。项目验收时，应对实际送检样品保留同类照片。" width="1024" height="768" >}}
+{{< guide-figure src="/images/products/grid-3runner/bh1210-grid-deck-3-runner-1200x1000mm-plastic-pallet-main.jpg" alt="从上方拍摄的 BH1210 网格三川字目录照片，可见网格表面和部分侧面开口" caption="现有 BH1210 网格三川字产品目录照片。项目验收时，应分别拍摄实际样品的顶面、底面和侧面并留档。" width="1024" height="768" >}}
 
 ## 2. 测试前，约定工况和合格判定条件 {#test-plan}
 

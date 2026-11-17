@@ -2,3 +2,6 @@
 /resources/_gen/
 /.hugo_cache/
 .hugo_build.lock
+
+# Local content execution prompt
+/prompts/宝恒工业-B2B-SEO-内容执行提示词.md

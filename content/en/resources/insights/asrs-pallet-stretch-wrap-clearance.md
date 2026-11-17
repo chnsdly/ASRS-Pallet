@@ -3,7 +3,7 @@ title: "AS/RS Pallet Stretch Wrap: Film Tails and Clearance Checks"
 description: "Check loose film tails, fork openings and underside contact areas before wrapped plastic pallets enter an AS/RS. Includes a downloadable inspection checklist."
 summary: "Review the wrapped load as well as the pallet: secure film ends, mark handling interfaces and validate the finished unit on the actual warehouse route."
 date: 2026-11-09T14:39:00+08:00
-lastmod: 2026-11-09T14:39:00+08:00
+lastmod: 2026-11-16T11:57:00+08:00
 author: "BAOHENG"
 readingTime: "7 min"
 layout: "guide"
@@ -65,6 +65,14 @@ Check the maximum outside length, width and total height **after wrapping**, inc
 
 Also identify what each station actually detects. A sensor checking a pallet support and a sensor checking the wrapped goods see different targets. Include the actual film arrangement in the [pallet sensor validation trial]({{< relref "resources/insights/asrs-pallet-color-sensor-detection.md" >}}) wherever film enters the detection zone. Do not change a sensor setting merely to make a rejected load pass.
 
+### Check which identity the reader must capture {#identification}
+
+At each identification station, distinguish the reusable **pallet identity**, if the site uses one, from the **identity of the current logistics unit**. For example, [GS1 Sweden describes an SSCC](https://gs1.se/en/guides/how-to-guides/labeling-the-pallet/rules-and-recommendations/) as identifying a logistics unit. A pallet can later carry different goods; do not assume its asset ID and the load ID are interchangeable. The system owner should define how they are associated and updated when a load is built, separated or the pallet is reused.
+
+Mark the intended label or tag and the reading side on the actual pallet or finished-load drawing. With the system and packaging providers, agree the reader position, travel orientation, label condition and whether film covers the label. Where applicable, also check empty returns and the combination of pallet and load. If an RFID system is proposed, its read zone and any nearby tags need their own assessment: [Balluff's RFID gate guidance](https://www.balluff.com/en-sg/document/doc-19917678) describes differences between loaded and empty carriers and the need to handle unintended reads. It is not evidence that a particular BAOHENG pallet has an RFID feature.
+
+In the planned trial, record the expected ID, the ID actually captured, the station and the resulting system record. Include a safe, approved exception process for an unreadable or unexpected ID; a successful scan alone does not prove the correct pallet-to-load association. Label placement, data rules and acceptance limits must follow the project and any applicable trading-partner requirements.
+
 ## 5. Trial the complete handling route before release {#route-trial}
 
 Plan the trial with the system provider using representative loads, the proposed production pallet and the intended film recipe. Include the relevant transfers, stops, restarts, turns, pickups and storage retrieval sequence. The provider should define speeds, operating conditions, sample quantities and repeat counts.
@@ -121,5 +129,7 @@ No. It covers the tested empty configuration. The goods, film and finished load 
 - [Lantech — AMR-integrated stretch wrapping](https://www.lantech.com/r3/news/lantech-launches-amr-integrated-stretch-wrapping-solutions-and-introduces-sl400-and-sl400lt-for-sale/): loose-film-tail interference in automated handling.
 - [Lantech — LeanWrap](https://www.lantech.com/leanwrap/): a manufacturer-specific example of load-to-pallet attachment and forklift clearance.
 - [Atlantic Packaging — LoadLogic](https://www.atlanticpkg.com/load_logic/): selecting wrap patterns for differing load configurations.
+- [GS1 Sweden — Rules and recommendations](https://gs1.se/en/guides/how-to-guides/labeling-the-pallet/rules-and-recommendations/): SSCC as the identity of a logistics unit.
+- [Balluff — RFID Gates in Factory Logistics](https://www.balluff.com/en-sg/document/doc-19917678): loaded and empty carriers, read zones and identification events.
 
-Sources reviewed on 9 November 2026. The inspection workflow and diagram are editorial tools, not BAOHENG test results, a wrapper specification or a compatibility certification.
+Wrapping sources reviewed on 9 November 2026; identification sources reviewed on 16 November 2026. The inspection workflow and diagram are editorial tools, not BAOHENG test results, a wrapper specification or a compatibility certification.

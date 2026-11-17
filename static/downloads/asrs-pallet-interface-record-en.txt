@@ -1,0 +1,78 @@
+BAOHENG — CONVEYOR AND SHUTTLE PALLET INTERFACE RECORD
+Editorial template | Revision: 2026-11-17 | Units: mm and kg unless stated
+
+Use this record for an enquiry and project review. It sets no acceptance
+limits and does not certify a pallet or an automated handling system.
+Keep unknowns marked TO CONFIRM and untested conditions PENDING.
+The responsible equipment and project teams define the criteria and trial.
+
+A. COMMON PALLET AND LOAD RECORD — complete once per configuration
+Project / route / date:
+Pallet family + model:
+Configuration / material / reinforcement:
+Pallet drawing number + revision:
+Sample ID / sample photographs:
+Reference side A marked on drawing / photograph reference:
+Pallet length x width x height / measured or drawing values:
+Runner direction and dimensioned underside-contact map reference:
+Payload mass — normal / maximum:
+Total moving mass including pallet and packaging — normal / maximum:
+Finished unit length x width x height including pallet:
+Load distribution / contact pattern / centre-of-gravity information:
+Wrapping / restraint / possible goods movement:
+Temperature by relevant process stage / loaded dwell time:
+Equipment / layout drawing references + revisions:
+Required quantity / delivery project context:
+
+B. STATION RECORD — repeat this block for every relevant handover
+Station ID / equipment type / provider:
+From station / to station:
+Equipment interface drawing + revision:
+Approach travel direction relative to side A / leading pallet edge:
+Exit travel direction relative to side A / leading pallet edge:
+Pallet rotation, if any / final runner orientation:
+Relevant forward / return movements:
+
+SUPPORT AND CLEARANCE — use a drawing; record applicable items only
+Roller diameter / centre-to-centre spacing / usable width:
+Outgoing last roller / incoming first roller positions:
+Chain-track count / centre positions across conveyor / contact widths:
+Chain top elevations / intended pallet bearing areas:
+Outgoing and incoming support boundaries / gap / relative heights:
+Support during approach, partial transfer and final position:
+Pickup/support locations / entering element dimensions:
+Lift movement / required openings / withdrawal path:
+Stops, guides and centring contact faces / permitted positions:
+Sensor target surfaces / label positions before and after transfer:
+Film or straps near an opening, support or sensing area:
+If an empty-pallet magazine is used — configuration / stack count / measured
+stack height and total mass / holding contacts / release path:
+Discharge edge and receiving support / full stack, last pallet, replenishment
+and serviceable returns included in trial where applicable:
+Dimensions still TO CONFIRM / measurement owner:
+
+C. REVIEW AND TRIAL DECISION — repeat as needed per station/load case
+Check or load-case ID:
+Applicable configuration / sample / load / orientation:
+Criterion / allowed limit / source document + revision:
+Required operating conditions / trial scope:
+Sample quantity / repetitions / method defined by responsible team:
+Reviewer / approval authority:
+Result: PENDING / MEETS AGREED CRITERION / DOES NOT MEET AGREED CRITERION
+Observed support, clearance, pickup, position and detection behaviour:
+Rocking / catching / contact / goods movement / exceptions:
+If applicable: missed or multiple pallet release / skew / sensing exceptions:
+Photo, video or event-log reference:
+Open item / action owner / next action / review date:
+Change before repeat check / repeat-check result:
+Release decision / reviewer / date / applicable scope:
+
+Notes
+- Chain-track centre spacing is different from chain-link pitch.
+- Roller centre spacing is different from the clear gap between rollers.
+- Four-way fork entry does not approve four conveying directions.
+- An empty-pallet run does not approve all loaded conditions.
+- Use the site's approved trial, guarding and isolation procedures.
+  Do not reach into running equipment or bypass guards or interlocks.
+- Keep the approved configuration and change-review requirements with
+  the quotation, purchase specification and sample acceptance record.

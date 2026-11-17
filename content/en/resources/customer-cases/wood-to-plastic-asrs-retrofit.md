@@ -3,6 +3,7 @@ title: "Replacing Wood Pallets in an AS/RS: Why Matching the Footprint Is Not En
 description: "A practical review of bottom geometry, equipment contact, long-term deflection and staged validation when converting an automated warehouse from wood to plastic pallets."
 summary: "An AS/RS pallet conversion cannot be specified by length and width alone. This case study maps conveyor contact, rack support, fork entry and loaded trials to reduce retrofit risk."
 date: 2026-09-15
+lastmod: 2026-11-15T11:56:00+08:00
 featured: true
 image: "/images/resources/customer-cases/asrs-wood-to-plastic-retrofit.webp"
 image_alt: "Blue solid-deck plastic pallet beside a wooden pallet in an automated warehouse evaluation area"
@@ -54,6 +55,21 @@ A controlled conversion normally progresses through four steps:
 4. **Limited operational release:** operate a small batch under monitored conditions before expanding the conversion.
 
 Acceptance criteria should be agreed in advance. They may cover positioning tolerance, transfer stability, allowable load overhang, test temperature and inspection intervals. This makes it easier to distinguish a pallet issue from a packaging or machine-setting issue.
+
+## Compare direct replacement with a carrier-pallet route
+
+If inbound goods arrive on several pallet types, direct replacement is not the only route to investigate. A warehouse may instead place a loaded inbound pallet onto a separate, controlled **carrier pallet**—also called a *slave pallet*—for the part of the journey inside the automated system. In an [Interlake Mecalux project](https://www.interlakemecalux.com/case-studies/automated-warehouse-charter-next-generation-blown), operators place incoming load pallets on such carriers before the system's inspection checkpoint; the carriers are separated and returned for reuse at outbound. This is that integrator's project, not a BAOHENG installation or evidence that a BAOHENG model is approved as a carrier.
+
+Compare the two routes against the actual project:
+
+- **Contact and support:** for direct replacement, check the replacement pallet's deck, underside, rack support and pickup interfaces. For a carrier, check the inbound pallet's contact with the carrier as well as the carrier's equipment and rack interfaces.
+- **Complete unit:** measure the finished load with the replacement pallet; for a carrier, include both pallets, goods and packaging in the combined dimensions and both pallet masses in the total.
+- **Operations:** plan how goods or pallet supply will change over for a replacement. A carrier route also needs placement, separation, empty-carrier return, inspection and clear responsibility for both pallets.
+- **Evidence:** assess the proposed replacement configuration and representative loaded route, or the identified inbound-pallet/carrier combination and its representative loaded route.
+
+A carrier adds its own height and mass and may change the load's centre of gravity, contact pattern and sensing surfaces. Its availability does not make every incoming pallet acceptable: the goods, incoming pallet and carrier still need to satisfy the agreed stability, support, profile and equipment criteria. A separate carrier also requires space, handling and a return loop; compare those requirements with the intended throughput and existing layout rather than assuming a cost saving.
+
+Ask the equipment provider and pallet supplier whether the proposed arrangement can be reviewed for the specific incoming pallet types, load patterns and rack supports. Record the combined unit's maximum dimensions, total mass, contact areas, movement and pickup sequence. If the system cannot accommodate the combination, keep it as an unresolved option and evaluate replacement or another approved workflow. Use the [unit-load dimensions guide]({{< relref "resources/insights/asrs-pallet-unit-load-dimensions.md" >}}) and the [sample acceptance checklist]({{< relref "resources/insights/asrs-pallet-sample-testing-checklist.md" >}}) to prepare the joint review.
 
 ## Decision outcome
 

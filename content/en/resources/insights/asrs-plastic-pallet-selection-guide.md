@@ -3,7 +3,7 @@ title: "AS/RS Plastic Pallet Selection: 7 Checks Before You Buy"
 description: "Choose an AS/RS plastic pallet by checking load, rack support, conveyor interfaces, deck design and sample validation. Includes a free RFQ checklist."
 summary: "A practical buying guide for warehouse teams and automation integrators: seven checks, real product drawings and a downloadable pallet RFQ checklist."
 date: 2026-10-21
-lastmod: 2026-10-21
+lastmod: 2026-11-13T12:05:00+08:00
 author: "BAOHENG"
 readingTime: "9 min"
 layout: "guide"
@@ -11,8 +11,8 @@ show_toc: true
 translationKey: "asrs-plastic-pallet-selection-guide"
 article_schema: true
 image: "/images/products/grid-3runner/bh1210-grid-deck-3-runner-1200x1000mm-plastic-pallet-main.jpg"
-image_alt: "Underside catalogue photograph of the blue BH1210 grid-deck plastic pallet showing three runners"
-image_caption: "BH1210 Grid 3-Runner · Catalogue photograph showing the underside."
+image_alt: "Blue BH1210 grid-deck plastic pallet viewed from above, with side openings partly visible"
+image_caption: "BH1210 Grid 3-Runner catalogue photograph. Request an underside view and confirmed drawing for equipment-interface review."
 intro: "Start with the load and every equipment interface. Then compare pallet designs and confirm the selected configuration with a representative sample."
 ---
 **An AS/RS plastic pallet should be selected against the complete handling route, not its dimensions or headline load rating alone.** For a new automated warehouse or a replacement project, confirm seven things: the unit load, machine envelope, rack support, conveyor and shuttle interfaces, deck design, operating environment, and sample acceptance criteria.

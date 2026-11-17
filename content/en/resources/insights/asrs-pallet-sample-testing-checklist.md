@@ -3,7 +3,7 @@ title: "AS/RS Pallet Sample Testing: A Practical Acceptance Checklist"
 description: "Plan AS/RS plastic pallet sample testing before a bulk order. Check dimensions, rack support and conveyor transfers, with a free acceptance checklist."
 summary: "Turn a pallet sample into a documented purchasing decision: confirm the configuration, measure critical interfaces, review loaded handling and record approval."
 date: 2026-10-27T09:00:00+08:00
-lastmod: 2026-10-27T09:00:00+08:00
+lastmod: 2026-11-13T12:05:00+08:00
 author: "BAOHENG"
 readingTime: "8 min"
 layout: "guide"
@@ -36,7 +36,7 @@ The family name matters. For example, the BAOHENG catalogue lists both **BH1210 
 
 Catalogue sources: [BH1210 Grid 3-Runner]({{< relref "product/grid-3runner/bh1210.md" >}}) and [BH1210 Solid 3-Runner]({{< relref "product/solid-3runner/bh1210.md" >}}). Their dimensions help identify candidates; they do not establish approval for your equipment.
 
-{{< guide-figure src="/images/products/grid-3runner/bh1210-grid-deck-3-runner-1200x1000mm-plastic-pallet-main.jpg" alt="Actual BH1210 Grid 3-Runner catalogue photograph showing the underside and three continuous runners" caption="Existing BH1210 Grid 3-Runner catalogue photograph, underside view. Retain equivalent photographs of the actual sample being evaluated." width="1024" height="768" >}}
+{{< guide-figure src="/images/products/grid-3runner/bh1210-grid-deck-3-runner-1200x1000mm-plastic-pallet-main.jpg" alt="BH1210 Grid 3-Runner catalogue photograph from above, showing the grid surface and partial side openings" caption="Existing BH1210 Grid 3-Runner catalogue photograph. Photograph the actual sample's top, underside and sides separately for the acceptance record." width="1024" height="768" >}}
 
 ## 2. Agree on the test conditions and acceptance criteria {#test-plan}
 

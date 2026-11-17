@@ -3,7 +3,7 @@ title: "立体库托盘缠绕膜怎么检查？膜尾、叉孔与底部干涉指
 description: "立体库塑料托盘入库前，如何检查松散膜尾、叉孔遮挡和底部缠膜？了解包装固定、设备接口与整托测试要点，下载可填写的检查清单。"
 summary: "把缠膜后的整托货物纳入验收：检查膜尾、标出搬运与支撑区域，并在实际设备路线上验证包装与托盘的配合。"
 date: 2026-11-09T14:39:00+08:00
-lastmod: 2026-11-09T14:39:00+08:00
+lastmod: 2026-11-16T11:57:00+08:00
 author: "BAOHENG"
 readingTime: "7 分钟"
 layout: "guide"
@@ -65,6 +65,14 @@ intro: "托盘图纸描述底座，自动化设备还需要一致的整托货物
 
 同时确认每个检测工位究竟检测什么：检测托盘支撑部位与检测上方缠膜货物，面对的是不同目标。薄膜进入检测区域时，应把实际缠膜状态纳入[托盘颜色与传感器验证]({{< relref "resources/insights/asrs-pallet-color-sensor-detection.md" >}})。不要为了让被拒收的货物通过而自行调整传感器设置。
 
+### 核对读码设备需要识别哪个对象 {#identification}
+
+逐个识别工位区分**可重复使用的托盘身份**（如果现场采用）和**当前物流单元的身份**。例如，[GS1 瑞典的说明](https://gs1.se/en/guides/how-to-guides/labeling-the-pallet/rules-and-recommendations/)将 SSCC 用于识别物流单元。同一托盘日后可能承载不同货物，不能默认托盘资产编号与货载编号可以互换。系统负责人应明确组托、拆托和托盘再利用时，两者如何关联和更新。
+
+在实际托盘或整托图纸上标出拟用标签或电子标签及读取侧。与系统方、包装方确认读码位置、运行方向、标签状态及薄膜是否覆盖标签；适用时还要检查空托盘回流及托盘与货载的组合。如果采用 RFID，读取区域与附近其他标签需要单独评估：[Balluff 的 RFID 门禁资料](https://www.balluff.com/en-sg/document/doc-19917678)说明了空、带载载具的差异及意外读取的处理；这并不证明某款宝恒托盘具有 RFID 功能。
+
+在约定测试中记录预期编号、实际读取编号、工位及系统产生的记录；对无法读取或读到意外编号的情况，事先确定安全且经批准的异常处理流程。扫描成功本身不能证明托盘与货载的关联正确。标签位置、数据规则和验收限值应遵循项目及适用的贸易伙伴要求。
+
 ## 5. 放行前验证完整搬运路线 {#route-trial}
 
 与系统提供方共同安排测试，使用代表性货物、拟用于量产的托盘和计划采用的缠膜程序。按项目需要覆盖交接、挡停、重新启动、转向、取货和存取货流程。运行速度、环境条件、样品数量与重复次数，由设备方确定。
@@ -121,5 +129,7 @@ intro: "托盘图纸描述底座，自动化设备还需要一致的整托货物
 - [Lantech：AMR 集成缠膜方案](https://www.lantech.com/r3/news/lantech-launches-amr-integrated-stretch-wrapping-solutions-and-introduces-sl400-and-sl400lt-for-sale/)：松散膜尾对自动搬运的干扰。
 - [Lantech：LeanWrap](https://www.lantech.com/leanwrap/)：特定厂商的货物与托盘连接、货叉避让方案示例。
 - [Atlantic Packaging：LoadLogic](https://www.atlanticpkg.com/load_logic/)：针对不同货物配置选择缠膜程序的说明。
+- [GS1 瑞典：规则与建议](https://gs1.se/en/guides/how-to-guides/labeling-the-pallet/rules-and-recommendations/)：SSCC 与物流单元身份。
+- [Balluff：工厂物流中的 RFID 门禁](https://www.balluff.com/en-sg/document/doc-19917678)：空、带载载具，读取区域及识别事件。
 
-资料核对日期：2026 年 11 月 9 日。文中的检查流程和示意图属于编辑整理工具，不是 BAOHENG 实测结果、缠膜设备参数或兼容性认证。
+缠膜资料核对日期：2026 年 11 月 9 日；识别资料核对日期：2026 年 11 月 16 日。文中的检查流程和示意图属于编辑整理工具，不是 BAOHENG 实测结果、缠膜设备参数或兼容性认证。

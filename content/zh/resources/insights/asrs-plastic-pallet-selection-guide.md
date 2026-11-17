@@ -3,7 +3,7 @@ title: "AS/RS 塑料托盘选型指南：采购前确认这 7 项条件"
 description: "立体库塑料托盘怎么选？从货物载荷、货架支撑、输送线接口到底面结构与样品验证，梳理 7 项选型条件，并提供可下载的询价清单。"
 summary: "面向仓库采购与自动化集成商的实用指南：7 项选型检查、真实产品尺寸图，以及可直接填写的托盘询价清单。"
 date: 2026-10-21
-lastmod: 2026-10-21
+lastmod: 2026-11-13T12:05:00+08:00
 author: "BAOHENG"
 readingTime: "9 分钟"
 layout: "guide"
@@ -11,8 +11,8 @@ show_toc: true
 translationKey: "asrs-plastic-pallet-selection-guide"
 article_schema: true
 image: "/images/products/grid-3runner/bh1210-grid-deck-3-runner-1200x1000mm-plastic-pallet-main.jpg"
-image_alt: "蓝色 BH1210 网格三川字塑料托盘底面产品照片，可见三条底部支撑"
-image_caption: "BH1210 网格三川字托盘 · 现有产品目录照片，展示底面结构。"
+image_alt: "从上方拍摄的蓝色 BH1210 网格塑料托盘，可见部分侧面开口"
+image_caption: "BH1210 网格三川字产品目录照片。评审设备接口时，请另行索取底面视图和已确认的图纸。"
 intro: "先明确货物和整条搬运路线的设备接口，再比较托盘结构，并用对应配置的代表性样品完成确认。"
 ---
 **AS/RS 塑料托盘应按完整搬运路线选型，尺寸和标称载荷只是其中两项。** 无论新建立体库还是替换旧托盘，采购前都应确认七件事：单元货物、设备空间、货架支撑、输送与穿梭车接口、面板和底部结构、使用环境，以及样品验收条件。

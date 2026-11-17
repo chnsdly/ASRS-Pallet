@@ -1,0 +1,72 @@
+BAOHENG — PALLET RACK-LOAD EVIDENCE REVIEW WORKSHEET
+Editorial template | Revision: 2026-11-12 | State units for every value
+
+This is a requirements and evidence-review aid. It is not a load-rating
+calculation, test method, certification or completed approval record.
+The responsible supplier, rack/system provider and engineering reviewers
+define the applicable conditions, evaluation and release decision.
+Unknown = TO CONFIRM. Untested condition = PENDING.
+
+A. INTENDED USE — complete once per project/load case
+Project / load-case ID / date:
+Payload mass — normal / maximum / included components:
+Total unit mass including pallet and packaging:
+Goods / packaging / bottom-layer sketch or photo reference:
+Contact dimensions / load distribution / offset / restraint:
+Pallet orientation / reference side on drawing:
+Rack support type / support bars / drawing number + revision:
+Support contact locations and widths:
+Clear span between facing support surfaces / endpoints marked:
+Support centre distance / endpoints marked:
+Permitted pallet-positioning range / source:
+Normal and extreme temperatures by process stage:
+Longest continuous loaded storage time / relevant exposure:
+Pickup / transfer conditions for separate interface review:
+Applicable project criteria / source / approval authority:
+Required quantity / purchasing context:
+
+B. CANDIDATE — repeat for each supplier and configuration
+Supplier / quotation reference + date:
+Family + model + configuration + drawing revision:
+Material specification / structure / reference pallet mass:
+Steel quantity / section / positions / orientation, if applicable:
+Quoted load figure / units / load type / mass definition:
+Claimed use / stated conditions / exclusions:
+Evidence type: supplier declaration / internal test / third-party report / other
+Issuer / report number / date / relevant pages:
+Standard part + edition / applicable test or assessment references:
+Test specimen / sample ID / link to offered configuration:
+Support setup / dimensions / orientation / drawing reference:
+Payload and loading arrangement:
+Conditioning / test temperature / loading duration:
+Measurement locations / reference points / timing:
+Observed deformation while loaded / continued change during loading:
+Remaining deformation after unloading / recovery interval:
+Results / acceptance limits / source / relevant result pages:
+Working-load conclusion / stated applicability / exclusions:
+Responsible reviewer / review date:
+
+C. CONDITION-BY-CONDITION COMPARISON — repeat a row as needed
+Field / intended use / candidate evidence / match or gap / source:
+Configuration:
+Support and orientation:
+Payload and contact pattern:
+Temperature and duration:
+Measurement and assessment basis:
+Working-load conclusion:
+Other relevant condition:
+
+D. NEXT ACTION AND RECORD
+Review outcome: APPLICABLE EVIDENCE IDENTIFIED / CLARIFICATION REQUIRED /
+FURTHER ASSESSMENT REQUIRED
+Scope and limitations identified by responsible reviewer:
+Open question / action owner / requested evidence / review date:
+Agreed further engineering review or evaluation, if required:
+Link to sample acceptance / separate equipment-interface review:
+Release decision / approval authority / date / applicable scope:
+Configuration or use changes requiring renewed review:
+
+Do not convert static, handling or rack-load figures using an assumed
+percentage. Do not treat a test load or a standard name as product approval.
+Use an approved evaluation plan; do not improvise overload trials in an
+operating rack. Retain the conditions and evidence with the purchase record.
