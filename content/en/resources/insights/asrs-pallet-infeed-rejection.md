@@ -3,13 +3,18 @@ title: "AS/RS Pallet Rejected at Infeed: What Should You Check?"
 description: "A practical response to an AS/RS infeed rejection: record the alarm, separate load, pallet and identification checks, and agree the next review."
 summary: "Use the actual rejection code and safe inspection record to distinguish a load-profile issue, pallet-interface concern or identification mismatch before ordering a replacement."
 date: 2026-11-17T16:18:00+08:00
-lastmod: 2026-11-17T16:18:00+08:00
+lastmod: 2026-11-17T16:33:00+08:00
 author: "BAOHENG"
 readingTime: "7 min"
 layout: "guide"
 show_toc: true
 translationKey: "asrs-pallet-infeed-rejection"
 article_schema: false
+image: "/images/resources/insights/asrs-pallet-infeed-rejection.webp"
+image_width: 1536
+image_height: 1024
+image_alt: "Illustration of a loaded blue pallet approaching an automated warehouse infeed inspection frame with an illuminated signal light"
+image_caption: "AI-generated editorial illustration based on a BAOHENG product reference. It is not a model drawing, actual installation, test or incident."
 intro: "A rejected unit is a signal to investigate, not proof that the pallet is the cause. Start with the station's actual message and the complete load."
 ---
 **When an automated warehouse rejects a pallet at infeed, keep the affected unit under the site's hold procedure, capture the station message, and identify what that station actually checked.** Review the wrapped load, the pallet and its interfaces, and identification separately. Ask the responsible equipment and warehouse teams to assess the evidence before changing a pallet or releasing the unit.

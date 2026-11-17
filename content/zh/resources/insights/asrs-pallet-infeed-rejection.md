@@ -3,13 +3,18 @@ title: "立体库托盘入库被拒收怎么办？从报警到复核的检查方
 description: "立体库入口拒收托盘时，如何记录报警并区分货载外形、托盘接口和识别信息？按实际设备要求安全复核，再决定下一步。"
 summary: "从实际拒收代码和安全检查记录出发，分别核对货载、托盘与识别信息，避免仅凭一次报警就决定更换托盘。"
 date: 2026-11-17T16:18:00+08:00
-lastmod: 2026-11-17T16:18:00+08:00
+lastmod: 2026-11-17T16:33:00+08:00
 author: "BAOHENG"
 readingTime: "7 分钟"
 layout: "guide"
 show_toc: true
 translationKey: "asrs-pallet-infeed-rejection"
 article_schema: false
+image: "/images/resources/insights/asrs-pallet-infeed-rejection.webp"
+image_width: 1536
+image_height: 1024
+image_alt: "蓝色托盘承载纸箱，经过带亮灯的自动化仓库入口检查架示意图"
+image_caption: "参考 BAOHENG 产品图生成的 AI 场景示意，不是型号图纸、实际设备安装、试验或事故照片。"
 intro: "入口拒收意味着需要排查，并不能证明问题一定出在托盘。先记录工位报警，再核对完整货载。"
 ---
 **立体库入口拒收托盘时，先按现场流程暂扣相关单元，保留工位报警信息，并确认该工位实际检查了什么。** 分别复核缠膜货载、托盘及其设备接口、识别信息；更换托盘或重新放行前，由相关设备方和仓库责任人评估记录。
