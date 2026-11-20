@@ -122,3 +122,13 @@ Prompt:
 
 Use case: photorealistic-natural. Create a single landscape 3:2 editorial cover image for a B2B article about confirming the approved specification before reordering AS/RS plastic pallets. Input image is a visual reference to a real blue grid-deck three-runner pallet: keep the top grid and rectangular shape credible; do not claim exact model reproduction. Show ONE blue plastic grid pallet sitting safely on the floor beside an uncluttered workbench, with a plain generic pallet outline drawing, simple caliper and blank clipboard on the bench. The visual conveys comparison of the pallet with a drawing, without suggesting that measurements or tests actually happened. Modern clean warehouse context, natural industrial light, realistic materials, wide composed image, no people, no logos, no labels, no text, no readable numbers, no fake certificates, no split-panel collages. Editorial conceptual scene, not an actual customer facility or proof of product approval.
 
+## asrs-pallet-cost-per-trip
+
+Final assets: `static/images/resources/insights/asrs-pallet-cost-per-trip.webp` (1536 × 865) and `static/images/resources/insights/asrs-pallet-cost-per-trip-768.webp` (768 × 433).
+
+Created on 20 November 2026 using the built-in image generation tool and `static/images/products/grid-3runner/bh1210-grid-deck-3-runner-1200x1000mm-plastic-pallet-main.jpg` as a visual reference. The result is an editorial illustration, not a model drawing or evidence of an actual customer facility or inspection. Both language versions disclose this in the caption.
+
+Prompt:
+
+Use case: photorealistic-natural. Create a horizontal editorial illustration for a B2B article on reusable automated-warehouse pallet cost per trip. Reference image is a BAOHENG grid-deck blue plastic pallet; preserve its overall grid deck and three-runner form without inventing distinctive model details. Show one empty blue grid pallet at a clean warehouse return and inspection area, with a clipboard and unmarked calculator on a nearby work table; a softly out-of-focus warehouse aisle in background. Calm realistic industrial lighting, no workers, no logos, no text, no labels, no numerical graphics. Conceptual scene, not a real customer facility or evidence of testing.
+
