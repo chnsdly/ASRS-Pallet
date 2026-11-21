@@ -132,3 +132,13 @@ Prompt:
 
 Use case: photorealistic-natural. Create a horizontal editorial illustration for a B2B article on reusable automated-warehouse pallet cost per trip. Reference image is a BAOHENG grid-deck blue plastic pallet; preserve its overall grid deck and three-runner form without inventing distinctive model details. Show one empty blue grid pallet at a clean warehouse return and inspection area, with a clipboard and unmarked calculator on a nearby work table; a softly out-of-focus warehouse aisle in background. Calm realistic industrial lighting, no workers, no logos, no text, no labels, no numerical graphics. Conceptual scene, not a real customer facility or evidence of testing.
 
+## asrs-pallet-barcode-reading
+
+Final assets: `static/images/resources/insights/asrs-pallet-barcode-reading.webp` (1536 × 1024) and `static/images/resources/insights/asrs-pallet-barcode-reading-768.webp` (768 × 512).
+
+Created on 21 November 2026 using the built-in image generation tool and `static/images/products/grid-3runner/bh1210-grid-deck-3-runner-1200x1000mm-plastic-pallet-main.jpg` as a visual reference. The result is an editorial illustration, not a model drawing, actual facility, test or approved label position. Both language versions disclose this in the caption.
+
+Prompt:
+
+Use case: photorealistic-natural. Create one landscape editorial illustration for a B2B article about automatic identification of palletized loads. The input image is a visual reference for the blue plastic grid-deck three-runner pallet, not an exact engineering model. Show a single blue pallet carrying stable closed cardboard cartons in a warehouse near a small fixed industrial camera mounted on a frame; the face of a carton carries one plain blank white rectangular label. Calm realistic industrial light, mechanically plausible scene, no people, no visible printed characters, no simulated barcode, no logo or brand, no numbers, no safety hazards, no split layout. Conceptual AI illustration, not a real facility, actual identification test or approved label position.
+
