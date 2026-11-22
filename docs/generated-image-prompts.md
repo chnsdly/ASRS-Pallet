@@ -142,3 +142,13 @@ Prompt:
 
 Use case: photorealistic-natural. Create one landscape editorial illustration for a B2B article about automatic identification of palletized loads. The input image is a visual reference for the blue plastic grid-deck three-runner pallet, not an exact engineering model. Show a single blue pallet carrying stable closed cardboard cartons in a warehouse near a small fixed industrial camera mounted on a frame; the face of a carton carries one plain blank white rectangular label. Calm realistic industrial light, mechanically plausible scene, no people, no visible printed characters, no simulated barcode, no logo or brand, no numbers, no safety hazards, no split layout. Conceptual AI illustration, not a real facility, actual identification test or approved label position.
 
+## asrs-plastic-pallet-fire-protection-review
+
+Final assets: `static/images/resources/insights/asrs-plastic-pallet-fire-protection-review.webp` (1536 × 865) and `static/images/resources/insights/asrs-plastic-pallet-fire-protection-review-768.webp` (768 × 433).
+
+Created on 22 November 2026 using the built-in image generation tool and `static/images/products/grid-3runner/bh1210-grid-deck-3-runner-1200x1000mm-plastic-pallet-main.jpg` as a visual reference. The result is an editorial illustration, not a model drawing, actual facility, fire test or approved storage layout. Both language versions disclose this in the caption.
+
+Prompt:
+
+Use case: photorealistic-natural. Landscape editorial cover for an industrial purchasing guide on preparing a warehouse fire-protection review before changing pallet materials. The input is a visual reference of a blue grid-deck plastic pallet, not an exact model drawing. Show a single empty blue plastic pallet resting flat on a clean warehouse floor beside a worktable with a blank generic floor-plan sheet and pen; warehouse racks in soft focus in the background. Neutral industrial lighting, no persons, no flames, no smoke, no extinguisher demonstration, no legible text, no labels, no logos, no numbers or invented safety symbols. The image is a conceptual illustration, not an approved layout or an actual customer facility or fire test.
+
