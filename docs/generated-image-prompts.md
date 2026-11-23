@@ -152,3 +152,13 @@ Prompt:
 
 Use case: photorealistic-natural. Landscape editorial cover for an industrial purchasing guide on preparing a warehouse fire-protection review before changing pallet materials. The input is a visual reference of a blue grid-deck plastic pallet, not an exact model drawing. Show a single empty blue plastic pallet resting flat on a clean warehouse floor beside a worktable with a blank generic floor-plan sheet and pen; warehouse racks in soft focus in the background. Neutral industrial lighting, no persons, no flames, no smoke, no extinguisher demonstration, no legible text, no labels, no logos, no numbers or invented safety symbols. The image is a conceptual illustration, not an approved layout or an actual customer facility or fire test.
 
+## asrs-pallet-pool-sizing
+
+Final assets: `static/images/resources/insights/asrs-pallet-pool-sizing.webp` (1536 × 865) and `static/images/resources/insights/asrs-pallet-pool-sizing-768.webp` (768 × 433).
+
+Created on 23 November 2026 using the built-in image generation tool and `static/images/products/grid-3runner/bh1210-grid-deck-3-runner-1200x1000mm-plastic-pallet-main.jpg` as a visual reference. The result is an editorial illustration, not a model drawing, actual facility, measured inventory or recommended stack arrangement. Both language versions disclose this in the caption.
+
+Prompt:
+
+Use case: photorealistic-natural. Create a horizontal editorial cover for a B2B article about estimating the number of reusable pallets in an automated warehouse. Reference image is a blue grid-deck three-runner plastic pallet; preserve recognizable color, deck and underside without claiming model accuracy. Show a small stable stack of empty blue pallets next to a clean warehouse planning worktable with a blank clipboard and calculator, warehouse aisles softly blurred in background. Realistic industrial lighting and scale, orderly grounded stack, no people, no readable text, numbers, brand marks, diagrams, or logos. Conceptual illustration, not a real warehouse, measured inventory or inventory recommendation.
+
