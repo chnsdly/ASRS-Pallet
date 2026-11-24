@@ -162,3 +162,13 @@ Prompt:
 
 Use case: photorealistic-natural. Create a horizontal editorial cover for a B2B article about estimating the number of reusable pallets in an automated warehouse. Reference image is a blue grid-deck three-runner plastic pallet; preserve recognizable color, deck and underside without claiming model accuracy. Show a small stable stack of empty blue pallets next to a clean warehouse planning worktable with a blank clipboard and calculator, warehouse aisles softly blurred in background. Realistic industrial lighting and scale, orderly grounded stack, no people, no readable text, numbers, brand marks, diagrams, or logos. Conceptual illustration, not a real warehouse, measured inventory or inventory recommendation.
 
+## asrs-pallet-concentrated-loads
+
+Final assets: `static/images/resources/insights/asrs-pallet-concentrated-loads.webp` (1536 × 1024) and `static/images/resources/insights/asrs-pallet-concentrated-loads-768.webp` (768 × 512).
+
+Created on 24 November 2026 with the built-in image generation tool, referencing `static/images/products/grid-3runner/bh1210-grid-deck-3-runner-1200x1000mm-plastic-pallet-main.jpg`. The resulting scene is an illustration, not a model drawing, customer site, test or approved loading configuration. Both language versions identify it as illustrative.
+
+Prompt:
+
+Photorealistic landscape editorial illustration for a warehouse guide about reviewing how the feet of industrial equipment contact a plastic pallet. Reference image: blue grid-deck plastic pallet, not an engineering drawing. Show one blue empty grid pallet on a warehouse floor beside a workbench with a small unattached generic metal equipment foot and a blank drawing; no equipment or weights on pallet, no rack loading. Natural industrial light, no people, no text, no numbers, no logo or signs. Conceptual scene, not an actual test, approved configuration or real customer site.
+
