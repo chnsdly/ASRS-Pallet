@@ -172,3 +172,13 @@ Prompt:
 
 Photorealistic landscape editorial illustration for a warehouse guide about reviewing how the feet of industrial equipment contact a plastic pallet. Reference image: blue grid-deck plastic pallet, not an engineering drawing. Show one blue empty grid pallet on a warehouse floor beside a workbench with a small unattached generic metal equipment foot and a blank drawing; no equipment or weights on pallet, no rack loading. Natural industrial light, no people, no text, no numbers, no logo or signs. Conceptual scene, not an actual test, approved configuration or real customer site.
 
+## asrs-pallet-slip-resistance
+
+Final assets: `static/images/resources/insights/asrs-pallet-slip-resistance.webp` (1536 × 865) and `static/images/resources/insights/asrs-pallet-slip-resistance-768.webp` (768 × 433).
+
+Created on 25 November 2026 with the built-in image generation tool, referencing `static/images/products/grid-3runner/bh1210-grid-deck-3-runner-1200x1000mm-plastic-pallet-main.jpg`. The scene is an illustration, not a model drawing, actual test, customer facility or approved configuration. Both languages disclose this.
+
+Prompt:
+
+Photorealistic landscape editorial illustration for a B2B guide on reviewing slip at different pallet interfaces. Input image is a reference of a blue grid-deck three-runner plastic pallet, not an exact model drawing. Show one empty blue grid pallet safely resting on a warehouse floor next to an uncluttered workbench with a small plain dark material sample and blank paper, softly blurred warehouse in background. No cargo, people, text, labels, arrows, logos, measurements or depicted testing. Editorial conceptual image, not a real customer facility, actual product test or approved anti-slip configuration.
+
