@@ -182,3 +182,9 @@ Prompt:
 
 Photorealistic landscape editorial illustration for a B2B guide on reviewing slip at different pallet interfaces. Input image is a reference of a blue grid-deck three-runner plastic pallet, not an exact model drawing. Show one empty blue grid pallet safely resting on a warehouse floor next to an uncluttered workbench with a small plain dark material sample and blank paper, softly blurred warehouse in background. No cargo, people, text, labels, arrows, logos, measurements or depicted testing. Editorial conceptual image, not a real customer facility, actual product test or approved anti-slip configuration.
 
+
+## asrs-pallet-fork-entry-pallet-jack
+
+Created 27 November 2026 with built-in image generation, using the BAOHENG BH1210 grid three-runner product photograph as an appearance reference. Final assets: `static/images/resources/insights/asrs-pallet-fork-entry-pallet-jack.webp` (1536 × 865) and `static/images/resources/insights/asrs-pallet-fork-entry-pallet-jack-768.webp` (768 × 433). This conceptual image is not a model drawing, actual customer site, equipment trial or compatibility approval.
+
+Prompt: Use case: photorealistic-natural. Asset: landscape editorial cover for a guide about checking pallet fork-entry compatibility. Reference image is a real blue grid-deck three-runner plastic pallet; preserve its overall appearance but this is not a dimensioned drawing. Show one empty blue grid pallet safely resting on a clean warehouse floor, with a separate unengaged manual pallet jack parked a short distance away, and no load or people. Show the pallet side and openings clearly. Calm industrial lighting. The jack must not touch, enter, lift or support the pallet: no depicted testing or inference of equipment compatibility. No text, labels, numbers, logos, arrows or watermark. Editorial conceptual scene, not an actual customer site or approved configuration.
